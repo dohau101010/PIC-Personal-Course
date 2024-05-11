@@ -1,0 +1,33 @@
+#include "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_kit_vdk_pic_all.c"
+
+void bai_315_dmd_ttr_16led(usi16 dl)
+{
+   unsigned int32 led1,led2, z1, z2, v1, v2, u1, u2;
+   signed int8 n,k;
+   z1=0x7fff; u1=0x8000;
+   z2=0xfffe; u2=1;
+   for(k=0;k<16;k++)
+   {
+      v1=u1; v2=u2;
+      for(n=k+1;n>0;n--)
+      {
+         v1=v1<<1;
+         v2=v2>>1
+         led1=z1|v1;
+         led2=z2|v2;
+         xuat_32led_don_2word(led1, led2);
+         delay_ms(dl);
+      }
+      z1=z1>>1; u1=u1>>1;
+      z2=z2<<1; u2=u2<<1;
+   }
+}
+
+void main()
+{
+   set_up_port();
+   while(true)
+   {
+      bai_315_dmd_ttr_16led(100);
+   }
+}

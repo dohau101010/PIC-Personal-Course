@@ -1,0 +1,47 @@
+ÀÄbai_403_mtp4x4_4led_dich_undo4
+   ÀÄMAIN  0/202  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄhienthi_4led7doan  0/92  Ram=3
+      ³  ÀÄxuat_4led_7doan_4so  0/36  Ram=0
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÀÄxuat_1byte  0/38  Ram=2
+      ÀÄb403_xuly_phimnhan  0/230  Ram=3
+         ÃÄkey_4x4_dw  0/50  Ram=2
+         ³  ÃÄkey_nhan  0/116  Ram=4
+         ³  ÃÄ@delay_ms1  0/38  Ram=1
+         ³  ÃÄkey_nhan  0/116  Ram=4
+         ³  ÃÄ@delay_ms1  0/38  Ram=1
+         ³  ÀÄkey_nhan  0/116  Ram=4
+         ÃÄ@const667  0/32  Ram=0
+         ÃÄhienthi_4led7doan  0/92  Ram=3
+         ³  ÀÄ*
+         ÃÄhienthi_4led7doan  0/92  Ram=3
+         ³  ÀÄ*
+         ÃÄbuzzer_on_off  0/36  Ram=3
+         ³  ÃÄxuat_buzzer_relay  0/30  Ram=2
+         ³  ³  ÃÄxuat_1byte  0/38  Ram=2
+         ³  ³  ÀÄxuat_1byte  0/38  Ram=2
+         ³  ÃÄ@delay_ms1  0/38  Ram=1
+         ³  ÃÄ@delay_ms1  0/38  Ram=1
+         ³  ÀÄxuat_buzzer_relay  0/30  Ram=2
+         ³     ÀÄ*
+         ÃÄxoa_mang_m4led  0/38  Ram=2
+         ÀÄhienthi_4led7doan  0/92  Ram=3
+            ÀÄ*

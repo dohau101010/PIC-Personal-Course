@@ -1,0 +1,86 @@
+
+ROM used:   1530/32768 (5%)
+            1530/32768 (5%) including unused fragments
+
+            0.3 Average locations per line
+            1.3 Average locations per statement
+
+RAM used:   52/2048 (3%) at main() level
+            85/2048 (4%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  133    75   6  bai_310_32led_tong_hop.c
+   24     0   0  C:\Program Files (x86)\PICC\Drivers\tv_kit_vdk_pic_all.c
+  212    46   4  C:\Program Files (x86)\PICC\Drivers\tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  C:\Program Files (x86)\PICC\Drivers\tv_01_4_nutnhan.c
+   98    63   5  C:\Program Files (x86)\PICC\Drivers\tv_02_matran_phim4x4_138.c
+ 2229   257  22  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  C:\Program Files (x86)\PICC\Drivers\tv_03_32led_don.c
+  105    47   4  C:\Program Files (x86)\PICC\Drivers\tv_04_4led_7doan.c
+  112    48   4  C:\Program Files (x86)\PICC\Drivers\tv_05_8led_7doan_quet.c
+  137    45   4  C:\Program Files (x86)\PICC\Drivers\tv_05_i2c_ds13_pcf.c
+   42    12   1  C:\Program Files (x86)\PICC\Drivers\tv_06_lcd_glcd.c
+  435   206  17  C:\Program Files (x86)\PICC\Drivers\tv_06_lcd.c
+   76    35   3  C:\Program Files (x86)\PICC\Drivers\tv_dht11.c
+  123    37   3  C:\Program Files (x86)\PICC\Drivers\tv_08_relay_triac_buzzer_dc.c
+  419    72   6  C:\Program Files (x86)\PICC\Drivers\tv_07_adc_cb.c
+   90    39   3  C:\Program Files (x86)\PICC\Drivers\tv_07_ds18b20.c
+  230    54   5  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  C:\Program Files (x86)\PICC\Drivers\tv_07_i2c_at24cxx.c
+   60    20   2  C:\Program Files (x86)\PICC\Drivers\tv_09_matran_led_mbi.c
+----- -----
+ 5678  1186 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     38   1    2   239  4.3  xuat_1byte
+0     22   1    4   131  2.8  xuat_1word
+0     88   3    0   396  1.4  xoa_tat_6module
+0     58   2    0   253  2.3  set_up_port
+0     34   1    4   160  1.8  xuat_32led_don_4byte
+0     36   1    8   245  3.1  xuat_32led_don_2word
+0     36   1    9   120  2.8  xuat_32led_don_1dw
+0      2   0    0             @const1100
+0      2   0    0             @const1106
+0      2   0    0             @const1111
+0     10   0    0             @const1121
+0     22   1    0             @const1123
+0     12   0    0             @const1182
+0     72   2    3   149  1.8  b303_32led_chop_tat
+0    170   6    9   603  5.9  b306_32led_std_tnv
+0    170   6    9   603  5.9  b307_32led_std_ttr
+0    172   6   12   412  4.5  b308_32led_std_pst
+0    162   5   12   412  4.5  b309_32led_std_tsp
+0     24   1    3   111  3.7  h310_32led_chop_tat_nlan
+0     26   1    3   111  3.7  h310_32led_std_pst_nlan
+0     26   1    3   111  3.7  h310_32led_std_tsp_nlan
+0     26   1    3   111  3.7  h310_32led_std_tnv_nlan
+0     26   1    3   111  3.7  h310_32led_std_ttr_nlan
+0    252   8    0   288  2.3  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               18
+    Statements              1186
+    Comments                1388
+    Volume (V)              8121
+    Difficulty (D)          61.4
+    Effort to implement (E) 498238
+    Time to implement (T)   7 hours, 41 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   14
+    Maintainability (MI)    114
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1526  31238  
+
+
+

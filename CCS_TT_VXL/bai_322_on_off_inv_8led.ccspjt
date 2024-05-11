@@ -1,0 +1,26 @@
+[PROJECT]
+Target=bai_322_on_off_inv_8led.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_322_on_off_inv_8led.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_322_on_off_inv_8led.c]
+Type=4
+[mru-list]
+1=bai_322_on_off_inv_8led.c
+[Opened Files]
+1=bai_322_on_off_inv_8led.c
+2=tv_kit_vdk_pic_all.c
+3=tv_00_define_18f4550.c
+4=
+5=bai_321_on_off_8led.c
+6=bai_322_on_off_inv_8led.c
+7=c3_vd_for_if_1.c
+8=c3_vd_for_if_ngat.c
+9=
+[Units]
+Count=1
+1=bai_322_on_off_inv_8led (main)

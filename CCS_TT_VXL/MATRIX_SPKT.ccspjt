@@ -1,0 +1,29 @@
+[PROJECT]
+Target=MATRIX_SPKT.hex
+Processor_Text=PIC16F887
+CCSVersion=5.015
+Compiler=PCM
+[Target Data]
+FileList=MATRIX_SPKT.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\C:\Program Files (x86)\PICC\Devices\
+[MATRIX_SPKT.c]
+Type=4
+[mru-list]
+1=MATRIX_SPKT.c
+[Opened Files]
+1=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\EXAMPLE_6_GLCD_1.c
+2=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\tv_boards.c
+3=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\TV_D401_TH.h
+4=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\TV_D501_TH.h
+5=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\tv_glcd.c
+6=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\tv_glcd.h
+7=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\EXAMPLE_6_LCD.c
+8=bai_403_mtp4x4_4led_dich_undo4.c
+9=MATRIX_SPKT.C
+10=C:\Program Files (x86)\PICC\Devices\16F887.H
+11=C:\Program Files (x86)\PICC\Devices\18F4550.H
+12=
+[Units]
+Count=1
+1=MATRIX_SPKT (main)

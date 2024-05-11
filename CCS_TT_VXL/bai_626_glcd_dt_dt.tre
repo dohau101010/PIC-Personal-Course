@@ -1,0 +1,126 @@
+ÀÄbai_626_glcd_dt_dt
+   ÀÄMAIN  0/196  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/112  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/42  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/42  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄsetup_glcd  0/88  Ram=1
+      ³  ÃÄglcd_command  0/10  Ram=1
+      ³  ³  ÀÄglcd_xuat_db  0/38  Ram=1
+      ³  ³     ÃÄxuat_glcd  0/20  Ram=2
+      ³  ³     ³  ÀÄxuat_glcd_lcd  0/36  Ram=0
+      ³  ³     ³     ÃÄxuat_1byte  0/42  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/42  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/42  Ram=2
+      ³  ³     ³     ÀÄxuat_1byte  0/42  Ram=2
+      ³  ³     ÀÄxuat_glcd  0/20  Ram=2
+      ³  ³        ÀÄ*
+      ³  ÃÄglcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄglcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÀÄglcd_command  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄsetup_glcd  0/88  Ram=1
+      ³  ÀÄ*
+      ÃÄglcd_mau_nen  0/122  Ram=7
+      ³  ÀÄ@MUL1616  0/34  Ram=5
+      ÀÄb627_glcd_line_rect_bar_circle_text  0/266  Ram=8
+         ÃÄsetup_glcd  0/88  Ram=1
+         ³  ÀÄ*
+         ÃÄglcd_mau_nen  0/122  Ram=7
+         ³  ÀÄ*
+         ÃÄglcd_text57  0/440  Ram=20
+         ³  ÃÄ@const1269  0/272  Ram=0
+         ³  ÃÄ@const1273  0/236  Ram=0
+         ³  ÀÄglcd_pixel  0/268  Ram=6
+         ³     ÃÄ@MUL1616  0/34  Ram=5
+         ³     ÀÄ@MUL1616  0/34  Ram=5
+         ÃÄglcd_line  0/310  Ram=17
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÀÄglcd_pixel  0/268  Ram=6
+         ³     ÀÄ*
+         ÃÄglcd_rect  0/194  Ram=6
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_line  0/310  Ram=17
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_line  0/310  Ram=17
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_line  0/310  Ram=17
+         ³  ³  ÀÄ*
+         ³  ÀÄglcd_line  0/310  Ram=17
+         ³     ÀÄ*
+         ÃÄglcd_rect  0/194  Ram=6
+         ³  ÀÄ*
+         ÃÄglcd_circle  0/528  Ram=12
+         ³  ÃÄglcd_line  0/310  Ram=17
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_line  0/310  Ram=17
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_line  0/310  Ram=17
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_line  0/310  Ram=17
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄ@MUL88  0/78  Ram=2
+         ³  ÀÄ@MUL88  0/78  Ram=2
+         ÃÄglcd_circle  0/528  Ram=12
+         ³  ÀÄ*
+         ÃÄglcd_bar  0/674  Ram=25
+         ³  ÃÄ@MULS1616  0/84  Ram=6
+         ³  ÃÄ@MULS1616  0/84  Ram=6
+         ³  ÃÄ@MULS1616  0/84  Ram=6
+         ³  ÃÄ@MULS1616  0/84  Ram=6
+         ³  ÃÄ@MULS1616  0/84  Ram=6
+         ³  ÃÄglcd_pixel  0/268  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÃÄ@MULS1616  0/84  Ram=6
+         ³  ÃÄ@MULS1616  0/84  Ram=6
+         ³  ÃÄ@MULS1616  0/84  Ram=6
+         ³  ÀÄglcd_pixel  0/268  Ram=6
+         ³     ÀÄ*
+         ÃÄglcd_bar  0/674  Ram=25
+         ³  ÀÄ*
+         ÀÄgdram_vdk_to_gdram_glcd_all  0/238  Ram=3
+            ÃÄglcd_command  0/10  Ram=1
+            ³  ÀÄ*
+            ÃÄglcd_command  0/10  Ram=1
+            ³  ÀÄ*
+            ÃÄ@MUL1616  0/34  Ram=5
+            ÃÄglcd_data  0/12  Ram=1
+            ³  ÀÄglcd_xuat_db  0/38  Ram=1
+            ³     ÀÄ*
+            ÃÄ@MUL1616  0/34  Ram=5
+            ÀÄglcd_data  0/12  Ram=1
+               ÀÄ*

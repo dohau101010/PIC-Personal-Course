@@ -1,0 +1,25 @@
+#include <tv_kit_vdk_pic_all.c>
+#include "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv__keypad_hc.c"
+unsigned int8 mp;
+signed int8 i;
+
+void main()
+{
+   set_up_port();
+   dl_8l7dq[0]=0x7f;
+   while(true)
+   {
+      hien_thi_8led_7doan_quet();
+     if(key4x4_read()==0)
+     {
+         mp=key4x4_key();
+     }
+         for(i=7;i>0;i--)
+         {
+            dl_8l7dq[i]=dl_8l7dq[i-1];
+         }
+         dl_8l7dq[0]=ma7doan[mp];
+     
+      
+   }
+}

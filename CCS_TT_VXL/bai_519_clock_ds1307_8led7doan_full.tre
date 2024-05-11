@@ -1,0 +1,62 @@
+ÀÄbai_519_clock_ds1307_8led7doan_full
+   ÀÄMAIN  0/236  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄds1307_kiem_tra_ma  0/22  Ram=0
+      ³  ÃÄds1307_doc_time  0/170  Ram=4
+      ³  ³  ÃÄ@I2C_WRITE_1  0/108  Ram=1
+      ³  ³  ÃÄ@I2C_WRITE_1  0/108  Ram=1
+      ³  ³  ÃÄ@I2C_WRITE_1  0/108  Ram=1
+      ³  ³  ÃÄ@I2C_READ_1  0/102  Ram=3
+      ³  ³  ÀÄ@I2C_READ_1  0/102  Ram=3
+      ³  ÀÄds1307_cap_nhat_time  0/148  Ram=3
+      ³     ÃÄ@I2C_WRITE_1  0/108  Ram=1
+      ³     ÃÄ@I2C_WRITE_1  0/108  Ram=1
+      ³     ÃÄ@I2C_WRITE_1  0/108  Ram=1
+      ³     ÀÄ@I2C_WRITE_1  0/108  Ram=1
+      ÃÄhien_thi_8led_7doan_quet  0/54  Ram=2
+      ³  ÃÄxuat_8led_7doan_quet  0/50  Ram=3
+      ³  ³  ÃÄ@const907  0/26  Ram=0
+      ³  ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÀÄtat_8led_7doan_quet  0/12  Ram=0
+      ³     ÀÄxuat_8led_7doan_quet  0/50  Ram=3
+      ³        ÀÄ*
+      ÃÄds1307_doc_time  0/170  Ram=4
+      ³  ÀÄ*
+      ÃÄphim_mod  0/26  Ram=1
+      ³  ÀÄphim_bt3_c2  0/68  Ram=3
+      ³     ÀÄ@delay_us1  0/28  Ram=1
+      ÃÄb518_giai_ma_8led_quet  0/40  Ram=0
+      ³  ÃÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÀÄ@const667  0/32  Ram=0
+      ³  ÃÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÀÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+      ³     ÀÄ*
+      ÃÄb518_giai_ma_8led_quet_ntn  0/38  Ram=0
+      ³  ÃÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÃÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+      ³  ³  ÀÄ*
+      ³  ÀÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+      ³     ÀÄ*
+      ÀÄb518_giai_ma_8led_quet_thu  0/26  Ram=0
+         ÀÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+            ÀÄ*

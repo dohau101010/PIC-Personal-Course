@@ -1,0 +1,5 @@
+>>> Warning 207 "VUMEDUBU.c" Line 40(1,1): Code has no effect
+>>> Warning 202 "VUMEDUBU.c" Line 5(7,8): Variable never used:   y
+      Memory usage:   ROM=4%      RAM=4% - 5%
+      0 Errors,  2 Warnings.
+Build Successful.

@@ -1,0 +1,163 @@
+
+ROM used:   4794/32768 (15%)
+            4794/32768 (15%) including unused fragments
+
+            0.8 Average locations per line
+            3.2 Average locations per statement
+
+RAM used:   104/2048 (5%) at main() level
+            124/2048 (6%) worst case
+
+Stack used: 11 worst case (10 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   66    42   3  bai_616_clock_ds1370_lcd_3key.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   3  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   6  tv_01_4_nutnhan.c
+   94    64   4  tv_02_matran_phim4x4_138.c
+ 2229   257  17  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   3  tv_04_4led_7doan.c
+  112    48   3  tv_05_8led_7doan_quet.c
+  137    45   3  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  435   206  14  tv_06_lcd.c
+   76    35   2  tv_dht11.c
+  123    37   2  tv_08_relay_triac_buzzer_dc.c
+  419    72   5  tv_07_adc_cb.c
+  106    48   3  tv_07_ds18b20.c
+  230    54   4  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   64    29   2  tv_08_step_motor.c
+   82    33   2  tv_08_dc_motor.c
+   60    20   1  tv_09_matran_led_mbi.c
+  102    65   4  bai_616_clock_ds1307_lcd_tv.c
+  309   198  13  bai_616_ds1307_3key_tv.c
+----- -----
+ 6180  1488 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0    1             @delay_ms1
+0     26   0    1             @delay_us1
+0    102   1    3             @I2C_READ_1
+0    108   1    1             @I2C_WRITE_1
+0     42   0    0   195  4.8  @const667
+0     38   0    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0     88   1    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     68   1    3   198  3.6  phim_bt0_c2
+0     68   1    3   194  3.9  phim_bt1_c2
+0     68   1    3   192  4.2  phim_bt2_c2
+0     68   1    3   190  4.4  phim_bt3_c2
+0     44   0    4   160  1.8  xuat_32led_don_4byte
+0     44   0    0   152  1.8  xuat_4led_7doan_4so
+0     40   0    3             @DIV88
+0     36   0    0             @const904
+0     56   1    3   123  2.6  xuat_8led_7doan_quet
+0     12   0    0    25  1.2  tat_8led_7doan_quet
+0     54   1    2   171  4.0  hien_thi_8led_7doan_quet
+0    126   1    6   293  5.1  md8l7d_gma_so_bcd_vitri_vn
+0    148   2    3   262  4.6  ds1307_cap_nhat_time
+0    170   2    4   280  4.0  ds1307_doc_time
+0     20   0    0    89  1.5  ds1307_kiem_tra_ma
+0     36   0    0   152  1.8  xuat_glcd_lcd
+0     16   0    2   104  3.0  xuat_lcd
+0     38   0    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     72   1    0   297  2.3  lcd_setup
+0     30   0    0   556  4.2  @const983
+0     26   0    3   145  3.9  lcd_goto_xy
+0     86   1    0   556  4.2  @const989
+0     90   1    0  1305  7.3  @const993
+0     44   0    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0     92   1    6   280  5.8  lcd_hien_thi_so_to
+0     76   1    2   553  5.1  @MUL88
+0     50   1    4   241  5.3  lcd_xoa_so_to
+0     82   1    6   379  5.5  lcd_hthi_byte
+0      2   0    0             @const1097
+0     32   0    2             @PSTRINGC_974
+0      2   0    0             @const1103
+0      2   0    0             @const1108
+0     10   0    0             @const1118
+0     22   0    0             @const1120
+0     12   0    0             @const1184
+0     20   0    0    43  1.3  ds1307_hthi_text_lcd
+0     14   0    0             @const1259
+0    126   1    0   428  4.5  ds1307_hthi_thu_lcd
+0     10   0    0             @const1261
+0     10   0    0             @const1262
+0     10   0    0             @const1263
+0     12   0    0             @const1264
+0     12   0    0             @const1265
+0     10   0    0             @const1266
+0     12   0    0             @const1267
+0     64   1    0   190  2.2  ds1307_hthi_ntn_lcd
+0      4   0    0             @const1269
+0      4   0    0             @const1270
+0    124   1    1   524  5.7  ds1307_hthi_giay_lcd_soto
+0     42   0    1   114  3.0  ds1307_hthi_phut_lcd_soto
+0     40   0    1   114  3.0  ds1307_hthi_gio_lcd_soto
+0     36   0    0   183  2.6  ds1307_hthi_lcd_soto
+0     50   1    0   216  2.8  ds1307_hthi_lcd_all
+0     94   1    2   104  1.7  ds1307_luu_vao_ds
+0     82   1    7   439  9.5  tang_or_giam_so_bcd
+0     42   0    1   272  2.3  giai_ma_thu_8l7dq
+0     40   0    0   179  2.7  giai_ma_gpg_8l7dq
+0     38   0    0   143  2.2  giai_ma_ntn_8l7dq
+0     56   1    0   287  3.2  giai_ma_gpg_ntn_8l7dq
+0     70   1    1   200  3.6  phim_chon_hthi
+0     58   1    0   426  3.8  tat_2led_chinh
+0     36   0    0   161  3.4  xu_ly_choptat
+0     42   0    1   197  3.6  phim_mod
+0     34   0    0   171  4.0  tang_giay
+0     36   0    0   171  4.0  tang_phut
+0     36   0    0   171  4.0  tang_gio
+0     32   0    0   139  3.1  chinh_tang_gpg
+0     36   0    0   171  4.0  tang_nam
+0     38   0    0   171  4.0  tang_thang
+0     38   0    0   171  4.0  tang_ngay
+0     32   0    0   139  3.1  chinh_tang_ntn
+0     28   0    0   133  4.3  chinh_tang_thu
+0     62   1    1   310  4.1  phim_up
+0     36   0    0   171  4.0  giam_giay
+0     38   0    0   171  4.0  giam_phut
+0     38   0    0   171  4.0  giam_gio
+0     32   0    0   139  3.1  chinh_giam_gpg
+0     38   0    0   171  4.0  giam_nam
+0     38   0    0   171  4.0  giam_thang
+0     38   0    0   171  4.0  giam_ngay
+0     32   0    0   139  3.1  chinh_giam_ntn
+0     28   0    0   133  4.3  chinh_giam_thu
+0     60   1    1   310  4.1  phim_dw
+0     16   0    0    29  1.2  interrupt_timer3
+0    340   4    0   898  6.3  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               73
+    Statements              1488
+    Comments                1428
+    Volume (V)              37285
+    Difficulty (D)          261.5
+    Effort to implement (E) 9751078
+    Time to implement (T)   150 hours, 29 minutes
+    Est Delivered Bugs (B)  15
+    Cyclomatic Complexity   125
+    Maintainability (MI)    116
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  4648  27970  
+
+
+

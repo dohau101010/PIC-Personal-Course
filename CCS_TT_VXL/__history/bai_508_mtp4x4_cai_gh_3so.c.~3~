@@ -1,0 +1,32 @@
+#include <tv_kit_vdk_pic_all.c>
+
+unsigned int8 mp;
+usi16 tram;
+signed int8 g_han,chuc,donvi;
+
+void b507_mtp4x4_cai_ghan()
+{
+   g_han=tram*100+chuc*10+donvi;
+   md8l7d_gma_3so_vitri_vn(g_han,2,cx_vn);
+   hien_thi_8led_7doan_quet();
+}
+
+void main()
+{
+   set_up_port();
+   dl_8l7dq[0]=0x7f; 
+   donvi=0; chuc=0; tram=0;
+   while(true)
+   {
+      hien_thi_8led_7doan_quet();
+      mp= key_4x4_dw_c2(20);
+      if(mp!=0xff)
+      {
+         tram=chuc; chuc=donvi; donvi=mp;
+         dl_8l7dq[2]=ma7doan[tram];
+         dl_8l7dq[1]=ma7doan[chuc];
+         dl_8l7dq[0]=ma7doan[mp];
+      }
+      
+   }
+}

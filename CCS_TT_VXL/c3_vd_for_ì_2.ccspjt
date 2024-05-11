@@ -1,0 +1,28 @@
+[PROJECT]
+Target=c3_vd_for_ì_2.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=c3_vd_for_ì_2.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\
+[c3_vd_for_ì_2.c]
+Type=4
+[mru-list]
+1=c3_vd_for_ì_2.c
+[Opened Files]
+1=c3_vd_for_ì_2.c
+2=
+3=
+4=C:\Users\PC MY\Documents\Zalo Received Files\TEST7.c
+5=
+6=
+7=bai_520_ds1307_3key_tv.c
+8=c3_vd_for_ì_2.c
+9=bai_414_dem_xung_t0_stop_run_32led_gh.c
+10=bai_521_tong_hop_3module_ds1307.c
+11=
+[Units]
+Count=1
+1=c3_vd_for_ì_2 (main)

@@ -1,0 +1,186 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 rbdc
+004.0   step_motor_enable
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006-007 dl_btn
+008-00B dl_4l7d
+00C-013 dl_8l7dq
+014-01C time_w
+01D-025 time_r
+026-029 g_lcd
+02A.0   lcd_e
+02A     lcd_ctrl
+02A.1   lcd_rw
+02A.2   lcd_rs
+02A.3   lcd_p
+02B-02C so_ng
+02D-02E so_tp
+02F.0   ttqn
+02F.1   buz_ena
+030     glcd_ctr
+030.0   glcd_psb
+030.1   glcd_nc
+030.2   glcd_e
+030.3   glcd_rw
+030.4   glcd_rs
+030.5   glcd_p
+031     doc
+032     ngang
+033-433 gdram_vdk
+434     t0
+435     t0_tam
+436     g_han
+437-438 xuat_1word.w
+437     h622_glcd_gma_hthi.addr
+437-43A atan2.y
+437     md4l7d_giaima_2so_vitri_vn.x
+437-438 buzzer_on_off.dl
+437     setup_glcd.glcd_fs_mode
+437     @PSTRINGC_1210.@SCRATCH1
+438     h622_glcd_gma_hthi.x
+438     md4l7d_giaima_2so_vitri_vn.y
+438     @PSTRINGC_1210.@SCRATCH2
+439     h622_glcd_gma_hthi.tram
+439     xuat_1word.b1
+439     xuat_buzzer_relay.rbdc1
+439     md4l7d_giaima_2so_vitri_vn.xvn
+439     buzzer_on_off.@SCRATCH1
+43A     @delay_ms1.P1
+43A     xuat_buzzer_relay.rbdc2
+43A     xuat_1word.b0
+43A     h622_glcd_gma_hthi.chuc
+43A     md4l7d_giaima_2so_vitri_vn.@SCRATCH1
+43B-43E atan2.x
+43B     h622_glcd_gma_hthi.donvi
+43B     md4l7d_giaima_2so_vitri_vn.@SCRATCH2
+43C     glcd_command.db
+43C     md4l7d_giaima_2so_vitri_vn.@SCRATCH3
+43C     h622_glcd_gma_hthi.@SCRATCH1
+43D     glcd_data.db
+43D     @DIV88.P1
+43E     glcd_xuat_db.db
+43E     @DIV88.P1
+43F     xuat_glcd.glcd_ctr
+43F-442 atan2.z
+43F     @DIV88.@SCRATCH1
+440     xuat_glcd.glcd_dta
+441     xuat_1byte.x
+441.7   xuat_1byte.msb
+442     xuat_1byte.sb
+443.0   atan2.sign
+444     atan2.quad
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  @const1100.call
+000026  @const1111.call
+000030  @const1113.call
+000046  @const1158.call
+000052  @const1283.call
+000060  xuat_1byte
+00008A  xuat_1word
+0000A0  xoa_tat_6module
+000110  set_up_port
+00014A  xuat_glcd_lcd
+00016E  xuat_glcd
+000182  glcd_xuat_db
+0001A8  glcd_command
+0001B2  @delay_ms1
+0001DA  setup_glcd
+000234  glcd_data
+00023E  @PSTRINGC_1210
+000260  @DIV88
+00028C  md4l7d_giaima_2so_vitri_vn
+00032A  xuat_4led_7doan_4so
+00034E  b622_hienthi_4led7doan
+000376  h622_glcd_gma_hthi
+00041C  xuat_buzzer_relay
+00043A  buzzer_on_off
+000466  b622_dem_sp_glcd_4l7d_t0
+0004A8  @cinit1
+0004A8  MAIN
+0004D4  @cinit2
+
+Project Directory:
+    E:\Downloads\TT VXL THAY PHU\tt_vxl_d501_thay_phu\tt_vxl_d501_thay_phu\
+
+Project Files:
+    bai_622_glcd_dem_sp_t0.c                                [22-Apr-22 15:44  CRC=63A053E1]
+    tv_kit_vdk_pic_all.c                                    [09-Feb-22 11:37  CRC=95887F12]
+    tv_00_define_18f4550.c                                  [30-Sep-21 12:29  CRC=91C401BF]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [04-Oct-21 08:38  CRC=26E88B80]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [25-Mar-22 13:13  CRC=1A33A3DD]
+    tv_05_i2c_ds13_pcf.c                                    [22-Apr-22 13:22  CRC=97278EF6]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [08-Apr-22 14:02  CRC=EE6254ED]
+    tv_dht11.c                                              [24-Nov-21 12:49  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [29-Oct-21 18:52  CRC=8F6690CD]
+    tv_07_ds18b20.c                                         [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [15-Oct-21 08:41  CRC=A7D8AEFA]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+    tv_06_glcd.c                                            [14-Oct-21 20:09  CRC=30956F99]
+    bai_622_glcd_dem_sp_t0_tv.c                             [22-Apr-22 15:44  CRC=C1EE8AA5]
+
+Source signature=B2546ED8
+
+Units:
+    bai_622_glcd_dem_sp_t0 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_622_glcd_dem_sp_t0.xsym
+    Errors:      bai_622_glcd_dem_sp_t0.err
+    Ext Symbols: bai_622_glcd_dem_sp_t0.esym
+    INHX32:      bai_622_glcd_dem_sp_t0.hex
+    Symbols:     bai_622_glcd_dem_sp_t0.sym
+    List:        bai_622_glcd_dem_sp_t0.lst
+    Debug/COFF:  bai_622_glcd_dem_sp_t0.cof
+    Project:     bai_622_glcd_dem_sp_t0.ccspjt
+    Call Tree:   bai_622_glcd_dem_sp_t0.tre
+    Statistics:  bai_622_glcd_dem_sp_t0.STA

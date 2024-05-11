@@ -1,0 +1,37 @@
+[PROJECT]
+Target=bai_316_32led_1dst_mp.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_316_32led_1dst_mp.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_316_32led_1dst_mp.c]
+Type=4
+[mru-list]
+1=bai_316_32led_1dst_mp.c
+[Opened Files]
+1=bai_316_32led_1dst_mp.c
+2=..\..\..\..\TT - VDK - 22-23\3 - THU VIEN VA MO PHONG\5_LED QUET.c
+3=..\..\..\..\TT - VDK - 22-23\3 - THU VIEN VA MO PHONG\tv_pickit2_shift_1.c
+4=..\..\..\..\TT - VDK - 22-23\3 - THU VIEN VA MO PHONG\“BAI_304_STD_PST_8LED.c
+5=tv_kit_vdk_pic_all.c
+6=tv_05_8led_7doan_quet.c
+7=
+8=bai_310_32led_tong_hop.c
+9=bai_308_32led_std_pst.c
+10=bai_311_32led_sd_pst.c
+11=bai_312_32led_sd_tsp.c
+12=bai_313_32led_sd_tnv.c
+13=bai_314_32led_sd_ttr.c
+14=bai_315_32led_1dsp_mp.c
+15=bai_316_32led_1dst_mp.c
+16=bai_321_on_off_8led.c
+17=bai_322_on_off_inv_8led.c
+18=bai_323_on_off_inv_cdoi_8led.c
+19=bai_326_32led_3y_cau_up_dw.c
+20=
+[Units]
+Count=1
+1=bai_316_32led_1dst_mp (main)

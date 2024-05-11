@@ -1,0 +1,5 @@
+*** Error 18 "BAI SUA.c" Line 1(9,54): File can not be opened
+    Not in local "C:\THU VIEN CAC MODULE\tv_kit_vdk_pic_all.c"
+    Not in local "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\C:\THU VIEN CAC MODULE\tv_kit_vdk_pic_all.c"
+*** Error 128 "BAI SUA.c" Line 1(9,16): A #DEVICE required before this line
+*** Error 48 "BAI SUA.c" Line 2(1,6): Expecting a (

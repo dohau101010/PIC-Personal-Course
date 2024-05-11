@@ -1,0 +1,6 @@
+*** Error 24 "C:\Program Files (x86)\PICC\Devices\18f4550.h" Line 11(9,19): Unknown device type    -- Try PCH
+      1 Errors,  0 Warnings.
+Build Failed.
+      Memory usage:   ROM=3%      RAM=4% - 6%
+      0 Errors,  0 Warnings.
+Build Successful.

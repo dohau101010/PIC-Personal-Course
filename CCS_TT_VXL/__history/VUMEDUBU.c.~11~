@@ -1,0 +1,393 @@
+#include "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\THU VIEN PIC 18F4550\tv_kit_vdk_pic_all.c"
+
+
+usi8 dir;
+usi8 ttl, tt_ct, k, i, m, n;
+usi32 x, LED1, LED2, RUN1, RUN2, SAVE1, SAVE2, LED7, RUN7, SAVE7, LED8, RUN8, SAVE8;
+usi16 LT, LED5, LED6, RUN5, RUN6, SAVE5, SAVE6,LED9,LED10,RUN10;
+usi16 LP, LED3, LED4, RUN3, RUN4, SAVE3, SAVE4,SAVE9,SAVE10,RUN9;
+
+void h327_reset_bien()
+{
+   ttl=0; x=0; LT=0; LP=0;
+   LED1=0; RUN1=1;     SAVE1=0; LED2=0; RUN2=0X80000000;     SAVE2=0; LED3=0; RUN3=0X8000;     SAVE3=0;
+   LED4=0; RUN4=1;     SAVE4=0; LED5=0; RUN5=1; SAVE5=0;     LED6=0; RUN6=0x8000;              SAVE6=0;
+   LED7=0xffffffff; RUN7=0x00000001; SAVE7=0xfffffffe; LED8=0xffffffff;  RUN8=0x80000000; SAVE8=0x7fffffff;
+   k=32;  i=0; m=16; n=0; RUN9=0x0001; SAVE9=0xfffe;LED9=0xffff; RUN10=0x8000;SAVE10=0x7fff;LED10=0xffff;
+   
+}
+
+void b308_32led_std_pst_if()          
+{                                 
+   if(ttl<32)
+   {
+      x = (x << 1) + 1;
+      xuat_32led_don_1dw(x);
+      ttl++;
+   }
+   else if(ttl<64)
+   {
+      x = (x << 1);
+      xuat_32led_don_1dw(x);
+      ttl++;
+   }
+   else h327_reset_bien();
+}    
+
+void b309_32led_std_tsp_if()          
+{                                 
+   if(ttl<32)
+   {
+      x = (x >> 1) + 0x80000000;
+      xuat_32led_don_1dw(x);
+      ttl++;
+   }
+   else if(ttl<64)
+   {
+      x = (x >> 1);
+      xuat_32led_don_1dw(x);
+      ttl++;
+   }
+   else h327_reset_bien();
+}    
+
+void b306_32led_std_tnv()          
+{                                 
+   if(ttl<16)
+   {
+      LT = (LT>>1) + 0x8000;
+      LP = (LP<<1) + 1;
+      xuat_32led_don_2word(LT,LP);
+      ttl++;
+   }
+   else if(ttl<32)
+   {
+      LT = (LT>>1);
+      LP = (LP<<1);
+      xuat_32led_don_2word(LT,LP);
+      ttl++;
+   }
+   else h327_reset_bien();
+}
+
+void b307_32led_std_ttr()          
+{  
+   if(ttl<16)
+   {
+      LT = (LT<<1) + 1;
+      LP = (LP>>1) + 0x8000;
+      xuat_32led_don_2word(LT,LP);
+      ttl++;
+   }
+   else if(ttl<32)
+   {
+      LT = (LT<<1);
+      LP = (LP>>1);
+      xuat_32led_don_2word(LT,LP);
+      ttl++;
+   }
+   else h327_reset_bien();
+}
+
+void l16_std_pst()
+{
+  
+   if(ttl<16)
+   {
+      LT = (LT<<1) + 1;
+      LP = (LP<<1) + 1;
+      xuat_32led_don_2word(LT,LP);
+      ttl++;
+   }
+   else if(ttl<32)
+   {
+      LT = (LT<<1);
+      LP = (LP<<1);
+      xuat_32led_don_2word(LT,LP);
+      ttl++;
+   }
+   else h327_reset_bien();
+}
+
+void l16_std_tsp()
+{
+  
+   if(ttl<16)
+   {
+      LT = (LT>>1) + 0x8000;
+      LP = (LP>>1) + 0x8000;
+      xuat_32led_don_2word(LT,LP);
+      ttl++;
+   }
+   else if(ttl<32)
+   {
+      LT = (LT>>1);
+      LP = (LP>>1);
+      xuat_32led_don_2word(LT,LP);
+      ttl++;
+   }
+   else h327_reset_bien();
+}
+
+VOID SANG_DON_PST_32LED()
+{       
+   IF(k>0)
+   {
+      IF(i<k)
+      {
+         LED1 = SAVE1|RUN1;
+         XUAT_32LED_DON_1DW(LED1);   
+         RUN1 = RUN1 <<1;
+         i++;
+      }
+      IF (k==i) 
+      {
+         k--;
+         i=0;         
+         SAVE1=LED1;
+         RUN1 = 1;
+      }
+   }
+   else h327_reset_bien();
+}   
+
+VOID SANG_DON_TSP_32LED()
+{       
+   IF(k>0)
+   {
+      IF(i<k)
+      {
+         LED2 = SAVE2|RUN2;
+         XUAT_32LED_DON_1DW(LED2);   
+         RUN2 = RUN2 >>1;
+         i++;
+      }
+      IF (k==i) 
+      {
+         k--;
+         i=0;         
+         SAVE2=LED2;
+         RUN2 = 0X80000000;
+      }
+   }
+   else h327_reset_bien();
+}   
+
+VOID SANG_DON_TNV_32LED()
+{       
+   IF(m>0)
+   {
+      IF(n<m)
+      {
+         LED3 = SAVE3|RUN3;
+         LED4 = SAVE4|RUN4;
+         XUAT_32LED_DON_2WORD(LED3,LED4);   
+         RUN3 = RUN3 >>1;
+         RUN4 = RUN4 <<1;
+         n++;
+      }
+      IF (m==n) 
+      {
+         m--;
+         n=0;         
+         SAVE3=LED3;
+         SAVE4=LED4;
+         RUN3 = 0x8000;
+         RUN4 = 1;
+      }
+   }
+   else h327_reset_bien();
+}   
+
+VOID SANG_DON_TTR_32LED()
+{       
+   IF(m>0)
+   {
+      IF(n<m)
+      {
+         LED5 = SAVE5|RUN5;
+         LED6 = SAVE6|RUN6;
+         XUAT_32LED_DON_2WORD(LED5,LED6);   
+         RUN5 = RUN5 <<1;
+         RUN6 = RUN6 >>1;
+         n++;
+      }
+      IF (m==n) 
+      {
+         m--;
+         n=0;         
+         SAVE5=LED5;
+         SAVE6=LED6;
+         RUN5 = 1;
+         RUN6 = 0x8000;
+      }
+   }
+   else h327_reset_bien();
+}   
+
+VOID SANG_DON_PST_16LED()
+{       
+   IF(m>0)
+   {
+      IF(n<m)
+      {
+         LED4 = SAVE4|RUN4;
+         XUAT_32LED_DON_2WORD(LED4,LED4);   
+         RUN4 = RUN4 <<1;
+         n++;
+      }
+      IF (m==n) 
+      {
+         m--;
+         n=0;         
+         SAVE4=LED4;
+         RUN4 = 1;
+      }
+   }
+   else h327_reset_bien();
+}   
+
+VOID SANG_DON_TSP_16LED()
+{       
+   IF(m>0)
+   {
+      IF(n<m)
+      {
+         LED3 = SAVE3|RUN3;
+         XUAT_32LED_DON_2WORD(LED3,LED3);   
+         RUN3 = RUN3 >>1;
+         n++;
+      }
+      IF (m==n) 
+      {
+         m--;
+         n=0;         
+         SAVE3=LED3;
+         RUN3 = 0x8000;
+      }
+   }
+   else h327_reset_bien();
+}   
+
+void b315_led_1dsp_mp()
+{
+   if(i<32)
+   {
+      if(n<i)
+      {
+         RUN7=RUN7>>1;
+         LED7=RUN7|SAVE7;
+         xuat_32led_don_1dw(LED7);
+         n++;
+      }
+      else if(n>=i)
+      {
+         i++;
+         n=0;
+         SAVE7=SAVE7<<1;
+         RUN7=0x00000001<<i;
+      }
+   }
+   else h327_reset_bien();
+}
+
+void b316_led_1dst_mp()
+{
+   if(i<32)
+   {
+      if(n<i)
+      {
+         RUN8=RUN8<<1;
+         LED8=RUN8|SAVE8;
+         xuat_32led_don_1dw(LED8);
+         n++;
+      }
+      else if(n==i)
+      {
+         i++;
+         n=0;
+         SAVE8=SAVE8>>1;
+         RUN8=0x80000000>>i;
+      }
+   }
+   else h327_reset_bien();
+}
+void b334_32led_18_yeu_cau_2btn()
+{
+   if(i<16)
+   {
+      if(n<i)
+      {
+         RUN9=RUN9<<1;
+         LED9=RUN9|SAVE9;
+         RUN10=RUN10>>1;
+         LED10=RUN10|SAVE10;
+         xuat_32led_don_2word(LED9,LED10);
+         n++;
+      }
+      else if(n==i)
+      {
+         i++;
+         n=0;
+         SAVE9=SAVE9>>1;
+         SAVE10=SAVE10<<1;
+         RUN9=0x8000>>i;
+         RUN10=0x0001<<i;
+      }
+   }
+   else h327_reset_bien();
+}
+void b328_2bt_up_dw_c2()
+{
+   if(phim_bt0_c2(2)==co_nhan)
+   {
+      if(tt_ct<11)
+      {
+         tt_ct++;
+         h327_reset_bien();
+      }
+   }
+   if(phim_bt1_c2(2)==co_nhan)
+   {
+      if(tt_ct>0)
+      {
+         tt_ct--;
+         h327_reset_bien();
+      }
+   }
+   if(phim_bt3_c2(2)==co_nhan)
+   {
+     if(dir>3) dir=0;
+     else dir++;
+     h327_reset_bien();
+   }
+}
+
+void main()
+{
+   set_up_port();
+   h327_reset_bien();
+   while(true)
+   {
+      b328_2bt_up_dw_c2();
+      if(tt_ct==0) b308_32led_std_pst_if();
+      else if(tt_ct==1) b309_32led_std_tsp_if();
+      else if(tt_ct==2)
+      {
+         if(dir==0) b306_32led_std_tnv();
+         else if(dir==1) b307_32led_std_ttr();
+         else if(dir==2)   l16_std_pst();
+         else if(dir==3)   l16_std_tsp();
+      }
+      else if(tt_ct==3) SANG_DON_PST_32LED();
+      else if(tt_ct==4) SANG_DON_TSP_32LED();
+      else if(tt_ct==5) SANG_DON_TNV_32LED();
+      else if(tt_ct==6) SANG_DON_TTR_32LED();
+      else if(tt_ct==7) SANG_DON_PST_16LED();
+      else if(tt_ct==8) SANG_DON_TSP_16LED();
+      else if(tt_ct==9) b315_led_1dsp_mp();
+      else if(tt_ct==10) b316_led_1dst_mp();
+      else if(tt_ct==11) b334_32led_18_yeu_cau_2btn();
+      delay_ms(200);
+   }
+}

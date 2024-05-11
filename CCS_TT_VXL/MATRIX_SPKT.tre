@@ -1,0 +1,10 @@
+ÀÄMATRIX_SPKT
+   ÀÄMAIN  0/90  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄQUETCOT  0/41  Ram=9
+      ³  ÃÄXUAT_1BYTE  0/24  Ram=2
+      ³  ÃÄXUAT_1BYTE  0/24  Ram=2
+      ³  ÃÄXUAT_1BYTE  0/24  Ram=2
+      ³  ÀÄXUAT_1BYTE  0/24  Ram=2
+      ÃÄ@const620  0/36  Ram=0
+      ÀÄ@delay_ms1  0/22  Ram=1

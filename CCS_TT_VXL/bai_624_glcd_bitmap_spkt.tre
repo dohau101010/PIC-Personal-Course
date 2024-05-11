@@ -1,0 +1,58 @@
+ÀÄbai_624_glcd_bitmap_spkt
+   ÀÄMAIN  0/248  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/112  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/42  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/42  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄsetup_glcd  0/88  Ram=1
+      ³  ÃÄglcd_command  0/10  Ram=1
+      ³  ³  ÀÄglcd_xuat_db  0/38  Ram=1
+      ³  ³     ÃÄxuat_glcd  0/20  Ram=2
+      ³  ³     ³  ÀÄxuat_glcd_lcd  0/36  Ram=0
+      ³  ³     ³     ÃÄxuat_1byte  0/42  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/42  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/42  Ram=2
+      ³  ³     ³     ÀÄxuat_1byte  0/42  Ram=2
+      ³  ³     ÀÄxuat_glcd  0/20  Ram=2
+      ³  ³        ÀÄ*
+      ³  ÃÄglcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄglcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÀÄglcd_command  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄ@delay_ms1  0/40  Ram=1
+      ÃÄsetup_glcd  0/88  Ram=1
+      ³  ÀÄ*
+      ÃÄglcd_mau_nen  0/124  Ram=7
+      ³  ÀÄ@MUL1616  0/34  Ram=5
+      ÃÄglcd_xuat_anh  0/146  Ram=13
+      ³  ÃÄ@const1300  0/526  Ram=0
+      ³  ÀÄglcd_pixel  0/270  Ram=6
+      ³     ÃÄ@MUL1616  0/34  Ram=5
+      ³     ÀÄ@MUL1616  0/34  Ram=5
+      ÀÄgdram_vdk_to_gdram_glcd_all  0/230  Ram=3
+         ÃÄglcd_command  0/10  Ram=1
+         ³  ÀÄ*
+         ÃÄglcd_command  0/10  Ram=1
+         ³  ÀÄ*
+         ÃÄ@MUL1616  0/34  Ram=5
+         ÃÄglcd_data  0/10  Ram=1
+         ³  ÀÄglcd_xuat_db  0/38  Ram=1
+         ³     ÀÄ*
+         ÃÄ@MUL1616  0/34  Ram=5
+         ÀÄglcd_data  0/10  Ram=1
+            ÀÄ*

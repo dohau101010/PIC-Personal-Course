@@ -1,0 +1,61 @@
+ÀÄbai_516_gio_phut_giay_3key
+   ÃÄMAIN  0/234  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄset_up_port  0/58  Ram=0
+   ³  ³  ÀÄxoa_tat_6module  0/88  Ram=0
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄxuat_1word  0/22  Ram=4
+   ³  ³        ÀÄ*
+   ³  ÃÄphim_mod  0/32  Ram=0
+   ³  ³  ÀÄphim_bt1_c1  0/72  Ram=4
+   ³  ³     ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³     ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³     ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ÃÄphim_up  0/76  Ram=0
+   ³  ³  ÀÄphim_bt0_c1  0/72  Ram=4
+   ³  ³     ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³     ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³     ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ÃÄphim_dw  0/76  Ram=0
+   ³  ³  ÀÄphim_bt2_c1  0/72  Ram=4
+   ³  ³     ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³     ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³     ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ÃÄxu_ly_gpg  0/60  Ram=0
+   ³  ÀÄxu_ly_choptat  0/28  Ram=0
+   ³     ÃÄgiai_ma_hien_thi  0/38  Ram=0
+   ³     ³  ÃÄmd8l7d_gma_2so_vitri_vn  0/142  Ram=6
+   ³     ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³     ³  ³  ÃÄ@const667  0/42  Ram=0
+   ³     ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³     ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³     ³  ³  ÀÄ@const667  0/42  Ram=0
+   ³     ³  ÃÄmd8l7d_gma_2so_vitri_vn  0/142  Ram=6
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÃÄmd8l7d_gma_2so_vitri_vn  0/142  Ram=6
+   ³     ³  ³  ÀÄ*
+   ³     ³  ÀÄhien_thi_8led_7doan_quet  0/52  Ram=2
+   ³     ³     ÃÄxuat_8led_7doan_quet  0/50  Ram=3
+   ³     ³     ³  ÃÄ@const904  0/36  Ram=0
+   ³     ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+   ³     ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+   ³     ³     ÃÄ@delay_ms1  0/38  Ram=1
+   ³     ³     ÀÄtat_8led_7doan_quet  0/12  Ram=0
+   ³     ³        ÀÄxuat_8led_7doan_quet  0/50  Ram=3
+   ³     ³           ÀÄ*
+   ³     ÃÄtat_2led_chinh  0/34  Ram=0
+   ³     ³  ÀÄhien_thi_8led_7doan_quet  0/52  Ram=2
+   ³     ³     ÀÄ*
+   ³     ÀÄgiai_ma_hien_thi  0/38  Ram=0
+   ³        ÀÄ*
+   ÀÄinterrupt_timer3  0/16  Ram=0

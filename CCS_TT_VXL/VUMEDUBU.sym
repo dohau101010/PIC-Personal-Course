@@ -1,0 +1,196 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 rbdc
+004.0   step_motor_enable
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006-007 dl_btn
+008-00B dl_4l7d
+00C-013 dl_8l7dq
+014-01C time_w
+01D-025 time_r
+026-029 g_lcd
+02A.0   lcd_e
+02A     lcd_ctrl
+02A.1   lcd_rw
+02A.2   lcd_rs
+02A.3   lcd_p
+02B-02C so_ng
+02D-02E so_tp
+02F-030 nd_tren
+031-032 nd_duoi
+033.0   ttqn
+033.1   buz_ena
+033.2   stepmotor_tn
+033.3   stepmotor_fh
+033.4   dcmotor_tn
+033.5   dcmotor_onoff
+033.6   status
+034-03B stepmotor_fs
+03C-04B stepmotor_hs
+04C     stepmotor_i
+04D-04E pwm_duty
+04F     t0
+050     t0_tam
+051     g_han
+052-053 y
+054     phim_bt0_c1.ktnp
+054-057 atan2.y
+054-055 buzzer_on_off.dl
+054-055 phim_bt3_c2.dl
+054-055 phim_bt2_c2.dl
+054-055 xuat_1word.w
+054     md4l7d_giaima_2so_vitri_vn.x
+054-055 xuat_32led_don_2word.wld1
+054     phim_bt1_c1.ktnp
+054     MAIN.@SCRATCH1
+055-056 phim_bt0_c1.dl
+055-056 phim_bt1_c1.dl
+055     md4l7d_giaima_2so_vitri_vn.y
+056     md4l7d_giaima_2so_vitri_vn.xvn
+056-057 xuat_32led_don_2word.wld0
+056     xuat_1word.b1
+056     xuat_buzzer_relay.rbdc1
+056     phim_bt2_c2.@SCRATCH1
+056     phim_bt3_c2.@SCRATCH1
+056     buzzer_on_off.@SCRATCH1
+057     @delay_us1.P1
+057     xuat_buzzer_relay.rbdc2
+057     xuat_1word.b0
+057     phim_bt0_c1.@SCRATCH1
+057     phim_bt1_c1.@SCRATCH1
+057     md4l7d_giaima_2so_vitri_vn.@SCRATCH1
+058     xuat_32led_don_2word.b3
+058-05B atan2.x
+058     @delay_ms1.P1
+058     md4l7d_giaima_2so_vitri_vn.@SCRATCH2
+059     xuat_32led_don_2word.b2
+059     md4l7d_giaima_2so_vitri_vn.@SCRATCH3
+05A     xuat_32led_don_2word.b1
+05A     @DIV88.P1
+05B     xuat_32led_don_2word.b0
+05B     @DIV88.P1
+05C-05F atan2.z
+05C     xuat_32led_don_4byte.bld3
+05C     @DIV88.@SCRATCH1
+05D     xuat_32led_don_4byte.bld2
+05E     xuat_32led_don_4byte.bld1
+05F     xuat_32led_don_4byte.bld0
+060     xuat_1byte.x
+060.0   atan2.sign
+060.7   xuat_1byte.msb
+061     atan2.quad
+061     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  @const1097.call
+000026  @const1103.call
+000028  @const1108.call
+00002A  @const1118.call
+000034  @const1120.call
+00004A  @const1184.call
+000056  xuat_1byte
+00007C  xuat_1word
+000092  xoa_tat_6module
+0000EA  set_up_port
+000124  @DIV88
+00014C  md4l7d_giaima_2so_vitri_vn
+0001DA  xuat_4led_7doan_4so
+0001FE  b411_hienthi_4led7doan
+00021C  @delay_ms1
+000242  phim_bt0_c1
+00028A  xuat_32led_don_4byte
+0002AE  xuat_32led_don_2word
+0002D2  phim_bt1_c1
+00031A  @delay_us1
+000334  phim_bt2_c2
+000378  phim_bt3_c2
+0003BC  xuat_buzzer_relay
+0003DA  buzzer_on_off
+0003FE  b411_dem_xung_ngoai_t0
+000430  MAIN
+000430  @cinit1
+000472  @cinit2
+
+Project Directory:
+    E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\
+
+Project Files:
+    VUMEDUBU.c                                              [20-Sep-23 15:07  CRC=EC83C5AD]
+    ..\THU VIEN PIC 18F4550\tv_kit_vdk_pic_all.c            [15-Jul-23 08:40  CRC=2DEB1629]
+    ..\THU VIEN PIC 18F4550\tv_00_define_18f4550.c          [15-Jul-23 08:40  CRC=EBD97A3A]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    ..\THU VIEN PIC 18F4550\tv_01_4_nutnhan.c               [06-Jan-22 21:24  CRC=24896EA4]
+    ..\THU VIEN PIC 18F4550\tv_02_matran_phim4x4_138.c      [15-Jul-23 13:51  CRC=74AC6B76]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    ..\THU VIEN PIC 18F4550\tv_03_32led_don.c               [15-Oct-21 08:09  CRC=01B74A28]
+    ..\THU VIEN PIC 18F4550\tv_04_4led_7doan.c              [15-Oct-21 08:11  CRC=4A84D16F]
+    ..\THU VIEN PIC 18F4550\tv_05_8led_7doan_quet.c         [25-Mar-22 13:13  CRC=1A33A3DD]
+    ..\THU VIEN PIC 18F4550\tv_05_i2c_ds13_pcf.c            [05-Jun-22 14:58  CRC=97278EF6]
+    ..\THU VIEN PIC 18F4550\tv_06_lcd_glcd.c                [15-Oct-21 08:17  CRC=2A209586]
+    ..\THU VIEN PIC 18F4550\tv_06_lcd.c                     [02-Jun-22 21:59  CRC=7B0F485F]
+    ..\THU VIEN PIC 18F4550\tv_dht11.c                      [13-May-22 16:42  CRC=D54B50C8]
+    ..\THU VIEN PIC 18F4550\tv_08_relay_triac_buzzer_dc.c   [15-Oct-21 08:37  CRC=97FC1465]
+    ..\THU VIEN PIC 18F4550\tv_07_adc_cb.c                  [13-May-22 13:20  CRC=6B8BEF4B]
+    ..\THU VIEN PIC 18F4550\tv_07_ds18b20.c                 [18-Jul-23 13:00  CRC=C870A0F3]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    ..\THU VIEN PIC 18F4550\tv_07_i2c_at24cxx.c             [15-Oct-21 08:41  CRC=A7D8AEFA]
+    ..\THU VIEN PIC 18F4550\tv_08_step_motor.c              [22-Jun-23 15:52  CRC=5ACE5D77]
+    ..\THU VIEN PIC 18F4550\tv_08_dc_motor.c                [27-May-22 16:39  CRC=81B98620]
+    ..\THU VIEN PIC 18F4550\tv_09_matran_led_mbi.c          [15-Oct-21 08:44  CRC=A571EA9E]
+
+Source signature=7F3A9BA9
+
+Units:
+    VUMEDUBU (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   VUMEDUBU.xsym
+    Errors:      VUMEDUBU.err
+    Ext Symbols: VUMEDUBU.esym
+    INHX32:      VUMEDUBU.hex
+    Symbols:     VUMEDUBU.sym
+    List:        VUMEDUBU.lst
+    Debug/COFF:  VUMEDUBU.cof
+    Project:     VUMEDUBU.ccspjt
+    Call Tree:   VUMEDUBU.tre
+    Statistics:  VUMEDUBU.STA

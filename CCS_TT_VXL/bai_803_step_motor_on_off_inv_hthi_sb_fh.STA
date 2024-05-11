@@ -1,0 +1,94 @@
+
+ROM used:   1854/32768 (6%)
+            1854/32768 (6%) including unused fragments
+
+            0.3 Average locations per line
+            1.6 Average locations per statement
+
+RAM used:   85/2048 (4%) at main() level
+            104/2048 (5%) worst case
+
+Stack used: 5 worst case (5 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   32    20   2  bai_803_step_motor_on_off_inv_hthi_sb_fh.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  tv_01_4_nutnhan.c
+   98    63   5  tv_02_matran_phim4x4_138.c
+ 2229   257  22  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   4  tv_05_8led_7doan_quet.c
+  137    45   4  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  419   198  17  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  419    72   6  tv_07_adc_cb.c
+   90    39   3  tv_07_ds18b20.c
+  230    54   5  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   60    20   2  tv_09_matran_led_mbi.c
+   64    29   2  tv_08_step_motor.c
+   51    31   3  bai_803_step_motor_tv.c
+----- -----
+ 5676  1183 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     26   1    1             @delay_us1
+0     32   1    0             @const667
+0     38   1    2   239  4.3  xuat_1byte
+0     22   1    4   131  2.8  xuat_1word
+0     88   2    0   396  1.4  xoa_tat_6module
+0     58   2    0   253  2.3  set_up_port
+0     68   2    3   192  4.2  phim_bt2_c2
+0     68   2    3   190  4.4  phim_bt3_c2
+0     36   1    4   160  1.8  xuat_32led_don_4byte
+0     36   1    8   245  3.1  xuat_32led_don_2word
+0     36   1    0   152  1.8  xuat_4led_7doan_4so
+0     66   2    5             @DIV1616
+0    440  12    9   759  5.4  md4l7d_giaima_4so_vitri_vn
+0      2   0    0             @const1100
+0     10   0    0             @const1111
+0     22   1    0             @const1113
+0     30   1    2   158  2.7  xuat_buzzer_relay
+0     34   1    3    94  1.7  buzzer_on_off
+0     12   0    0             @const1172
+0     46   1    0   125  3.4  step_motor_quay_thuan_fs
+0     46   1    0   125  3.4  step_motor_quay_nghich_fs
+0     14   0    0    38  1.9  step_motor_run_tn_fs
+0     46   1    0   125  3.4  step_motor_quay_thuan_hs
+0     46   1    0   125  3.4  step_motor_quay_nghich_hs
+0     14   0    0    38  1.9  step_motor_run_tn_hs
+0     12   0    0    38  1.9  step_motor_run_fs_hs
+0     22   1    0    45  1.4  hthi_sobuoc_7doan
+0     60   2    0   170  3.5  phim_bt3_fs_hs
+0    134   4    0   514  4.7  step_motor_on_off_inv
+0    248   7    1   326  3.7  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               23
+    Statements              1183
+    Comments                1401
+    Volume (V)              8648
+    Difficulty (D)          69.6
+    Effort to implement (E) 602044
+    Time to implement (T)   9 hours, 17 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   20
+    Maintainability (MI)    53
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1850  30914  
+
+
+

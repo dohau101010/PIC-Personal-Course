@@ -1,0 +1,32 @@
+#include <tv_kit_vdk_pic_all.c> 
+#int_timer1
+void ngattimer()
+{
+   set_timer1(-5000);
+   hien_thi_8led_7doan_quet();
+}
+usi8 giay_tam; 
+void b518_giai_ma_8led_quet() 
+{
+   md8l7d_gma_so_bcd_vitri_vn (giay_ds, 0, kx_vn);
+   md8l7d_gma_so_bcd_vitri_vn (phut_ds, 3, kx_vn) ;
+   md8l7d_gma_so_bcd_vitri_vn (gio_ds, 6, cx_vn);
+}
+
+void main() 
+{
+   set_up_port ();
+   ds1307_kiem_tra_ma ();
+   enable_interrupts(global);
+   enable_interrupts(int_timer1);
+   setup_timer_1(t1_internal|t1_div_by_8);
+   set_timer1(-5000);
+   WHILE (true)
+   {
+       
+      ds1307_doc_time (8); 
+         b518_giai_ma_8led_quet ();
+      }
+   }
+
+

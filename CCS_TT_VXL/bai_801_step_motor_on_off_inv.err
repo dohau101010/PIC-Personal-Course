@@ -1,0 +1,111 @@
+--- Info 300 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(16,28): More info:   First Declaration of stepmotor_fs
+*** Error 31 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(16,28): Identifier is already used in this scope
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(29,30): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(30,31): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(31,32): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(32,36): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(36,37): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(37,41): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(41,42): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(42,46): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(46,47): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(47,51): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(51,52): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 5(52,53): Expecting a declaration
+--- Info 300 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(16,28): More info:   First Declaration of stepmotor_hs
+*** Error 31 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(16,28): Identifier is already used in this scope
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(29,30): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(30,31): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(31,32): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(32,36): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(36,37): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(37,41): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(41,42): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(42,46): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(46,47): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(47,51): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(51,52): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(52,56): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(56,57): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(57,61): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(61,62): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(62,66): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(66,67): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(67,71): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(71,72): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 6(72,73): Expecting a declaration
+--- Info 300 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 8(15,26): More info:   First Declaration of stepmotor_i
+*** Error 31 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 8(15,26): Identifier is already used in this scope
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 8(27,28): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 8(28,29): Expecting a declaration
+--- Info 300 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 9(6,18): More info:   First Declaration of stepmotor_tn
+*** Error 31 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 9(6,18): Identifier is already used in this scope
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 9(19,20): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 9(20,21): Expecting a declaration
+--- Info 300 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 10(6,18): More info:   First Declaration of stepmotor_fh
+*** Error 31 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 10(6,18): Identifier is already used in this scope
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 10(19,20): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 10(20,21): Expecting a declaration
+--- Info 300 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 12(6,30): More info:   First Declaration of step_motor_quay_thuan_fs
+*** Error 31 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 12(31,32): Identifier is already used in this scope
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 14(4,8): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 14(9,13): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 14(16,22): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 14(22,23): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 15(4,8): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 15(9,13): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 15(14,26): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 15(27,38): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 15(39,40): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 17(4,15): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 17(17,18): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 18(4,15): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 18(18,29): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 18(32,36): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 18(36,37): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 19(1,2): Expecting a declaration
+--- Info 300 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 20(6,31): More info:   First Declaration of step_motor_quay_nghich_fs
+*** Error 31 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 20(32,33): Identifier is already used in this scope
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 22(4,8): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 22(9,13): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 22(16,22): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 22(22,23): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 23(4,8): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 23(9,13): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 23(14,26): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 23(27,38): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 23(39,40): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 25(4,15): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 25(17,18): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 26(4,15): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 26(18,29): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 26(32,36): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 26(36,37): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 27(1,2): Expecting a declaration
+--- Info 300 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 28(6,26): More info:   First Declaration of step_motor_run_tn_fs
+*** Error 31 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 28(27,28): Identifier is already used in this scope
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 30(4,6): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 30(6,7): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 30(7,19): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 31(4,8): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 32(1,2): Expecting a declaration
+--- Info 300 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 34(6,30): More info:   First Declaration of step_motor_quay_thuan_hs
+*** Error 31 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 34(31,32): Identifier is already used in this scope
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 36(4,8): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 36(9,13): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 36(16,22): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 36(22,23): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 37(4,8): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 37(9,13): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 37(14,26): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 37(27,38): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 37(39,40): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 39(4,15): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 39(17,18): Expecting a declaration
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 40(4,15): Expecting a (
+*** Error 48 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 40(18,29): Expecting a (
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 40(32,36): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 40(36,37): Expecting a declaration
+*** Error 43 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_08_step_motor.c" Line 41(1,2): Expecting a declaration
+      100 Errors,  0 Warnings.
+Build Failed.

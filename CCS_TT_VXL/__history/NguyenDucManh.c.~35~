@@ -1,0 +1,248 @@
+#include <tv_kit_vdk_pic_all.c>
+#include <tv_06_glcd.c>
+#include <graphics.c>//duoi tv_pic_glcd
+#include <bai_633_glcd_kim_gio_phut_giay_tv.c>
+#include <tv_08_dc_motor.c>
+signed int8 i, pwm_tdo;
+
+usi8 giay_tam, giay_bin,phut_bin,gio_bin;
+int1 ud=0;
+usi8 mp;
+unsigned int8 t0, t0_tam,g_han;
+usi8 hum_bl,hum_bh,tem_bl,tem_bh,sum, sum_ss; //hum: do am; tem: nhiet do byte thap. byte cao
+usi8 hum_bht=0, tem_bht=0;
+int1 presence;
+int1 tt;
+
+void phim_ud()
+{
+   if(mp==0x0E)
+   {
+      t0=g_han-t0;
+      set_timer0(t0);
+      ud=~ud;
+      //if(t0<4) t0=24;
+   }
+}
+
+void hienthi_t0_lcd()
+{
+   if(ud==0)
+   {
+      //md4l7d_giaima_2so_vitri_vn(t0,3,cx_vn);
+      lcd_goto_xy(2,3);
+      lcd_data(" ");
+      lcd_xoa_so_to(0,16);
+      lcd_hien_thi_so_to(t0/10,2,0);
+      lcd_goto_xy(3,3);
+      lcd_data(t0%10+0x30);
+      delay_ms(100);
+   }
+   else
+   {
+       //md4l7d_giaima_2so_vitri_vn((g_han-t0),3,cx_vn);
+     // if((g_han-t0)<4) (g_han-t0) = 24;
+      lcd_xoa_so_to(2,0);
+      lcd_goto_xy(2,0);
+      lcd_data((g_han-t0)/10+0x30);
+      lcd_hien_thi_so_to((g_han-t0)%10,2,1);
+      delay_ms(100);
+   }
+//!   md4l7d_giaima_2so_vitri_vn(g_han,1,cx_vn);
+//!   xuat_4led_7doan_4so();
+}
+//!void phim_run()
+//!{
+//!    if(phim_bt0_c2(100)==co_nhan)
+//!    {
+//!       setup_timer_0(t0_ext_l_to_h|t0_div_1);
+//!       lp=0xffff;
+//!       xuat_32led_don_2word(lt,lp);
+//!    }
+//!}
+
+void dem_xung_ngoai_t0()
+{
+    t0 = get_timer0();
+    if(t0_tam!=t0)
+    {
+     t0_tam=t0;
+     if(t0>g_han)
+    {
+      set_timer0(4);
+   //buzzer_on_off(300);
+    }
+    if((g_han-t0)<4)
+    {
+      set_timer0(24);
+   //buzzer_on_off(300);
+    }
+    hienthi_t0_lcd();
+ }
+}
+
+void dht11_read_temp_humi()
+{
+   dht11_start();
+   presence = dht11_check_response(); //doc ket qua tra ve 1 bit
+   if(!presence==true) //=0: co DHT11
+   {
+      hum_bh = dht11_read(); //doc byte dau tien
+      hum_bl = dht11_read(); //doc byte tiep theo
+      tem_bh = dht11_read();
+      tem_bl = dht11_read();
+      sum    = dht11_read();
+      sum_ss = hum_bh+hum_bl+tem_bh+tem_bl; //so sanh
+   }
+   else  hien_thi_no_dht11();
+}
+
+void dht11_hthi_lcd_nd_da(usi8 x,y) //hien thi nhiet do do am
+{
+   if(sum==sum_ss) //sum doc ve tu DHT11, sum_ss duoc tinh toan boi vdk , neu chung bang nhau thi qua trinh nhan du lieu dung
+   {
+      if(hum_bht!=hum_bh) //do am byte cao tam
+      {
+         hum_bht=hum_bh;
+         //lcd_gm_ht_2so_to_xvn(hum_bh,x,y,kx_vn);
+         //lcd_xoa_so_to(2,0);
+         if(tt==0)
+         {
+            lcd_goto_xy(0,8);
+            lcd_data(hum_bh/10+0x30);
+            lcd_hien_thi_so_to(hum_bh%10,0,9);
+         }
+         else
+         {
+            lcd_xoa_so_to(0,9);
+            lcd_goto_xy(0,11);
+            lcd_data(hum_bh%10+0x30);
+            lcd_hien_thi_so_to(hum_bh/10,0,8);
+         }
+      }
+      if(tem_bht!=tem_bh) //nhiet do byte cao tam
+      {
+         tem_bht=tem_bh; //neu khac nhau thi cap nhat
+         //lcd_gm_ht_2so_to_xvn(tem_bh,x,y+14,kx_vn);
+         //lcd_goto_xy(2,3);
+         //lcd_data(" ");
+         //lcd_xoa_so_to(0,16);
+         if(tt==0)
+         {
+            lcd_xoa_so_to(2,11);
+            lcd_hien_thi_so_to(tem_bh/10,2,8);
+            lcd_goto_xy(2,11);
+            lcd_data(tem_bh%10+0x30);
+         }
+         else
+         {
+            lcd_xoa_so_to(2,8);
+            lcd_hien_thi_so_to(tem_bh%10,2,11);
+            lcd_goto_xy(2,8);
+            lcd_data(tem_bh/10+0x30);
+         }
+      }
+      //else hien_thi_sai_dht11();
+   }
+}
+
+void main()
+{
+   set_up_port();
+   setup_glcd(glcd_text_mode);
+   delay_ms(10);
+   setup_glcd(glcd_graphic_mode);
+   glcd_mau_nen(0);
+   ds1307_kiem_tra_ma();
+   
+   glcd_ve_cac_vong_tron_so();
+   giay_bin=(giay_ds/16)*10+(giay_ds%16);
+   glcd_ve_kim_giay(bks,giay_bin,0);
+   giay_tam=0x60;
+   
+   phut_bin= (phut_ds/16)*10+(phut_ds%16);
+   glcd_ve_kim_phut(bkm,phut_bin,1);
+   
+   gio_bin= (gio_ds/16)*10+(gio_ds%16);
+   glcd_ve_kim_gio(bkh,gio_bin,1);
+   
+//!   setup_glcd (glcd_text_mode) ;
+//!   delay_ms (1) ;
+//!   setup_glcd (glcd_graphic_mode);
+//!   glcd_mau_nen (0) ;
+   glcd_xuat_anh (64, 64, 0, 0) ;
+   //glcd_xuat_anh (64, 64, 64, 0) ;
+   gdram_vdk_to_gdram_glcd_all () ;
+   
+   lcd_setup();
+   setup_timer_0(t0_ext_l_to_h|t0_div_1);
+   //setup_timer_0(t0_off);
+   set_timer0(4);  t0_tam=1;
+   g_han=24;   
+   tt=0;
+   
+   dc_motor_enable();
+   setup_ccp1(ccp_pwm);
+   setup_timer_2(t2_div_by_16,249,1);
+   pwm_duty=0;  pwm_tdo=0;
+   set_pwm1_duty(pwm_duty);
+   dc_motor_stop();
+   
+   while(true)
+   {
+      mp = key_4x4_dw();
+      if(mp==0x0F)   
+      {
+         tt=~tt;
+//!         dht11_read_temp_humi();
+//!         dht11_hthi_lcd_nd_da(2,0);
+      }
+      dht11_read_temp_humi();
+      dht11_hthi_lcd_nd_da(2,0);
+      //if(mp==0x0F)   tt=~tt;
+      
+      ds1307_doc_time(8);
+      if(giay_tam!=giay_ds)
+      {
+         giay_tam=giay_ds;
+         giay_bin=(giay_ds/16)*10+(giay_ds%16);
+         if(giay_ds==0)
+         {
+            phut_bin=(phut_ds/16)*10+(phut_ds%16);
+            glcd_ve_kim_phut(bkm,phut_bin,1);
+            
+            if(phut_ds==0)
+            {
+               gio_bin=(gio_ds/16)*10+(gio_ds%16);
+               glcd_ve_kim_gio(bkh,gio_bin,1);
+            }
+         }
+         glcd_ve_kim_giay(bks,giay_bin,1);
+         gdram_vdk_to_gdram_glcd_all();
+         //glcd_dong_ho_so();
+//!         if(giay_ds<60)
+//!         {
+//!            md4l7d_giaima_2so_vitri_vn(giay_ds,3, kx_vn);
+//!            xuat_4led_7doan_4so();
+//!         }
+      }
+      md4l7d_giaima_2so_vitri_vn(giay_bin, 3, kx_vn);
+      xuat_4led_7doan_4so();
+      
+      dem_xung_ngoai_t0();
+      phim_ud();
+      
+      if(mp==1)   
+      {
+         set_pwm1_duty(20*5);
+      }
+      if(mp==2)   
+      {
+         set_pwm1_duty(20*10);
+      }
+      if(mp==2)   
+      {
+         set_pwm1_duty(20*15);
+      }
+   }
+}

@@ -1,0 +1,86 @@
+
+ROM used:   1128/32768 (3%)
+            1128/32768 (3%) including unused fragments
+
+            0.2 Average locations per line
+            1.1 Average locations per statement
+
+RAM used:   48/2048 (2%) at main() level
+            68/2048 (3%) worst case
+
+Stack used: 7 worst case (7 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   14     8   1  bai_612_lcd_so_to_0.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   8  tv_01_4_nutnhan.c
+   98    63   6  tv_02_matran_phim4x4_138.c
+ 2229   257  24  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   5  tv_05_8led_7doan_quet.c
+  137    45   4  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  419   198  19  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  356    24   2  tv_07_adc_cb.c
+   90    39   4  tv_07_ds18b20.c
+  230    54   5  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   3  tv_07_i2c_at24cxx.c
+   60    20   2  tv_09_matran_led_mbi.c
+----- -----
+ 5480  1063 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   2    1             @delay_ms1
+0     38   2    2   239  4.3  xuat_1byte
+0     22   1    4   131  2.8  xuat_1word
+0     88   4    0   396  1.4  xoa_tat_6module
+0     58   3    0   253  2.3  set_up_port
+0     36   2    0   152  1.8  xuat_glcd_lcd
+0     16   1    2   104  3.0  xuat_lcd
+0     38   2    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     72   3    0   297  2.3  lcd_setup
+0     20   1    0             @const986
+0     26   1    3   145  3.9  lcd_goto_xy
+0     76   3    0             @const992
+0     80   4    0             @const996
+0     44   2    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0     94   4    6   280  5.8  lcd_hien_thi_so_to
+0     76   3    2             @MUL88
+0      2   0    0             @const1100
+0     34   2    2             @PSTRINGC_977
+0     10   0    0             @const1111
+0     22   1    0             @const1113
+0     12   1    0             @const1158
+0    178   8    0   145  2.0  MAIN
+0     22   1    0   598  4.7  @const1202
+ Inline         0  1020  6.2  @cinit1
+
+Program metrics:
+    Functions               16
+    Statements              1063
+    Comments                1375
+    Volume (V)              6984
+    Difficulty (D)          48.4
+    Effort to implement (E) 338246
+    Time to implement (T)   5 hours, 13 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   15
+    Maintainability (MI)    120
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1124  31640  
+
+
+

@@ -1,0 +1,31 @@
+#include <tv_kit_vdk_pic_all.c>
+void set_up_port_ic_chot()
+{
+ set_tris_a(0xff); set_tris_b(0x3c);
+ set_tris_b(0x3c); set_tris_e(0x00);
+ set_tris_d(0x00); output_d(0xff);
+ port_b_pullups(0xff);
+ tin_hieu_dk_74573_a = 0xff;
+ tin_hieu_dk_74573_b = 0xff;
+ chot_ic_74573_a_goi_du_lieu;
+ chot_ic_74573_b_goi_du_lieu;
+ rbdc=0;
+
+ setup_adc(adc_clock_div_32);
+ setup_adc_ports(an0_to_an2|vss_vdd);
+}
+void b301_32led_chop_tat(usi16 dl)          
+{                                 
+   xuat_32led_don_4byte(0,0,0,0);     delay_ms(200); //0000 0000 x4 = 32 bit 0                                 
+   xuat_32led_don_2word(0xffff,0xffff);  delay_ms(200); //16 bit 0, 1111 1111: 8        
+}    
+
+void main()                                                        
+{                                               
+   set_up_port_ic_chot();                                                                       
+   while(true)                                        
+   {                                                                   
+      b301_32led_chop_tat(500);                                        
+   }      
+}  
+

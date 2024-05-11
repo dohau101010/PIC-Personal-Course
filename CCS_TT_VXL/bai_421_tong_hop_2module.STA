@@ -1,0 +1,89 @@
+
+ROM used:   1980/32768 (6%)
+            1980/32768 (6%) including unused fragments
+
+            0.4 Average locations per line
+            1.7 Average locations per statement
+
+RAM used:   68/2048 (3%) at main() level
+            90/2048 (4%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   17    10   1  bai_421_tong_hop_2module.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   8  tv_01_4_nutnhan.c
+   98    63   5  tv_02_matran_phim4x4_138.c
+ 2229   257  22  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   4  tv_05_8led_7doan_quet.c
+  137    45   4  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  419   198  17  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  356    24   2  tv_07_adc_cb.c
+   90    39   3  tv_07_ds18b20.c
+  230    54   5  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   60    20   2  tv_09_matran_led_mbi.c
+  125    80   7  bai_338_32led_3y_chay_td_4yc_dung_if.c
+   27    12   1  bai_411_t0_tv.c
+----- -----
+ 5635  1157 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     32   1    0             @const667
+0     38   1    2   239  4.3  xuat_1byte
+0     22   1    4   131  2.8  xuat_1word
+0     88   2    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     36   1    4   160  1.8  xuat_32led_don_4byte
+0     38   1    8   245  3.1  xuat_32led_don_2word
+0     36   1    9   120  2.8  xuat_32led_don_1dw
+0     36   1    0   152  1.8  xuat_4led_7doan_4so
+0    142   4    6   305  5.1  md4l7d_giaima_2so_vitri_vn
+0     40   1    3             @DIV88
+0      2   0    0             @const1100
+0     10   0    0             @const1111
+0     22   1    0             @const1113
+0     30   1    2   158  2.7  xuat_buzzer_relay
+0     36   1    3    94  1.7  buzzer_on_off
+0     12   0    0             @const1158
+0    182   5    5   290  4.6  h327_32led_std_pst_if
+0    172   4    5   290  4.6  h327_32led_std_tsp_if
+0    298   8    5   550  5.2  h327_32led_std_tnv_if
+0    332   8    5   587  5.7  h327_32led_std_ttr_if
+0     32   1    0   161  2.1  bai338_32led_chay_td_4yc_dung_if
+0     32   1    0    82  1.6  b411_hienthi_4led7doan
+0     40   1    0   152  3.0  b411_dem_sp_t0
+0    172   4    0   167  2.6  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               19
+    Statements              1157
+    Comments                1388
+    Volume (V)              8262
+    Difficulty (D)          58.7
+    Effort to implement (E) 485218
+    Time to implement (T)   7 hours, 29 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   17
+    Maintainability (MI)    104
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  1976  30788  
+
+
+

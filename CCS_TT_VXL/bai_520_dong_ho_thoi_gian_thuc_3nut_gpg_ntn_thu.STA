@@ -1,0 +1,124 @@
+
+ROM used:   3292/32768 (10%)
+            3292/32768 (10%) including unused fragments
+
+            0.6 Average locations per line
+            2.6 Average locations per statement
+
+RAM used:   71/2048 (3%) at main() level
+            91/2048 (4%) worst case
+
+Stack used: 6 worst case (5 in main + 1 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   52    32   3  bai_520_dong_ho_thoi_gian_thuc_3nut_gpg_ntn_thu.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  tv_01_4_nutnhan.c
+   98    63   5  tv_02_matran_phim4x4_138.c
+ 2229   257  20  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   4  tv_05_8led_7doan_quet.c
+  137    45   4  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  419   198  16  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  356    24   2  tv_07_adc_cb.c
+   90    39   3  tv_07_ds18b20.c
+  230    54   4  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   60    20   2  tv_09_matran_led_mbi.c
+  295   190  15  bai_521_ds1307_3key_tv.c
+----- -----
+ 5813  1277 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   1    1             @delay_ms1
+0     26   0    1             @delay_us1
+0    102   2    3             @I2C_READ_1
+0    108   2    1             @I2C_WRITE_1
+0     42   1    0             @const667
+0     38   1    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0     88   1    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     68   1    3   198  3.6  phim_bt0_c2
+0     68   1    3   194  3.9  phim_bt1_c2
+0     68   1    3   192  4.2  phim_bt2_c2
+0     68   1    3   190  4.4  phim_bt3_c2
+0     36   1    4   160  1.8  xuat_32led_don_4byte
+0     36   1    0   152  1.8  xuat_4led_7doan_4so
+0     40   1    3             @DIV88
+0     36   1    0             @const907
+0     56   1    3   123  2.6  xuat_8led_7doan_quet
+0     12   0    0    25  1.2  tat_8led_7doan_quet
+0     52   1    2   171  4.0  hien_thi_8led_7doan_quet
+0    122   2    6   293  5.1  md8l7d_gma_so_bcd_vitri_vn
+0    148   2    3   262  4.6  ds1307_cap_nhat_time
+0    170   3    4   280  4.0  ds1307_doc_time
+0     22   0    0    89  1.5  ds1307_kiem_tra_ma
+0      2   0    0             @const1100
+0     10   0    0             @const1111
+0     22   0    0             @const1113
+0     12   0    0             @const1158
+0     88   1    2   104  1.7  ds1307_luu_vao_ds
+0     82   1    7   439  9.5  tang_or_giam_so_bcd
+0     40   1    1   272  2.3  giai_ma_thu_8l7dq
+0     40   1    0   179  2.7  giai_ma_gpg_8l7dq
+0     38   1    0   143  2.2  giai_ma_ntn_8l7dq
+0     64   1    0   287  3.2  giai_ma_gpg_ntn_8l7dq
+0     66   1    1   200  3.6  phim_chon_hthi
+0     58   1    0   426  3.8  tat_2led_chinh
+0     36   1    0   161  3.4  xu_ly_choptat
+0     46   1    1   197  3.6  phim_mod
+0     34   1    0   171  4.0  tang_giay
+0     36   1    0   171  4.0  tang_phut
+0     36   1    0   171  4.0  tang_gio
+0     32   0    0   139  3.1  chinh_tang_gpg
+0     36   1    0   171  4.0  tang_nam
+0     38   1    0   171  4.0  tang_thang
+0     38   1    0   171  4.0  tang_ngay
+0     32   0    0   139  3.1  chinh_tang_ntn
+0     28   0    0   133  4.3  chinh_tang_thu
+0     58   1    1   226  3.6  phim_up
+0     36   1    0   171  4.0  giam_giay
+0     38   1    0   171  4.0  giam_phut
+0     38   1    0   171  4.0  giam_gio
+0     32   0    0   139  3.1  chinh_giam_gpg
+0     38   1    0   171  4.0  giam_nam
+0     38   1    0   171  4.0  giam_thang
+0     38   1    0   171  4.0  giam_ngay
+0     32   0    0   139  3.1  chinh_giam_ntn
+0     28   0    0   133  4.3  chinh_giam_thu
+0     58   1    1   226  3.6  phim_dw
+0     16   0    0    29  1.2  interrupt_timer3
+0    256   4    0   676  5.8  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               49
+    Statements              1277
+    Comments                1389
+    Volume (V)              20898
+    Difficulty (D)          173.5
+    Effort to implement (E) 3625865
+    Time to implement (T)   55 hours, 57 minutes
+    Est Delivered Bugs (B)  8
+    Cyclomatic Complexity   76
+    Maintainability (MI)    132
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-00006     0  4  
+00008-00094   142  0  
+00096-07FFE  3146  29472  
+
+
+

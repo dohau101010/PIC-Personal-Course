@@ -1,0 +1,86 @@
+ÀÄbai_803_step_motor_on_off_inv_hthi_sb_fh
+   ÀÄMAIN  0/248  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄhthi_sobuoc_7doan  0/22  Ram=0
+      ³  ÃÄmd4l7d_giaima_4so_vitri_vn  0/440  Ram=9
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÀÄ@const667  0/32  Ram=0
+      ³  ÀÄxuat_4led_7doan_4so  0/36  Ram=0
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄstep_motor_on_off_inv  0/134  Ram=0
+      ³  ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ³  ÀÄxuat_32led_don_4byte  0/36  Ram=4
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÀÄxuat_1byte  0/38  Ram=2
+      ³  ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄphim_bt2_c2  0/68  Ram=3
+      ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+      ³  ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÀÄbuzzer_on_off  0/34  Ram=3
+      ³     ÃÄxuat_buzzer_relay  0/30  Ram=2
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÀÄxuat_buzzer_relay  0/30  Ram=2
+      ³        ÀÄ*
+      ÃÄphim_bt3_fs_hs  0/60  Ram=0
+      ³  ÃÄphim_bt3_c2  0/68  Ram=3
+      ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+      ³  ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄbuzzer_on_off  0/34  Ram=3
+      ³     ÀÄ*
+      ÃÄstep_motor_run_fs_hs  0/12  Ram=0
+      ³  ÃÄstep_motor_run_tn_fs  0/14  Ram=0
+      ³  ³  ÃÄstep_motor_quay_thuan_fs  0/46  Ram=0
+      ³  ³  ³  ÀÄxuat_buzzer_relay  0/30  Ram=2
+      ³  ³  ³     ÀÄ*
+      ³  ³  ÀÄstep_motor_quay_nghich_fs  0/46  Ram=0
+      ³  ³     ÀÄxuat_buzzer_relay  0/30  Ram=2
+      ³  ³        ÀÄ*
+      ³  ÀÄstep_motor_run_tn_hs  0/14  Ram=0
+      ³     ÃÄstep_motor_quay_thuan_hs  0/46  Ram=0
+      ³     ³  ÀÄxuat_buzzer_relay  0/30  Ram=2
+      ³     ³     ÀÄ*
+      ³     ÀÄstep_motor_quay_nghich_hs  0/46  Ram=0
+      ³        ÀÄxuat_buzzer_relay  0/30  Ram=2
+      ³           ÀÄ*
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄstep_motor_run_fs_hs  0/12  Ram=0
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÀÄhthi_sobuoc_7doan  0/22  Ram=0
+         ÀÄ*

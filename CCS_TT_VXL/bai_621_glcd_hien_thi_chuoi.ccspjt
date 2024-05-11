@@ -1,0 +1,26 @@
+[PROJECT]
+Target=bai_621_glcd_hien_thi_chuoi.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_621_glcd_hien_thi_chuoi.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_621_glcd_hien_thi_chuoi.c]
+Type=4
+[mru-list]
+1=bai_621_glcd_hien_thi_chuoi.c
+[Opened Files]
+1=bai_621_glcd_hien_thi_chuoi.c
+2=
+3=C:\Program Files (x86)\PICC\Drivers\tv_00_define_18f4550.c
+4=bai_402_mtp4x4_4led_dich.c
+5=bai_502_8so_chop_tat.c
+6=“bai_602_lcd_ht_2hang_dich_trai.c
+7=bai_601_lcd_hienthi_4hang.c
+8=bai_621_glcd_hien_thi_chuoi.c
+9=
+[Units]
+Count=1
+1=bai_621_glcd_hien_thi_chuoi (main)

@@ -1,0 +1,106 @@
+ÀÄbai_520_clock_ds1307_8led7doan_full_3key
+   ÃÄMAIN  0/292  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄset_up_port  0/58  Ram=0
+   ³  ³  ÀÄxoa_tat_6module  0/88  Ram=0
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄxuat_1word  0/22  Ram=4
+   ³  ³        ÀÄ*
+   ³  ÃÄds1307_kiem_tra_ma  0/22  Ram=0
+   ³  ³  ÃÄds1307_doc_time  0/170  Ram=4
+   ³  ³  ³  ÃÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ³  ³  ÃÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ³  ³  ÃÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ³  ³  ÃÄ@I2C_READ_1  0/102  Ram=3
+   ³  ³  ³  ÀÄ@I2C_READ_1  0/102  Ram=3
+   ³  ³  ÀÄds1307_cap_nhat_time  0/148  Ram=3
+   ³  ³     ÃÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ³     ÃÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ³     ÃÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ³     ÀÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ÃÄxu_ly_choptat  0/36  Ram=0
+   ³  ³  ÃÄtat_2led_chinh  0/32  Ram=0
+   ³  ³  ÀÄgiai_ma_gpg_8l7dq  0/40  Ram=0
+   ³  ³     ÃÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+   ³  ³     ³  ÃÄ@const667  0/42  Ram=0
+   ³  ³     ³  ÀÄ@const667  0/42  Ram=0
+   ³  ³     ÃÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄmd8l7d_gma_so_bcd_vitri_vn  0/122  Ram=6
+   ³  ³        ÀÄ*
+   ³  ÃÄhien_thi_8led_7doan_quet  0/52  Ram=2
+   ³  ³  ÃÄxuat_8led_7doan_quet  0/50  Ram=3
+   ³  ³  ³  ÃÄ@const904  0/36  Ram=0
+   ³  ³  ³  ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³  ÀÄxuat_1byte  0/38  Ram=2
+   ³  ³  ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ³  ÀÄtat_8led_7doan_quet  0/12  Ram=0
+   ³  ³     ÀÄxuat_8led_7doan_quet  0/50  Ram=3
+   ³  ³        ÀÄ*
+   ³  ÃÄphim_mod  0/32  Ram=1
+   ³  ³  ÀÄphim_bt1_c2  0/68  Ram=3
+   ³  ³     ÀÄ@delay_us1  0/26  Ram=1
+   ³  ÃÄphim_up  0/24  Ram=1
+   ³  ³  ÃÄphim_bt0_c2  0/68  Ram=3
+   ³  ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+   ³  ³  ÃÄchinh_tang_gpg  0/32  Ram=0
+   ³  ³  ³  ÃÄtang_giay  0/34  Ram=0
+   ³  ³  ³  ³  ÃÄtang_or_giam_so_bcd  0/82  Ram=7
+   ³  ³  ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ³  ³  ³  ÀÄ@DIV88  0/40  Ram=3
+   ³  ³  ³  ³  ÀÄds1307_luu_vao_ds  0/88  Ram=2
+   ³  ³  ³  ³     ÃÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ³  ³  ³     ÃÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ³  ³  ³     ÀÄ@I2C_WRITE_1  0/108  Ram=1
+   ³  ³  ³  ÃÄtang_phut  0/36  Ram=0
+   ³  ³  ³  ³  ÃÄtang_or_giam_so_bcd  0/82  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÀÄds1307_luu_vao_ds  0/88  Ram=2
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÀÄtang_gio  0/36  Ram=0
+   ³  ³  ³     ÃÄtang_or_giam_so_bcd  0/82  Ram=7
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÀÄds1307_luu_vao_ds  0/88  Ram=2
+   ³  ³  ³        ÀÄ*
+   ³  ³  ÃÄgiai_ma_gpg_8l7dq  0/40  Ram=0
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄhien_thi_8led_7doan_quet  0/52  Ram=2
+   ³  ³     ÀÄ*
+   ³  ÃÄphim_dw  0/24  Ram=1
+   ³  ³  ÃÄphim_bt2_c2  0/68  Ram=3
+   ³  ³  ³  ÀÄ@delay_us1  0/26  Ram=1
+   ³  ³  ÃÄchinh_giam_gpg  0/32  Ram=0
+   ³  ³  ³  ÃÄgiam_giay  0/36  Ram=0
+   ³  ³  ³  ³  ÃÄtang_or_giam_so_bcd  0/82  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÀÄds1307_luu_vao_ds  0/88  Ram=2
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÃÄgiam_phut  0/38  Ram=0
+   ³  ³  ³  ³  ÃÄtang_or_giam_so_bcd  0/82  Ram=7
+   ³  ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ³  ÀÄds1307_luu_vao_ds  0/88  Ram=2
+   ³  ³  ³  ³     ÀÄ*
+   ³  ³  ³  ÀÄgiam_gio  0/38  Ram=0
+   ³  ³  ³     ÃÄtang_or_giam_so_bcd  0/82  Ram=7
+   ³  ³  ³     ³  ÀÄ*
+   ³  ³  ³     ÀÄds1307_luu_vao_ds  0/88  Ram=2
+   ³  ³  ³        ÀÄ*
+   ³  ³  ÃÄgiai_ma_gpg_8l7dq  0/40  Ram=0
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄhien_thi_8led_7doan_quet  0/52  Ram=2
+   ³  ³     ÀÄ*
+   ³  ÃÄds1307_doc_time  0/170  Ram=4
+   ³  ³  ÀÄ*
+   ³  ÀÄgiai_ma_gpg_8l7dq  0/40  Ram=0
+   ³     ÀÄ*
+   ÀÄinterrupt_timer3  0/16  Ram=0

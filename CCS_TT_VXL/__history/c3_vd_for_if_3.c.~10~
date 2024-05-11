@@ -1,0 +1,90 @@
+#include <tv_kit_vdk_pic_all.c>
+usi8 status=0;
+#int_rb
+void ngat_portb()
+{
+   if(phim_bt0_c1(1,0))
+   {
+      if(status<5) status++;
+   }
+   if(phim_bt1_c1(1,0))
+   {
+       if(status>0) status--;
+   }
+   clear_interrupt(int_rb);
+}
+
+void ST(usi16 dl)
+{
+   xuat_32led_don_1dw(0);
+   delay_ms(dl);
+   xuat_32led_don_1dw(0xffffffff);
+   delay_ms(dl);
+}
+
+void dk32led_PST(usi16 dl)
+{   
+   usi16 i; usi32 led; led=0;
+   for(i=0;i<32; i++) 
+      {
+         led=(led<<1)+0x00000001; 
+         xuat_32led_don_1dw(led ); 
+         delay_ms(dl);
+         if(status!=1) break;
+      } 
+ for(i=0;i<32; i++) 
+      { 
+         led=(led<<1);
+         xuat_32led_don_1dw(led ); 
+         delay_ms(dl);
+         if(status!=1) break;
+      }  
+}
+void dk32led_TSP(usi16 dl)
+{   
+   usi16 i; usi32 led; led=0;
+   for(i=0;i<32; i++) 
+      {
+         led=(led>>1)+0x80000000; 
+         xuat_32led_don_1dw(led ); 
+         delay_ms(dl);
+         if(status!=2) break;
+      } 
+ for(i=0;i<32; i++) 
+      { 
+         led=(led>>1);
+         xuat_32led_don_1dw(led ); 
+         delay_ms(dl);
+         if(status!=2) break;
+      }  
+}
+void bai_32led_sd_TSP(usi16 dl)          
+{                                 
+    usi16 i; usi32 led; led=0x80000000;
+   for(i=0;i<32; i++) 
+      {
+         led=(led>>1);
+         xuat_32led_don_1dw(led ); 
+         delay_ms(dl);
+         if(status!=3) break;
+      }
+}
+void TH()
+{
+   xuat_32led_don_1dw(0);
+}
+
+void main()
+{   
+   set_up_port ();
+   enable_interrupts(global);
+   enable_interrupts(int_rb);
+    while(true)
+      {
+          if(status==0) ST(300);
+     else if(status==1) dk32led_PST(50);
+     else if(status==2) dk32led_TSP(50);
+     else if(status==3) bai_32led_sd_TSP(50);
+     else if(status==4) TH();
+      }
+}

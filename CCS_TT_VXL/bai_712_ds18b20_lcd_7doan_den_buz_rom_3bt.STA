@@ -1,0 +1,140 @@
+
+ROM used:   4118/32768 (13%)
+            4118/32768 (13%) including unused fragments
+
+            0.7 Average locations per line
+            3.5 Average locations per statement
+
+RAM used:   60/2048 (3%) at main() level
+            91/2048 (4%) worst case
+
+Stack used: 10 worst case (10 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   42    26   2  bai_712_ds18b20_lcd_7doan_den_buz_rom_3bt.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  tv_01_4_nutnhan.c
+   98    63   5  tv_02_matran_phim4x4_138.c
+ 2229   257  22  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   4  tv_05_8led_7doan_quet.c
+  137    45   4  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  419   198  17  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  419    72   6  tv_07_adc_cb.c
+   90    39   3  tv_07_ds18b20.c
+  230    54   5  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   60    20   2  tv_09_matran_led_mbi.c
+   44    24   2  bai_711_ds18a_tv.c
+   27    13   1  bai_711_bt3_lcd_tv.c
+   35    18   2  bai_712_bt_up_dw_lcd_tv.c
+----- -----
+ 5677  1184 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0    1             @delay_ms1
+0     26   0    1             @delay_us1
+0     32   0    0             @const667
+0     38   0    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0     88   1    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     70   1    3   198  3.6  phim_bt0_c2
+0     70   1    3   194  3.9  phim_bt1_c2
+0     70   1    3   190  4.4  phim_bt3_c2
+0     44   1    4   160  1.8  xuat_32led_don_4byte
+0     38   0    8   245  3.1  xuat_32led_don_2word
+0     36   0    9   120  2.8  xuat_32led_don_1dw
+0     44   1    0   152  1.8  xuat_4led_7doan_4so
+0    148   2    6   305  5.1  md4l7d_giaima_2so_vitri_vn
+0     40   0    3             @DIV88
+0     66   1    5             @DIV1616
+0     36   0    0   152  1.8  xuat_glcd_lcd
+0     16   0    2   104  3.0  xuat_lcd
+0     38   0    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     72   1    0   297  2.3  lcd_setup
+0     20   0    0             @const986
+0     26   0    3   145  3.9  lcd_goto_xy
+0     76   1    0             @const992
+0     80   1    0             @const996
+0     44   1    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0     92   1    6   280  5.8  lcd_hien_thi_so_to
+0     76   1    2             @MUL88
+0     52   1    4   241  5.3  lcd_xoa_so_to
+0    170   2   12   540  5.2  lcd_gm_ht_3so_nho_xvn
+0    128   2    9   419  5.9  lcd_gm_ht_2so_to_xvn
+0      2   0    0             @const1100
+0     32   0    2             @PSTRINGC_977
+0     10   0    0             @const1111
+0     22   0    0             @const1113
+0     34   0    2   158  2.7  xuat_buzzer_relay
+0      6   0    0    29  1.2  buzzer_on
+0      6   0    0    29  1.2  buzzer_off
+0      6   0    0    29  1.2  triac_2_on
+0      6   0    0    32  0.8  triac_2_off
+0     92   1    3   381  4.7  so_sanh_1nd
+0    134   2    5   505  5.5  so_sanh_and_2nd
+0    134   2    5   525  6.0  so_sanh_or_2nd
+0     70   1    5   233  2.7  so_sanh_nd_dk_buzzer
+0     60   1    1   176  2.3  touch_read_bit
+0     34   0    2   149  4.3  touch_read_byte
+0    112   1    1   450  3.3  touch_write_bit
+0     46   1    3   185  5.6  touch_write_byte
+0     78   1    2   260  3.2  touch_present
+0     18   0    0    43  1.3  ds18b20_no_ds18b
+0     12   0    0             @const1172
+0     46   1    0   158  1.3  ds18b20_khoi_tao
+0     58   1    4   260  2.9  ds18b20_read_temp
+0    182   2   15   851  8.6  ds18b20_doc_rom
+0    150   2    8   398  4.6  ds18b20_a_ht_lcd
+0      2   0    0             @const1223
+0     32   0    5             @MUL1616
+0     22   0    2    96  2.1  ds18b20_a_ht_7doan
+0     76   1    0   214  4.1  ds18b20_a_doc_xuly_hthi
+0     26   0    0    43  1.3  lcd_ena_buz_on
+0      4   0    0             @const1232
+0     20   0    0    43  1.3  lcd_ena_buz_off
+0      4   0    0             @const1234
+0     38   0    0   132  2.9  phim_bt3_tat_mo_buzz
+0    104   1    2   114  3.0  hienthi_nd_tren
+0    104   1    2   114  3.0  hienthi_nd_duoi
+0     44   1    0   100  3.2  chinh_nd_tren
+0     46   1    0   100  3.2  chinh_nd_duoi
+0    340   4    0   619  2.8  MAIN
+0      6   0    0             @const1243
+0      6   0    0             @const1244
+0      6   0    0             @const1245
+0      4   0    0             @const1246
+0      6   0    0             @const1247
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               53
+    Statements              1184
+    Comments                1390
+    Volume (V)              24004
+    Difficulty (D)          170.3
+    Effort to implement (E) 4088900
+    Time to implement (T)   63 hours, 6 minutes
+    Est Delivered Bugs (B)  9
+    Cyclomatic Complexity   60
+    Maintainability (MI)    138
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  4114  28650  
+
+
+

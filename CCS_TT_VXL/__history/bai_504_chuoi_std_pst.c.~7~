@@ -1,0 +1,17 @@
+#include <tv_kit_vdk_pic_all.c>
+const unsigned int8 ma_7doan[24]={0xC6,0X88,0X8E,0X86,0XC6,0XC0,0XC6,0X88,0XC6,0XC0,0XC7,0X88
+                                 ,0xFF,0XFF,0XFF,0XFF,0xFF,0XFF,0XFF,0XFF,0xFF,0XFF,0XFF,0XFF};
+usi8 i;
+
+void main()
+{
+   set_up_port();
+   for(i=0;i<24;i++)
+   {
+      dl_8l7dq[7-i]=ma_7doan[i];
+   }
+   while(true)
+   {
+      hien_thi_8led_7doan_quet();
+   }
+}

@@ -1,0 +1,16 @@
+#include "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\THU VIEN PIC 18F4550\tv_kit_vdk_pic_all.c"
+
+const unsigned char chuoi_hthi[]={"abcd"};
+#include "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\THU VIEN PIC 18F4550\tv_09_matran_led_quet_hang.c"
+void main() 
+{ 
+ set_up_port_ic_chot(); 
+ lay_so_luong_ky_tu_chuoi();
+ lay_ma_ky_tu(slkt); 
+ xoa_dl_48_cot();
+ sapxep_vitri_48byte_cot_xanh(24);
+ while(true)
+ { 
+ hien_thi_ma_tran_quet_hang(50);
+ } 
+}

@@ -1,0 +1,36 @@
+ÀÄbai_513_dem_giay_cx
+   ÃÄMAIN  0/214  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄset_up_port  0/58  Ram=0
+   ³  ³  ÀÄxoa_tat_6module  0/88  Ram=0
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄxuat_1word  0/22  Ram=4
+   ³  ³        ÀÄ*
+   ³  ÃÄmd8l7d_gma_2so_vitri_vn  0/142  Ram=6
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÃÄ@const667  0/42  Ram=0
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÀÄ@const667  0/42  Ram=0
+   ³  ÃÄhien_thi_8led_7doan_quet  0/54  Ram=2
+   ³  ³  ÃÄxuat_8led_7doan_quet  0/50  Ram=3
+   ³  ³  ³  ÃÄ@const907  0/36  Ram=0
+   ³  ³  ³  ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³  ÀÄxuat_1byte  0/38  Ram=2
+   ³  ³  ÃÄ@delay_ms1  0/40  Ram=1
+   ³  ³  ÀÄtat_8led_7doan_quet  0/12  Ram=0
+   ³  ³     ÀÄxuat_8led_7doan_quet  0/50  Ram=3
+   ³  ³        ÀÄ*
+   ³  ÀÄmd8l7d_gma_2so_vitri_vn  0/142  Ram=6
+   ³     ÀÄ*
+   ÀÄinterrupt_timer3  0/16  Ram=0

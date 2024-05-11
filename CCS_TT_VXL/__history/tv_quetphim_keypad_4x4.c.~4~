@@ -1,0 +1,27 @@
+#include <tv_kit_vdk_pic_all.c>
+void dk24led_PST(usi16 dl)
+{   
+   usi16 i,j; usi32 led; led=0;
+   for(i=0;i<24; i++) 
+      {
+         led=(led<<1)+0x1; 
+         xuat_32led_don_1dw(led& (0x00ffffff));      
+         delay_ms(dl);
+      } 
+ for(i=0;i<24; i++) 
+      { 
+         led=(led<<1);
+         xuat_32led_don_1dw(led& (0x00ffffff)); 
+         delay_ms(dl);
+      }  
+}
+
+void main()
+{   
+   set_up_port ();
+    while(true)
+      {   
+         dk24led_PST(100);     
+      }
+}
+

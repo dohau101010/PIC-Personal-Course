@@ -1,0 +1,82 @@
+
+ROM used:   932/32768 (3%)
+            932/32768 (3%) including unused fragments
+
+            0.2 Average locations per line
+            0.8 Average locations per statement
+
+RAM used:   84/2048 (4%) at main() level
+            101/2048 (5%) worst case
+
+Stack used: 4 worst case (4 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   24    12   1  bai_506_mtp4x4_8led_dich.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  tv_01_4_nutnhan.c
+   95    64   5  tv_02_matran_phim4x4_138.c
+ 2229   257  22  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   4  tv_05_8led_7doan_quet.c
+  137    45   4  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  435   206  17  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  419    72   6  tv_07_adc_cb.c
+   90    39   3  tv_07_ds18b20.c
+  230    54   5  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   64    29   2  tv_08_step_motor.c
+   82    33   3  tv_08_dc_motor.c
+   60    20   2  tv_09_matran_led_mbi.c
+----- -----
+ 5712  1186 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   2    1             @delay_ms1
+0     32   2    0   131  2.8  @const667
+0     38   2    2   239  4.3  xuat_1byte
+0     22   1    4   131  2.8  xuat_1word
+0     88   5    0   396  1.4  xoa_tat_6module
+0     58   3    0   253  2.3  set_up_port
+0    116   6    4   699  8.1  key_nhan
+0     50   3    2   245  5.0  key_4x4_dw
+0     26   1    0    25  1.2  @const904
+0     50   3    3   123  2.6  xuat_8led_7doan_quet
+0     12   1    0    25  1.2  tat_8led_7doan_quet
+0     54   3    2   171  4.0  hien_thi_8led_7doan_quet
+0      2   0    0    43  1.3  @const1097
+0      2   0    0             @const1103
+0      2   0    0    29  1.2  @const1108
+0     10   1    0    29  1.2  @const1118
+0     22   1    0    45  1.4  @const1120
+0     12   1    0    38  1.9  @const1179
+0    294  16    3   315  5.5  MAIN
+ Inline         0   290  4.6  @cinit1
+
+Program metrics:
+    Functions               18
+    Statements              1186
+    Comments                1398
+    Volume (V)              5684
+    Difficulty (D)          54.6
+    Effort to implement (E) 310598
+    Time to implement (T)   4 hours, 48 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   15
+    Maintainability (MI)    117
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE   928  31836  
+
+
+

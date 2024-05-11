@@ -1,0 +1,26 @@
+[PROJECT]
+Target=dem_sp_ud_mtp.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=dem_sp_ud_mtp.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[dem_sp_ud_mtp.c]
+Type=4
+[mru-list]
+1=dem_sp_ud_mtp.c
+[Opened Files]
+1=thi_vxl_t6.c
+2=CaoNgocDuy_19151211.c
+3=bai_tong_hop.c
+4=bai_tong_hop_1.c
+5=bai_tong_hop_2.c
+6=bai_tong_hop_tv.c
+7=desangCN.c
+8=dem_sp_ud_mtp.c
+9=
+[Units]
+Count=1
+1=dem_sp_ud_mtp (main)

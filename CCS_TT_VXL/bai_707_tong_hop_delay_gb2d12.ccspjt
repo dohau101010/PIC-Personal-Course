@@ -1,0 +1,26 @@
+[PROJECT]
+Target=bai_707_tong_hop_delay_gb2d12.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_707_tong_hop_delay_gb2d12.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_707_tong_hop_delay_gb2d12.c]
+Type=4
+[mru-list]
+1=bai_707_tong_hop_delay_gb2d12.c
+[Units]
+Count=1
+1=bai_707_tong_hop_delay_gb2d12 (main)
+[Opened Files]
+1=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\“BAI_424_KEY_4X4_4LED_DICH_UNDO4”.c
+2=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAITONGHOP_CHUONG4_COUNTER_SP_3NUT.c
+3=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\TEST NHANH PROTEUS.c
+4=bai_611a_lcd_traitim.c
+5=bai_707_tong_hop_delay_gb2d12.c
+6=
+7=C:\Program Files (x86)\PICC\Drivers\bai_707_gp2d12_dsp_tv.c
+8=
+9=

@@ -1,0 +1,35 @@
+[PROJECT]
+Target=bai_815_dc_motor_pwm_ccp1_up_dw_stop.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_815_dc_motor_pwm_ccp1_up_dw_stop.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_815_dc_motor_pwm_ccp1_up_dw_stop.c]
+Type=4
+[mru-list]
+1=bai_815_dc_motor_pwm_ccp1_up_dw_stop.c
+[Opened Files]
+1=bai_815_dc_motor_pwm_ccp1_up_dw_stop.c
+2=
+3=bai_801_step_motor_on_off_inv.c
+4=bai_801_step_motor_tv.c
+5=bai_tong_hop_1.c
+6=bai_tong_hop_tv.c
+7=bai_713_ds18b20_a_b_lcd_7doan_den_buz.c
+8=bai_711_ds18b20_lcd_7doan_den_buz.c
+9=bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+10=tv_06_lcd.c
+11=bai_705_lcd_7doan_lm35a_b_den_buz_bt3.c
+12=tv_07_adc_cb.c
+13=bai_701_lm35a_tv.c
+14=bai_721_do_nhiet_do_do_am_DHT11.c
+15=bai_818_dc_motor_tv.c
+16=bai_815_dc_motor_tv.c
+17=bai_815_dc_motor_pwm_ccp1_up_dw_stop.c
+18=
+[Units]
+Count=1
+1=bai_815_dc_motor_pwm_ccp1_up_dw_stop (main)

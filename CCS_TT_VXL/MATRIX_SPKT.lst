@@ -1,0 +1,307 @@
+CCS PCM C Compiler, Version 5.015, 5967               22-Jun-23 18:49
+
+               Filename:   E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\MATRIX_SPKT.lst
+
+               ROM used:   217 words (3%)
+                           Largest free fragment is 2048
+               RAM used:   13 (4%) at main() level
+                           23 (6%) worst case
+               Stack used: 2 locations
+               Stack size: 8
+
+*
+0000:  MOVLW  00
+0001:  MOVWF  0A
+0002:  GOTO   07F
+0003:  NOP
+.................... #INCLUDE <16F887.H> 
+.................... //////////// Standard Header file for the PIC16F887 device //////////////// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... ////        (C) Copyright 1996, 2013 Custom Computer Services          //// 
+.................... //// This source code may only be used by licensed users of the CCS C  //// 
+.................... //// compiler.  This source code may only be distributed to other      //// 
+.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
+.................... //// or distribution is permitted without written permission.          //// 
+.................... //// Derivative programs created using this software in object code    //// 
+.................... //// form are not restricted in any way.                               //// 
+.................... /////////////////////////////////////////////////////////////////////////// 
+.................... #device PIC16F887 
+0004:  BCF    0A.0
+0005:  BCF    0A.1
+0006:  BCF    0A.2
+0007:  ADDWF  02,F
+0008:  RETLW  38
+0009:  RETLW  64
+000A:  RETLW  60
+000B:  RETLW  30
+000C:  RETLW  18
+000D:  RETLW  0C
+000E:  RETLW  4C
+000F:  RETLW  38
+0010:  RETLW  7C
+0011:  RETLW  66
+0012:  RETLW  66
+0013:  RETLW  7C
+0014:  RETLW  60
+0015:  RETLW  60
+0016:  RETLW  60
+0017:  RETLW  60
+0018:  RETLW  62
+0019:  RETLW  64
+001A:  RETLW  68
+001B:  RETLW  70
+001C:  RETLW  70
+001D:  RETLW  68
+001E:  RETLW  64
+001F:  RETLW  62
+0020:  RETLW  FF
+0021:  RETLW  18
+0022:  RETLW  18
+0023:  RETLW  18
+0024:  RETLW  18
+0025:  RETLW  18
+0026:  RETLW  18
+0027:  RETLW  18
+....................  
+.................... #list 
+....................  
+.................... #FUSES HS 
+.................... #USE DELAY(CLOCK=20M) 
+*
+0069:  MOVLW  27
+006A:  MOVWF  04
+006B:  BCF    03.7
+006C:  MOVF   00,W
+006D:  BTFSC  03.2
+006E:  GOTO   07C
+006F:  MOVLW  06
+0070:  MOVWF  78
+0071:  CLRF   77
+0072:  DECFSZ 77,F
+0073:  GOTO   072
+0074:  DECFSZ 78,F
+0075:  GOTO   071
+0076:  MOVLW  7B
+0077:  MOVWF  77
+0078:  DECFSZ 77,F
+0079:  GOTO   078
+007A:  DECFSZ 00,F
+007B:  GOTO   06F
+007C:  BCF    0A.3
+007D:  BCF    0A.4
+007E:  GOTO   0CD (RETURN)
+....................  
+.................... #DEFINE SER PIN_D0 
+.................... #DEFINE SCK PIN_D1 
+.................... #DEFINE RCK PIN_D2 
+....................  
+.................... CONST UNSIGNED INT8 SPKT[32]={0X38,0x64, 0x60, 0x30, 0x18,  0x0c, 0x4c, 0x38, 
+....................                               0X7C, 0x66, 0x66, 0x7C, 0x60, 0x60, 0x60, 0x60, 
+....................                               0X62, 0x64, 0x68, 0x70, 0x70, 0x68, 0x64, 0x62, 
+....................                               0XFF, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18}; 
+....................                                
+.................... UNSIGNED INT32 DL_COT; 
+.................... UNSIGNED INT8 COT, K; 
+....................  
+.................... VOID XUAT_1BYTE(UNSIGNED INT8 BYTEXUAT) 
+.................... { 
+....................    UNSIGNED INT8 I; 
+....................    #BIT BSER=BYTEXUAT.7 
+....................    FOR(I=0; I<8; I++) 
+*
+0028:  CLRF   31
+0029:  MOVF   31,W
+002A:  SUBLW  07
+002B:  BTFSS  03.0
+002C:  GOTO   03F
+....................    { 
+....................       OUTPUT_BIT(SER, BSER); 
+002D:  BTFSC  30.7
+002E:  GOTO   031
+002F:  BCF    08.0
+0030:  GOTO   032
+0031:  BSF    08.0
+0032:  BSF    03.5
+0033:  BCF    08.0
+....................       OUTPUT_LOW(SCK); OUTPUT_HIGH(SCK); 
+0034:  BCF    08.1
+0035:  BCF    03.5
+0036:  BCF    08.1
+0037:  BSF    03.5
+0038:  BCF    08.1
+0039:  BCF    03.5
+003A:  BSF    08.1
+....................       BYTEXUAT=BYTEXUAT<<1; 
+003B:  BCF    03.0
+003C:  RLF    30,F
+003D:  INCF   31,F
+003E:  GOTO   029
+....................    } 
+003F:  RETURN
+.................... } 
+.................... VOID QUETCOT(UNSIGNED INT32 DL_COT) 
+.................... { 
+....................    XUAT_1BYTE(DL_COT>>24); 
+0040:  MOVF   2A,W
+0041:  MOVWF  2C
+0042:  CLRF   2D
+0043:  CLRF   2E
+0044:  CLRF   2F
+0045:  MOVF   2A,W
+0046:  MOVWF  30
+0047:  CALL   028
+....................    XUAT_1BYTE(DL_COT>>16); 
+0048:  MOVF   29,W
+0049:  MOVWF  2C
+004A:  MOVF   2A,W
+004B:  MOVWF  2D
+004C:  CLRF   2E
+004D:  CLRF   2F
+004E:  MOVF   29,W
+004F:  MOVWF  30
+0050:  CALL   028
+....................    XUAT_1BYTE(DL_COT>>8); 
+0051:  MOVF   28,W
+0052:  MOVWF  2C
+0053:  MOVF   29,W
+0054:  MOVWF  2D
+0055:  MOVF   2A,W
+0056:  MOVWF  2E
+0057:  CLRF   2F
+0058:  MOVF   28,W
+0059:  MOVWF  30
+005A:  CALL   028
+....................    XUAT_1BYTE(DL_COT); 
+005B:  MOVF   27,W
+005C:  MOVWF  30
+005D:  CALL   028
+....................    OUTPUT_LOW(RCK); OUTPUT_HIGH(RCK); 
+005E:  BSF    03.5
+005F:  BCF    08.2
+0060:  BCF    03.5
+0061:  BCF    08.2
+0062:  BSF    03.5
+0063:  BCF    08.2
+0064:  BCF    03.5
+0065:  BSF    08.2
+0066:  BCF    0A.3
+0067:  BCF    0A.4
+0068:  GOTO   0C0 (RETURN)
+.................... } 
+....................  
+.................... VOID MAIN() 
+*
+007F:  MOVF   03,W
+0080:  ANDLW  1F
+0081:  MOVWF  03
+0082:  MOVLW  FF
+0083:  MOVWF  26
+0084:  BSF    03.5
+0085:  BSF    03.6
+0086:  MOVF   09,W
+0087:  ANDLW  C0
+0088:  MOVWF  09
+0089:  BCF    03.6
+008A:  BCF    1F.4
+008B:  BCF    1F.5
+008C:  MOVLW  00
+008D:  BSF    03.6
+008E:  MOVWF  08
+008F:  BCF    03.5
+0090:  CLRF   07
+0091:  CLRF   08
+0092:  CLRF   09
+0093:  BCF    03.7
+.................... { 
+....................    SET_TRIS_C(0); 
+0094:  MOVLW  00
+0095:  BSF    03.5
+0096:  BCF    03.6
+0097:  MOVWF  07
+0098:  BCF    03.5
+0099:  MOVWF  26
+....................    SET_TRIS_D(0); 
+009A:  BSF    03.5
+009B:  MOVWF  08
+....................    WHILE(TRUE) 
+....................    { 
+....................       FOR(K=0; K<30; K++) 
+009C:  BCF    03.5
+009D:  CLRF   25
+009E:  MOVF   25,W
+009F:  SUBLW  1D
+00A0:  BTFSS  03.0
+00A1:  GOTO   0D7
+....................       { 
+....................          FOR(COT=0; COT<32; COT++) 
+00A2:  CLRF   24
+00A3:  MOVF   24,W
+00A4:  SUBLW  1F
+00A5:  BTFSS  03.0
+00A6:  GOTO   0D5
+....................          { 
+....................             DL_COT=0X1<<COT; 
+00A7:  MOVLW  01
+00A8:  MOVWF  20
+00A9:  CLRF   21
+00AA:  CLRF   22
+00AB:  CLRF   23
+00AC:  MOVF   24,W
+00AD:  MOVWF  27
+00AE:  BTFSC  03.2
+00AF:  GOTO   0B7
+00B0:  BCF    03.0
+00B1:  RLF    20,F
+00B2:  RLF    21,F
+00B3:  RLF    22,F
+00B4:  RLF    23,F
+00B5:  DECFSZ 27,F
+00B6:  GOTO   0B0
+....................             QUETCOT(DL_COT); 
+00B7:  MOVF   23,W
+00B8:  MOVWF  2A
+00B9:  MOVF   22,W
+00BA:  MOVWF  29
+00BB:  MOVF   21,W
+00BC:  MOVWF  28
+00BD:  MOVF   20,W
+00BE:  MOVWF  27
+00BF:  GOTO   040
+....................             OUTPUT_C(SPKT[COT]); 
+00C0:  MOVF   24,W
+00C1:  CALL   004
+00C2:  MOVWF  27
+00C3:  MOVLW  00
+00C4:  MOVWF  26
+00C5:  BSF    03.5
+00C6:  CLRF   07
+00C7:  BCF    03.5
+00C8:  MOVF   27,W
+00C9:  MOVWF  07
+....................             DELAY_MS(1); 
+00CA:  MOVLW  01
+00CB:  MOVWF  27
+00CC:  GOTO   069
+....................             OUTPUT_C(0); 
+00CD:  MOVLW  00
+00CE:  MOVWF  26
+00CF:  BSF    03.5
+00D0:  CLRF   07
+00D1:  BCF    03.5
+00D2:  CLRF   07
+00D3:  INCF   24,F
+00D4:  GOTO   0A3
+....................          } 
+00D5:  INCF   25,F
+00D6:  GOTO   09E
+....................       } 
+00D7:  GOTO   09D
+....................    } 
+....................  
+.................... } 
+....................  
+00D8:  SLEEP
+
+Configuration Fuses:
+   Word  1: 2FE2   HS NOWDT PUT MCLR NOPROTECT NOCPD BROWNOUT IESO FCMEN NOLVP NODEBUG
+   Word  2: 3FFF   BORV40 NOWRT

@@ -1,0 +1,21 @@
+[PROJECT]
+Target=bai_407_cai_gh_0_99_2bt_up.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_407_cai_gh_0_99_2bt_up.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_407_cai_gh_0_99_2bt_up.c]
+Type=4
+[mru-list]
+1=bai_407_cai_gh_0_99_2bt_up.c
+[Opened Files]
+1=bai_407_cai_gh_0_99_2bt_up.c
+2=bai_412_dem_xung_t0_stop_run_32led.c
+3=
+4=
+[Units]
+Count=1
+1=bai_407_cai_gh_0_99_2bt_up (main)

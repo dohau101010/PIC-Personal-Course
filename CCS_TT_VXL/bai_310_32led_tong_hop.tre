@@ -1,0 +1,79 @@
+ÀÄbai_310_32led_tong_hop
+   ÀÄMAIN  0/252  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄh310_32led_chop_tat_nlan  0/24  Ram=3
+      ³  ÀÄb303_32led_chop_tat  0/72  Ram=3
+      ³     ÃÄxuat_32led_don_4byte  0/34  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄxuat_32led_don_4byte  0/34  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄh310_32led_std_pst_nlan  0/26  Ram=3
+      ³  ÀÄb308_32led_std_pst  0/172  Ram=12
+      ³     ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³     ³  ÀÄxuat_32led_don_2word  0/36  Ram=8
+      ³     ³     ÀÄxuat_32led_don_4byte  0/34  Ram=4
+      ³     ³        ÀÄ*
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³     ³  ÀÄ*
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄh310_32led_chop_tat_nlan  0/24  Ram=3
+      ³  ÀÄ*
+      ÃÄh310_32led_std_tsp_nlan  0/26  Ram=3
+      ³  ÀÄb309_32led_std_tsp  0/162  Ram=12
+      ³     ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³     ³  ÀÄ*
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³     ³  ÀÄ*
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄh310_32led_chop_tat_nlan  0/24  Ram=3
+      ³  ÀÄ*
+      ÃÄh310_32led_std_tnv_nlan  0/26  Ram=3
+      ³  ÀÄb306_32led_std_tnv  0/170  Ram=9
+      ³     ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³     ³  ÀÄ*
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³     ³  ÀÄ*
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÀÄ@delay_ms1  0/38  Ram=1
+      ÃÄh310_32led_chop_tat_nlan  0/24  Ram=3
+      ³  ÀÄ*
+      ÀÄh310_32led_std_ttr_nlan  0/26  Ram=3
+         ÀÄb307_32led_std_ttr  0/170  Ram=9
+            ÃÄxuat_32led_don_2word  0/36  Ram=8
+            ³  ÀÄ*
+            ÃÄ@delay_ms1  0/38  Ram=1
+            ÃÄ@delay_ms1  0/38  Ram=1
+            ÃÄxuat_32led_don_2word  0/36  Ram=8
+            ³  ÀÄ*
+            ÃÄ@delay_ms1  0/38  Ram=1
+            ÀÄ@delay_ms1  0/38  Ram=1

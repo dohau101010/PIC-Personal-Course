@@ -1,0 +1,31 @@
+[PROJECT]
+Target=bai_705_lcd_7doan_lm35a_b_den_buz_bt3.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_705_lcd_7doan_lm35a_b_den_buz_bt3.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_705_lcd_7doan_lm35a_b_den_buz_bt3.c]
+Type=4
+[mru-list]
+1=bai_705_lcd_7doan_lm35a_b_den_buz_bt3.c
+[Opened Files]
+1=bai_818_dkdc_dc_quay_thuan_nghich_PWM_For_Rev.c
+2=bai_tong_hop.c
+3=bai_801_step_motor_on_off_inv.c
+4=bai_801_step_motor_tv.c
+5=bai_tong_hop_1.c
+6=bai_tong_hop_tv.c
+7=bai_713_ds18b20_a_b_lcd_7doan_den_buz.c
+8=bai_711_ds18b20_lcd_7doan_den_buz.c
+9=bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+10=tv_06_lcd.c
+11=bai_705_lcd_7doan_lm35a_b_den_buz_bt3.c
+12=tv_07_adc_cb.c
+13=bai_701_lm35a_tv.c
+14=
+[Units]
+Count=1
+1=bai_705_lcd_7doan_lm35a_b_den_buz_bt3 (main)

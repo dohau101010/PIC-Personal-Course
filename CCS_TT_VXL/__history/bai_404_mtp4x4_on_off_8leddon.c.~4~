@@ -1,0 +1,17 @@
+#include <tv_kit_vdk_pic_all.c>
+unsigned int8 mp;
+signed int8 i;
+unsigned int8 m8led[8]=
+   {0x01,0x02,0x04,0x08,0x10,0x20,0x40,0x80};
+
+void main() 
+{ 
+   set_up_port(); 
+   xuat_32led_don_4byte(0,0,0,0);
+   while(true) 
+   { 
+      mp = key_4x4_dw();
+      if(mp<8)
+         xuat_32led_don_4byte(0,0,0,m8led[mp]);
+   }
+}

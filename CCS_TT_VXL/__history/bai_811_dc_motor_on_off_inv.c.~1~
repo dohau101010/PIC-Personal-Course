@@ -1,0 +1,14 @@
+#include <tv_kit_vdk_pic_all.c>
+#include <tv_08_dc_motor.c>
+#include <bai_811_dc_motor_tv.c>
+
+void main()
+{
+   set_up_port();
+   dc_motor_enable(); //xuat du lieu ra ic74595 dieu khien chan F=> dieu khien 2 ngo vao enble AvB cuar ICl298 de cho phep 2 cau H san sang hoat dong
+   dc_motor_stop();
+   while(true)
+   {
+      phim_on_off_inv_dkdc();
+   }
+}

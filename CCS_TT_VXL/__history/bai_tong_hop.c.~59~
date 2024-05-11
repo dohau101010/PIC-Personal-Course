@@ -1,0 +1,200 @@
+#include <tv_kit_vdk_pic_all.c>
+#include <tv_08_dc_motor.c>
+#include <tv_08_step_motor.c>
+#define solan 100
+unsigned int8 ds18a_ng,ds18a_ngt=0;
+unsigned int16 ds18a_w,ds18a_tp,ds18a_tpt=50;
+unsigned INT16 lm35a_ng,lm35a_tp,lm35a_ngt=0;
+unsigned int16 lt=0, lp=0;
+int1 tt_qt=0, tt_qn=0, tt_n=0, tt_tam=0;
+//trang thai quay thuan, quay nghich, ngung
+signed int8 giay, bdn;
+
+#int_timer3
+void interrupt_timer3()
+{
+   bdn++;
+   set_timer3(3036);
+}
+
+void tang_giay()
+{
+   bdn = bdn-10;  giay++;
+   if(giay==60)   giay=0;
+   md8l7d_gma_2so_vitri_vn(giay,0,kx_vn);
+}
+
+void ds18b20_a_ht_lcd()
+{
+    if(ds18a_ngt!=ds18a_ng)
+    {
+       ds18a_ngt=ds18a_ng;
+       lcd_goto_xy(0,0);
+       lcd_data(ds18a_ng/10+0x30);
+       //lcd_goto_xy(1,0);
+       //lcd_data(ds18a_ng%10+0x30);
+       lcd_hien_thi_so_to(ds18a_ng%10,1,0);
+    }
+    if(ds18a_tpt!=ds18a_tp)
+    {
+       ds18a_tpt=ds18a_tp;
+    }
+}
+
+void ds18b20_a_doc_xuly_hthi()
+{
+    if(touch_present())
+    {
+       ds18a_w = ds18b20_read_temp();
+       ds18a_ng = ds18a_w>>4; //dich phai gia tri 4bit
+       ds18a_tp = ds18a_w & 0x000f; //giu nguyen 4 bit thap, xoa di cac bit cao
+       ds18b20_a_ht_lcd();
+    }
+    else ds18b20_no_ds18b();
+}
+
+void adc_lm35a_doc_xuly(usi8 sl) 
+{
+   float lm35a;
+   lm35a = h701_adc_read(sl, chan_lm35a);
+   lm35a = lm35a/2.046;
+   float_to_ng_2so_tp(lm35a);
+   lm35a_ng = so_ng;
+   lm35a_tp = so_tp;
+}
+
+void adc_lm35a_ht_lcd() 
+{
+   IF (lm35a_ngt != lm35a_ng)
+   {
+      lm35a_ngt = lm35a_ng;
+      lcd_hien_thi_so_to(lm35a_ng/10,0,17);
+      lcd_goto_xy(2,19);
+      lcd_data(lm35a_ng%10+0x30);
+   }
+}
+
+void phim_on_off()
+{
+   if((!input(on))&&(!tt_tam)) 
+    {
+       tt_tam=1;   stepmotor_onoff=1;
+       lt=0xffff;
+       tt_n=0; tt_qt=0; tt_qn=0;
+       xuat_32led_don_2word(lt,lp); 
+    } 
+    else if((!input(off))&&(tt_tam))
+    {
+       tt_tam=0;   stepmotor_onoff=0;
+       lt=0;   lp=0;
+       tt_n=0; tt_qt=0; tt_qn=0;
+       xuat_32led_don_2word(lt,lp); 
+    } 
+}
+
+void dkdc_theo_giay(usi8 giay)
+{
+    if(tt_tam)  //&&(!dcmotor_tn)) 
+    {
+      if((1<giay)&&(giay<16))
+      {
+         if((tt_qn==0)&&(stepmotor_onoff))
+         { 
+             dcmotor_tn=0; stepmotor_tn=1;
+             dc_motor_ktao_ccpx();
+             pwm_duty=250;
+             dc_motor_set_pwmx_duty();
+             lt=0xff00;
+             tt_n=0; tt_qn=1; 
+             xuat_32led_don_2word(lt,lp);
+             
+             step_motor_run_fs_hs();
+             delay_ms(stepmotor_delay);
+         }
+      }
+      else if ((31<giay)&&(giay<46))
+      {
+        if((tt_qt==0)&&(stepmotor_onoff))
+        {
+            dcmotor_tn=1; stepmotor_tn=0;
+            dc_motor_ktao_ccpx();
+            pwm_duty=250;
+            dc_motor_set_pwmx_duty();
+            lp=0xff; 
+            xuat_32led_don_2word(lt,lp);
+            tt_n=0; tt_qt=1; 
+
+            step_motor_run_fs_hs();
+            delay_ms(stepmotor_delay);
+        }
+      }
+      else
+      {
+        if(tt_n==0)
+        {
+            tt_n=1; tt_qt=0; tt_qn=0;
+            dc_motor_pwm_ccp1_ccp2_stop();
+            lp=0; lt=0;
+            xuat_32led_don_2word(lt,lp);
+        }
+      }
+    }
+//!    if(phim_bt1_c2(2)==co_nhan) //&&(dcmotor_tn))
+//!    {
+//!       //dcmotor_tn=0;
+//!       pwm_duty=0;  
+//!       dc_motor_set_pwmx_duty();
+//!       dc_motor_pwm_ccp1_ccp2_stop();
+//!       lt=0;   lp=0;
+//!       xuat_32led_don_2word(lt,lp); 
+//!    } 
+}
+
+void main()
+{
+   set_up_port();
+   lcd_setup();
+   lcd_khoi_tao_cgram_so_to();
+   
+   ds18b20_khoi_tao();
+   ds18b20_doc_rom(3,0);
+   
+   setup_timer_3(t3_internal|t3_div_by_8);
+   set_timer3(3036);
+   
+   enable_interrupts(global);
+   enable_interrupts(int_timer3);
+   
+   giay=0;
+   bdn=0;
+   
+   md8l7d_gma_2so_vitri_vn(giay,0,kx_vn);
+   dc_motor_enable();
+   //dc_motor_stop();
+   setup_ccp1(ccp_pwm);
+   setup_timer_2(t2_div_by_16,249,1);
+   pwm_duty=0;
+   
+   stepmotor_delay=20; //thoi gian delay giua 2 buoc
+   stepmotor_tn = 0;  //chon chieu quay nghich
+   stepmotor_fh = 1;  //chon buoc du
+   
+   while(true)
+   {
+      ds18b20_a_doc_xuly_hthi();
+      delay_ms(200);
+      
+      adc_lm35a_doc_xuly(solan);
+      adc_lm35a_ht_lcd();
+      //delay_ms(200);
+      if(bdn<10)
+      {
+         for(usi8 h=0; h<10; h++)
+            hien_thi_8led_7doan_quet();
+         phim_on_off();
+         dkdc_theo_giay(giay);
+      }
+      else tang_giay();
+   }
+}
+

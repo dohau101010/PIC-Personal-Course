@@ -1,0 +1,57 @@
+#INCLUDE <18F4550.H>
+#FUSES HS
+#USE DELAY(CLOCK=40M)
+
+#DEFINE SER PIN_D0
+#DEFINE SCK PIN_D1
+#DEFINE RCK PIN_D2
+
+CONST UNSIGNED INT8 SPKT[32]={0X38,0x64, 0x60, 0x30, 0x18,  0x0c, 0x4c, 0x38,
+                              0X7C, 0x66, 0x66, 0x7C, 0x60, 0x60, 0x60, 0x60,
+                              0X62, 0x64, 0x68, 0x70, 0x70, 0x68, 0x64, 0x62,
+                              0XFF, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18, 0x18};
+                              
+UNSIGNED INT32 DL_COT;
+UNSIGNED INT8 COT, K;
+
+VOID XUAT_1BYTE(UNSIGNED INT8 BYTEXUAT)
+{
+   UNSIGNED INT8 I;
+   #BIT BSER=BYTEXUAT.7
+   FOR(I=0; I<8; I++)
+   {
+      OUTPUT_BIT(SER, BSER);
+      OUTPUT_LOW(SCK); OUTPUT_HIGH(SCK);
+      BYTEXUAT=BYTEXUAT<<1;
+   }
+}
+VOID QUETCOT(UNSIGNED INT32 DL_COT)
+{
+   XUAT_1BYTE(DL_COT>>24);
+   XUAT_1BYTE(DL_COT>>16);
+   XUAT_1BYTE(DL_COT>>8);
+   XUAT_1BYTE(DL_COT);
+   OUTPUT_LOW(RCK); OUTPUT_HIGH(RCK);
+}
+
+VOID MAIN()
+{
+   SET_TRIS_D(0);
+   SET_TRIS_B(0);
+   WHILE(TRUE)
+   {
+      FOR(K=0; K<30; K++)
+      {
+         FOR(COT=0; COT<32; COT++)
+         {
+            DL_COT=0X1<<COT;
+            QUETCOT(DL_COT);
+            OUTPUT_B(SPKT[COT]);
+            DELAY_MS(1);
+            OUTPUT_B(0);
+         }
+      }
+   }
+
+}
+

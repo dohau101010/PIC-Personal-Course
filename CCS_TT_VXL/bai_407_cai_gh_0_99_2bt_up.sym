@@ -1,0 +1,171 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   step_motor_enable
+004-005 rbdc
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006-007 dl_btn
+008     HANG
+009     COT
+00A     GT
+00B     MPT
+00C-00F dl_4l7d
+010-017 dl_8l7dq
+018-01B g_lcd
+01C     lcd_ctrl
+01C.0   lcd_e
+01C.1   lcd_rw
+01C.2   lcd_rs
+01C.3   lcd_p
+01D-01E so_ng
+01F-020 so_tp
+021-022 nd_tren
+023-024 nd_duoi
+025.0   ttqn
+025.1   buz_ena
+025.2   stepmotor_tn
+025.3   stepmotor_fh
+025.4   dcmotor_tn
+025.5   dcmotor_onoff
+025.6   tt_cai
+026-02D stepmotor_fs
+02E-03D stepmotor_hs
+03E     stepmotor_i
+03F-040 pwm_duty
+041     mp
+042     donvi
+043     chuc
+044     g_han
+045     @delay_ms1.P1
+045     md4l7d_giaima_2so_vitri_vn.x
+045     @MUL88.P1
+045-048 atan2.y
+045-046 xuat_1word.w
+045     TIMHANG.@SCRATCH1
+045     KEYPRESS.@SCRATCH1
+045     b408_hienthi_4led7doan.@SCRATCH1
+045     MAIN.@SCRATCH1
+046     md4l7d_giaima_2so_vitri_vn.y
+046     @MUL88.P1
+047     md4l7d_giaima_2so_vitri_vn.xvn
+047     xuat_1word.b1
+048     xuat_1word.b0
+048     md4l7d_giaima_2so_vitri_vn.@SCRATCH1
+049-04C atan2.x
+049     xuat_1byte.x
+049.7   xuat_1byte.msb
+049     md4l7d_giaima_2so_vitri_vn.@SCRATCH2
+04A     xuat_1byte.sb
+04A     md4l7d_giaima_2so_vitri_vn.@SCRATCH3
+04B     @DIV88.P1
+04C     @DIV88.P1
+04D-050 atan2.z
+04D     @DIV88.@SCRATCH1
+051.0   atan2.sign
+052     atan2.quad
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  @const1067.call
+000026  @const1073.call
+000028  @const1078.call
+00002A  @const1088.call
+000034  @const1090.call
+00004A  @const1149.call
+000056  xuat_1byte
+00007C  xuat_1word
+000092  xoa_tat_6module
+0000EA  set_up_port
+000124  @MUL88
+000170  @DIV88
+000198  md4l7d_giaima_2so_vitri_vn
+000228  xuat_4led_7doan_4so
+00024C  b408_hienthi_4led7doan
+00026E  TIMHANG
+00029E  KEYPRESS
+0002FA  @goto10794
+00031C  @delay_ms1
+000344  KEY_4X4_DW
+000374  @cinit1
+000374  MAIN
+0003B8  @cinit2
+
+Project Directory:
+    E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\
+
+Project Files:
+    bai_407_cai_gh_0_99_2bt_up.c                            [18-Mar-22 00:11  CRC=BD283A1C]
+    tv_kit_vdk_pic_all.c                                    [14-Jul-23 23:35  CRC=1CD754BC]
+    tv_00_define_18f4550.c                                  [14-Jul-23 23:06  CRC=CC1B6E79]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [14-Jul-23 23:34  CRC=0AE3973F]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [25-Mar-22 13:13  CRC=1A33A3DD]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [02-Jun-22 21:59  CRC=7B0F485F]
+    tv_dht11.c                                              [13-May-22 16:42  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [13-May-22 13:20  CRC=6B8BEF4B]
+    tv_07_ds18b20.c                                         [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_08_step_motor.c                                      [22-Jun-23 15:52  CRC=5ACE5D77]
+    tv_08_dc_motor.c                                        [27-May-22 16:39  CRC=81B98620]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+
+Source signature=A8D70088
+
+Units:
+    bai_407_cai_gh_0_99_2bt_up (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_407_cai_gh_0_99_2bt_up.xsym
+    Errors:      bai_407_cai_gh_0_99_2bt_up.err
+    Ext Symbols: bai_407_cai_gh_0_99_2bt_up.esym
+    INHX32:      bai_407_cai_gh_0_99_2bt_up.hex
+    Symbols:     bai_407_cai_gh_0_99_2bt_up.sym
+    List:        bai_407_cai_gh_0_99_2bt_up.lst
+    Debug/COFF:  bai_407_cai_gh_0_99_2bt_up.cof
+    Project:     bai_407_cai_gh_0_99_2bt_up.ccspjt
+    Call Tree:   bai_407_cai_gh_0_99_2bt_up.tre
+    Statistics:  bai_407_cai_gh_0_99_2bt_up.STA

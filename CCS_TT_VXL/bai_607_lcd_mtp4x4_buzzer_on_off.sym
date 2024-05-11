@@ -1,0 +1,236 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016-017 rbdc
+016.0   step_motor_enable
+016.1   step_motor_in1
+016.2   step_motor_in2
+016.3   step_motor_in3
+016.4   step_motor_in4
+016.5   dc_enable
+016.6   pwrkey
+017.0   buzzer
+017.1   triac_1
+017.2   triac_2
+017.3   relay_1
+017.4   relay_2
+018-019 dl_btn
+01A-01D dl_4l7d
+01E-025 dl_8l7dq
+026-02E time_w
+02F-037 time_r
+038-03B g_lcd
+03C.0   lcd_e
+03C     lcd_ctrl
+03C.1   lcd_rw
+03C.2   lcd_rs
+03C.3   lcd_p
+03D-03E so_ng
+03F-040 so_tp
+041-042 nd_tren
+043-044 nd_duoi
+045.0   ttqn
+045.1   buz_ena
+045.2   tt_ss
+045.3   tt_cai
+046     mp
+047     bdn
+048     i
+049     tg_cai
+04A     tg_dem
+04B     chuc
+04C     donvi
+04D-050 xuat_32led_don_1dw.dwld
+04D-04E xuat_1word.w
+04D     lcd_goto_xy.x
+04D     key_4x4_dw.mp1
+04D-04E buzzer_on_off.dl
+04D-050 atan2.y
+04D     @PSTRINGC_977.@SCRATCH1
+04D     lcd_hienthi_tg_cai.@SCRATCH1
+04D     lcd_hienthi_tg_dem.@SCRATCH1
+04D     buzz_bip.@SCRATCH1
+04D     xu_ly_cac_phim.@SCRATCH1
+04E     lcd_goto_xy.y
+04E     key_4x4_dw.mp2
+04E     @DIV88.P1
+04E     @PSTRINGC_977.@SCRATCH2
+04F     @DIV88.P1
+04F     lcd_data.db
+04F     xuat_buzzer_relay.rbdc1
+04F     key_nhan.maphim
+04F     xuat_1word.b1
+04F     lcd_goto_xy.@SCRATCH1
+04F     buzzer_on_off.@SCRATCH1
+050     xuat_buzzer_relay.rbdc2
+050     key_nhan.hang
+050     lcd_command.db
+050     @delay_ms1.P1
+050     xuat_1word.b0
+050     @DIV88.@SCRATCH1
+051     key_nhan.cot
+051-054 atan2.x
+051     lcd_xuat.db
+051-052 xuat_32led_don_1dw.wd1
+052     xuat_lcd.lcd_ctr
+052     key_nhan.@SCRATCH1
+053     xuat_lcd.lcd_dta
+053-054 xuat_32led_don_1dw.wd0
+055-058 atan2.z
+055-056 xuat_32led_don_2word.wld1
+055     xuat_32led_don_1dw.@SCRATCH1
+057-058 xuat_32led_don_2word.wld0
+059     xuat_32led_don_2word.b3
+059.0   atan2.sign
+05A     xuat_32led_don_2word.b2
+05A     atan2.quad
+05B     xuat_32led_don_2word.b1
+05C     xuat_32led_don_2word.b0
+05D     xuat_32led_don_4byte.bld3
+05E     xuat_32led_don_4byte.bld2
+05F     xuat_32led_don_4byte.bld1
+060     xuat_32led_don_4byte.bld0
+061     xuat_1byte.x
+061.7   xuat_1byte.msb
+062     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  maquet.call
+0000B0  maquet.data
+0000B4  lcd_vitri.call
+0000CE  lcd_vitri.data
+0000D2  @const1100.call
+0000D4  @const1106.call
+0000D6  @const1111.call
+0000D8  @const1121.call
+0000E2  @const1123.call
+0000F8  @const1182.call
+000104  @const1233.call
+000108  @const1235.call
+00010C  @const1237.call
+000110  @const1239.call
+000114  interrupt_timer3
+000124  @const1249.call
+000138  @const1250.call
+00014E  @const1251.call
+000164  @const1252.call
+00017A  xuat_1byte
+0001A0  xuat_1word
+0001B6  xoa_tat_6module
+00020E  set_up_port
+000248  xuat_glcd_lcd
+00026C  xuat_lcd
+00027C  lcd_xuat
+0002A2  lcd_command
+0002AC  @delay_ms1
+0002D2  lcd_setup
+00031A  lcd_goto_xy
+000334  lcd_data
+00033E  @PSTRINGC_977
+00035E  lcd_hienthi_dis
+000374  lcd_hienthi_off
+00038A  @DIV88
+0003B2  lcd_hienthi_tg_cai
+0003FA  lcd_hienthi_tg_dem
+000438  key_nhan
+0004A8  key_4x4_dw
+0004DA  lcd_hienthi_ena
+0004F2  xuat_32led_don_4byte
+000516  xuat_32led_don_2word
+00053C  xuat_32led_don_1dw
+000560  lcd_hienthi_on
+000578  tat_het
+00058E  xu_ly_cac_phim
+0005F4  xuat_buzzer_relay
+000612  buzzer_on_off
+000636  buzz_bip
+00065E  @cinit1
+00065E  MAIN
+00069E  @cinit2
+
+Project Directory:
+    E:\Downloads\TT VXL THAY PHU\tt_vxl_d501_thay_phu\tt_vxl_d501_thay_phu\
+
+Project Files:
+    bai_607_lcd_mtp4x4_buzzer_on_off.c                      [15-Apr-22 13:29  CRC=2585299F]
+    tv_kit_vdk_pic_all.c                                    [09-Feb-22 11:37  CRC=95887F12]
+    tv_00_define_18f4550.c                                  [30-Sep-21 12:29  CRC=91C401BF]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [04-Oct-21 08:38  CRC=26E88B80]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [25-Mar-22 13:13  CRC=1A33A3DD]
+    tv_05_i2c_ds13_pcf.c                                    [04-Jun-22 08:02  CRC=97278EF6]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [02-Jun-22 21:59  CRC=7B0F485F]
+    tv_dht11.c                                              [13-May-22 16:42  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [13-May-22 13:20  CRC=6B8BEF4B]
+    tv_07_ds18b20.c                                         [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [15-Oct-21 08:41  CRC=A7D8AEFA]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+
+Source signature=CE0AFC41
+
+Units:
+    bai_607_lcd_mtp4x4_buzzer_on_off (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_607_lcd_mtp4x4_buzzer_on_off.xsym
+    Errors:      bai_607_lcd_mtp4x4_buzzer_on_off.err
+    Ext Symbols: bai_607_lcd_mtp4x4_buzzer_on_off.esym
+    INHX32:      bai_607_lcd_mtp4x4_buzzer_on_off.hex
+    Symbols:     bai_607_lcd_mtp4x4_buzzer_on_off.sym
+    List:        bai_607_lcd_mtp4x4_buzzer_on_off.lst
+    Debug/COFF:  bai_607_lcd_mtp4x4_buzzer_on_off.cof
+    Project:     bai_607_lcd_mtp4x4_buzzer_on_off.ccspjt
+    Call Tree:   bai_607_lcd_mtp4x4_buzzer_on_off.tre
+    Statistics:  bai_607_lcd_mtp4x4_buzzer_on_off.STA

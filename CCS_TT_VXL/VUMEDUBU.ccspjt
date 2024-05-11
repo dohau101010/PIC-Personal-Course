@@ -1,0 +1,25 @@
+[PROJECT]
+Target=VUMEDUBU.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=VUMEDUBU.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[VUMEDUBU.c]
+Type=4
+[mru-list]
+1=VUMEDUBU.c
+[Opened Files]
+1=..\..\..\..\TT - VDK - 22-23\1 - PHAN MEM\TV_PICKIT2_SHIFT_1_OLD.c
+2=VUMEDUBU.c
+3=C:\Users\PC MY\Documents\Zalo Received Files\bai_412_dem_xung_t0_stop_run_32led.c
+4=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_518_MORONG.c
+5=C:\Users\PC MY\Documents\Zalo Received Files\bai_414_dem_xung_t0_stop_run_32led_gh.c
+6=
+7=..\THU VIEN PIC 18F4550\tv_kit_vdk_pic_all.c
+8=
+[Units]
+Count=1
+1=VUMEDUBU (main)

@@ -1,0 +1,31 @@
+#include "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\tv_kit_vdk_pic_all.c"
+void bai_314csan_don_trongra(usi16 dl)
+{
+   usi16 led1,led2,v1,v2,z1,z2;
+   usi16 i,k;
+   v1=0; z1=0; led1=0; v2=0; z2=0; led2=0;
+   for(k=0;k<16;k++)
+   {
+      v1=0x0001;
+      v2=0x8000;
+      for(i=k;i<16;i++)
+      {
+         led1=v1|z1;
+         led2=v2|z2;
+         xuat_32led_don_2word(led1,led2);
+         delay_ms(dl);
+         v1=v1<<1;
+         v2=v2>>1;
+      }
+      z1=led1;
+      z2=led2;
+   }
+}
+void main()
+{
+   set_up_port();
+   while(true)
+   {
+      bai_314csan_don_trongra(100);
+   }
+}

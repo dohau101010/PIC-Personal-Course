@@ -1,0 +1,70 @@
+#include "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\THU VIEN PIC 18F4550\tv_kit_vdk_pic_all.c"
+
+usi8 t0, t0_tam, g_han;
+unsigned int1 status, dir_counter;
+usi16 y;
+void b411_hienthi_4led7doan()
+{
+   md4l7d_giaima_2so_vitri_vn(t0, 3, 1);
+   md4l7d_giaima_2so_vitri_vn(g_han, 1, 1);
+   xuat_4led_7doan_4so();
+}
+
+void b411_dem_xung_ngoai_t0()
+{
+   if(t0!=t0_tam)
+    {
+      t0_tam=t0;
+      b411_hienthi_4led7doan();
+      if(dir_counter==0)
+      {
+         t0=get_timer0();
+         if(t0>g_han)
+         {
+            set_timer0(1);
+            t0=1;
+            buzzer_on_off(200);
+         }
+      }
+      else
+      {
+         t0=g_han-get_timer0();
+         if(t0<0)
+         {
+            set_timer0(0);
+            t0=0;
+            buzzer_on_off(200);
+         }
+      }
+    }
+}
+
+void main()
+{
+   set_up_port(); 
+   setup_timer_0(t0_ext_l_to_h|t0_div_1); 
+   set_timer0(0);
+   g_han=10;
+   t0_tam=1;
+   b411_hienthi_4led7doan();
+   while(true)
+   {
+     if(!input(on)==1)
+     {
+         setup_timer_0(t0_ext_l_to_h|t0_div_1);
+         xuat_32led_don_2word(0,0xff);
+     }
+     else if(!input(off)==1)
+     {
+      setup_timer_0(t0_off); 
+      xuat_32led_don_2word(0,0);
+     } 
+     else if(phim_bt2_c1(1,0))
+     {
+         dir_counter=!dir_counter;
+         set_timer0(g_han-get_timer0());
+     }
+     b411_dem_xung_ngoai_t0();
+
+   }
+}

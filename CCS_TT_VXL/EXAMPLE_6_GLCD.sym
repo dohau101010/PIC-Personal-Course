@@ -1,0 +1,353 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-009 system_var
+00A-00D delay
+00E-011 led32
+012-015 d7seg
+016-01D s7seg
+01E-01F inputcd.oldpin
+020-021 inputcd.t
+022     inputcd.step
+023-42A GLCD
+42B     glcd_text.x1
+42C     glcd_text.x2
+42D     glcd_text.y1
+42E     glcd_text.y2
+42F     dem
+430     glcd_spkt_logo_raw.x
+430     glcd_bar.x1
+430-431 glcd_text_setup.x
+430     s7seg_display.i
+430-431 glcd_triangle.x1
+430     @PRINTF_D0_961.P1
+430     glcd_circle.x
+430-431 inputcd.pin
+430     glcd_update.hesox
+430     glcd_clear.color
+430     @READBITA.P1
+430     @WRITEBITA.P2
+430     write_lcd20x4.lcd_signal
+430-433 atan2.y
+430-431 write_ledmatrix.mahang
+430     @PSTRINGC_961.@SCRATCH1
+431     glcd_update.hesox2
+431     @PRINTF_D0_961.P1
+431     @WRITEBITA.P2
+431     glcd_circle.y
+431     s7seg_display.n
+431-432 glcd_clear.d
+431     write_lcd20x4.lcd_ins_hthi
+431     glcd_bar.y1
+431-432 @READBITA.P1
+431     glcd_spkt_logo_raw.i
+431     @PSTRINGC_961.@SCRATCH2
+432     glcd_circle.radius
+432     glcd_update.hesoy
+432-433 write_ledmatrix.macot1
+432-433 glcd_text_setup.y
+432     glcd_spkt_logo_raw.j
+432-433 @WRITEBITA.P1
+432     glcd_bar.x2
+432-433 glcd_triangle.y1
+432     @delay_ms1.P1
+432     s7seg_display.@SCRATCH1
+432     @PRINTF_D0_961.@SCRATCH1
+433     glcd_circle.fill
+433-434 glcd_clear.doc
+433     glcd_update.doc
+433     glcd_bar.y2
+433     glcd_spkt_logo_raw.k
+433     @PRINTF_D0_961.@SCRATCH2
+434     glcd_spkt_logo_raw.y
+434     glcd_update.ngang
+434-435 glcd_triangle.x2
+434-437 atan2.x
+434     glcd_text_setup.size
+434     glcd_circle.color
+434-435 write_ledmatrix.macot2
+434     glcd_bar.width
+434     @PRINTF_D0_961.@SCRATCH3
+435     glcd_text_setup.color
+435     glcd_circle.xt1
+435-436 glcd_spkt_logo_raw.count
+435-436 glcd_clear.ngang
+435     glcd_bar.color
+435     glcd_update.@SCRATCH1
+435     @PRINTF_D0_961.@SCRATCH4
+436-437 glcd_triangle.y2
+436     glcd_circle.xt2
+436-437 write_ledmatrix.macot3
+436     glcd_text_setup.overlay
+436     glcd_bar.half_width
+436     glcd_text.t
+436     glcd_command.data
+436     @DIV88.P1
+436     glcd_update.@SCRATCH2
+437     glcd_text.j
+437     glcd_circle.yt1
+437     @DIV88.P1
+437-438 glcd_bar.dy
+437     glcd_clear.@SCRATCH1
+437     glcd_update.@SCRATCH3
+437     glcd_spkt_logo_raw.@SCRATCH1
+438-439 glcd_triangle.x3
+438     glcd_circle.yt2
+438     glcd_data.data
+438-43B atan2.z
+438     glcd_text.k
+438     write_ledmatrix.@SCRATCH1
+438     glcd_clear.@SCRATCH2
+438     glcd_spkt_logo_raw.@SCRATCH2
+438     @DIV88.@SCRATCH1
+439     glcd_circle.a
+439-43A glcd_bar.dx
+439     glcd_text.l
+439     write_glcd128x64.glcd_signal
+439     write_ledmatrix.@SCRATCH2
+439     glcd_clear.@SCRATCH3
+439     glcd_spkt_logo_raw.@SCRATCH3
+43A-43B glcd_triangle.y3
+43A     glcd_circle.b
+43A     write_glcd128x64.glcd_ins_hthi
+43A     glcd_text.m
+43A     glcd_clear.@SCRATCH4
+43A     glcd_spkt_logo_raw.@SCRATCH4
+43B     glcd_bar.addx
+43B     SSPI_WRITE.x
+43B     glcd_circle.p
+43B-43F glcd_text.pixelData
+43C     glcd_triangle.fill
+43C.0   atan2.sign
+43C     glcd_bar.addy
+43C     glcd_circle.@SCRATCH1
+43D     glcd_bar.j
+43D     @MUL88.P1
+43D     glcd_triangle.color
+43D     atan2.quad
+43D     glcd_circle.@SCRATCH2
+43E     @MUL88.P1
+43E-43F glcd_bar.p
+43E     glcd_triangle.xt1
+43E     glcd_circle.@SCRATCH3
+43F     glcd_triangle.xt2
+440     glcd_triangle.yt11
+440-441 glcd_bar.diff
+440     glcd_text.@SCRATCH1
+441     glcd_triangle.yt22
+441     glcd_text.@SCRATCH2
+442-443 glcd_bar.c1
+442-447 glcd_triangle.x
+442     glcd_text.@SCRATCH3
+443     glcd_rect.x1
+443     glcd_text.@SCRATCH4
+444-445 glcd_bar.c2
+444     glcd_rect.y1
+444     glcd_text.@SCRATCH5
+445     glcd_rect.x2
+446     glcd_bar.i
+446     glcd_rect.y2
+447     glcd_rect.fill
+447     glcd_bar.xt1
+448     glcd_bar.yt1
+448-44D glcd_triangle.y
+448     glcd_rect.color
+449     glcd_rect.xmin
+449     glcd_bar.xt2
+44A     glcd_rect.xmax
+44A     glcd_bar.yt2
+44B     glcd_rect.ymin
+44B-44C glcd_bar.temp
+44C     glcd_rect.ymax
+44D-44E glcd_bar.temp
+44D     glcd_rect.i
+44E-44F glcd_triangle.n
+44E     GLCD_HORIZONE_LINE.x1
+44F     GLCD_HORIZONE_LINE.x2
+44F     glcd_bar.@SCRATCH1
+450-451 glcd_triangle.yt1
+450     GLCD_HORIZONE_LINE.y
+450     glcd_bar.@SCRATCH2
+451     GLCD_HORIZONE_LINE.color
+452     GLCD_HORIZONE_LINE.doc
+452-453 glcd_triangle.yt2
+453     GLCD_HORIZONE_LINE.i
+454-455 glcd_triangle.yt
+454     GLCD_HORIZONE_LINE.right
+455     GLCD_HORIZONE_LINE.left
+456-457 glcd_triangle.dx1
+456     GLCD_HORIZONE_LINE.@SCRATCH1
+457     GLCD_HORIZONE_LINE.@SCRATCH2
+458-459 glcd_triangle.dx2
+458     GLCD_HORIZONE_LINE.@SCRATCH3
+459     GLCD_HORIZONE_LINE.@SCRATCH4
+45A-45B glcd_triangle.dx3
+45A     GLCD_HORIZONE_LINE.@SCRATCH5
+45B     GLCD_HORIZONE_LINE.@SCRATCH6
+45C-45D glcd_triangle.dy1
+45C     GLCD_HORIZONE_LINE.@SCRATCH7
+45D     GLCD_HORIZONE_LINE.@SCRATCH8
+45E-45F glcd_triangle.dy2
+45E     GLCD_HORIZONE_LINE.@SCRATCH9
+45F     GLCD_HORIZONE_LINE.@SCRATCH10
+460-461 glcd_triangle.dy3
+462-463 glcd_triangle.sh1
+464-465 glcd_triangle.sh2
+466-467 glcd_triangle.sh3
+468     glcd_line.x1
+468     GLCD_VERTICAL_LINE.x
+468     glcd_triangle.@SCRATCH1
+469     glcd_line.y1
+469     GLCD_VERTICAL_LINE.y1
+469     glcd_triangle.@SCRATCH2
+46A-46B @MULS1616.P1
+46A     glcd_line.x2
+46A-46B @DIVS1616.P1
+46A     GLCD_VERTICAL_LINE.y2
+46B     GLCD_VERTICAL_LINE.color
+46B     glcd_line.y2
+46C     glcd_line.color
+46C     GLCD_VERTICAL_LINE.i
+46C-46D @DIVS1616.P1
+46C-46D @MULS1616.P2
+46D-46E glcd_line.dy
+46E     @MULS1616.@SCRATCH1
+46E     @DIVS1616.@SCRATCH1
+46F-470 glcd_line.dx
+46F     @MULS1616.@SCRATCH2
+46F     @DIVS1616.@SCRATCH2
+471     glcd_line.addx
+472     glcd_line.addy
+473-474 glcd_line.p
+475-476 glcd_line.diff
+477     glcd_line.i
+478     glcd_line.xt1
+479     glcd_line.xt2
+47A     glcd_line.yt1
+47B     glcd_line.yt2
+47C     GLCD_UPDATE_COORDINATE.x1
+47C     GLCD_PIXEL_TEMP.x
+47C     glcd_line.@SCRATCH1
+47D     GLCD_PIXEL_TEMP.y
+47D     GLCD_UPDATE_COORDINATE.y1
+47E     GLCD_UPDATE_COORDINATE.x2
+47E     GLCD_PIXEL_TEMP.color
+47F     GLCD_UPDATE_COORDINATE.y2
+47F     GLCD_PIXEL_TEMP.b
+480     GLCD_PIXEL_TEMP.doc
+480     GLCD_UPDATE_COORDINATE.@SCRATCH1
+481     GLCD_PIXEL_TEMP.ngang
+482-483 @MUL1616.P1
+482     GLCD_PIXEL_TEMP.@SCRATCH1
+483     GLCD_PIXEL_TEMP.@SCRATCH2
+484-485 @MUL1616.P1
+486     @MUL1616.@SCRATCH1
+F83     PSP_DATA
+F84.0   SSCK
+F84.2   SSDO
+FA1.1   TIM3IF
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  GLCD_FONT.call
+000014  GLCD_FONT.data
+000114  GLCD_FONT2.call
+000124  GLCD_FONT2.data
+000200  GLCD_Logo_DHSPKTTP.call
+00020E  GLCD_Logo_DHSPKTTP.data
+00040E  @const1143.call
+000414  SSPI_WRITE
+00048A  private_write_buzzer_relay
+0004A6  led32_display
+0004CE  d7seg_display
+0004F6  @delay_ms1
+00051E  s7seg_display
+000588  private_write_glcd_lcd
+0005AE  write_lcd20x4
+0005C8  write_glcd128x64
+0005E0  write_ledmatrix
+000648  system_init
+0006C2  glcd_command
+0006F0  glcd_clear
+000794  @MUL1616
+0007B6  glcd_data
+0007E2  glcd_update
+00092C  glcd_setup
+000974  GLCD_UPDATE_COORDINATE
+0009BE  GLCD_PIXEL_TEMP
+000ACC  glcd_spkt_logo_raw
+000B80  GLCD_HORIZONE_LINE
+0011B6  @MUL88
+001204  glcd_circle
+001452  GLCD_VERTICAL_LINE
+00147E  glcd_rect
+001544  @MULS1616
+001598  @DIVS1616
+001610  glcd_line
+001786  glcd_triangle
+001C7C  glcd_bar
+001F98  glcd_text_setup
+001FBC  glcd_text
+00216E  @PSTRINGC_961
+002190  @DIV88
+0021BC  @PRINTF_D0_961
+00227A  MAIN
+00227A  @cinit1
+0022A6  @cinit2
+
+Project Directory:
+    E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\
+
+Project Files:
+    EXAMPLE_6_GLCD.c                                        [22-Jun-23 15:03  CRC=F04D85A4]
+    C:\Program Files (x86)\PICC\Drivers\tv_boards.c         [26-Mar-23 12:28  CRC=E3A2BD05]
+    C:\Program Files (x86)\PICC\Drivers\TV_D501_TH.C        [25-Aug-22 14:04  CRC=1FD863A8]
+    C:\Program Files (x86)\PICC\Drivers\TV_D501_TH.h        [25-Aug-22 14:02  CRC=79282120]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    C:\Program Files (x86)\PICC\Drivers\TV_LOWLEVER.C       [01-Mar-23 10:03  CRC=748DE935]
+    C:\Program Files (x86)\PICC\Drivers\TV_LOWLEVER.H       [19-Nov-22 07:33  CRC=D872A938]
+    C:\Program Files (x86)\PICC\Drivers\tv_glcd.c           [16-Aug-22 16:39  CRC=2D7A6F47]
+    C:\Program Files (x86)\PICC\Drivers\tv_glcd.h           [16-Aug-22 16:40  CRC=4D9B7E4A]
+
+Source signature=2A3EBACA
+
+Units:
+    EXAMPLE_6_GLCD (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   EXAMPLE_6_GLCD.xsym
+    Errors:      EXAMPLE_6_GLCD.err
+    Ext Symbols: EXAMPLE_6_GLCD.esym
+    INHX32:      EXAMPLE_6_GLCD.hex
+    Symbols:     EXAMPLE_6_GLCD.sym
+    List:        EXAMPLE_6_GLCD.lst
+    Debug/COFF:  EXAMPLE_6_GLCD.cof
+    Project:     EXAMPLE_6_GLCD.ccspjt
+    Call Tree:   EXAMPLE_6_GLCD.tre
+    Statistics:  EXAMPLE_6_GLCD.STA

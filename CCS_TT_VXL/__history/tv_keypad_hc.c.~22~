@@ -1,0 +1,61 @@
+typedef struct
+{
+ unsigned int8 key;
+}KEY4x4_STRUCT;
+KEY4x4_STRUCT key4x4;
+unsigned int8 KEYREAD()
+{
+ unsigned int8 cot;
+ for(cot=0;cot<4;cot++)
+ {
+ output_bit(pin_b7,cot&0x02); // Xu?t mã quét c?t ra IC74138
+ output_bit(pin_b6,cot&0x01); // Xu?t mã quét c?t ra IC74138
+ IF (!INPUT(PIN_B2)) return (3 + cot*4);
+ ELSE IF (!INPUT(PIN_B3)) return (2 + cot*4);
+ ELSE IF (!INPUT(PIN_B4)) return (1 + cot*4); 
+ ELSE IF (!INPUT(PIN_B5)) return (0 + cot*4);
+ }
+ return 0xff;
+}
+int8 key4x4_read()
+{ 
+ static unsigned int8 step=0;
+ static unsigned int16 t;
+ key4x4.key = KEYREAD();
+ switch (step)
+ { 
+
+ case 0: 
+ if( key4x4.key!=0xff)
+ { t = delay_start();
+ step=1;
+ }
+ break;
+ case 1:
+ if(key4x4.key==0xff)step =0;
+ else if(delay_stop(t)>=30)
+ { step = 2;
+ t = delay_start();
+ return 0;
+ }
+break;
+ case 2:
+ if(key4x4.key==0xff)step =0;
+ else if(delay_stop(t)>=500)
+ {
+ t = delay_start();
+ step = 3;
+ }
+ break;
+ case 3:
+ if(key4x4.key==0xff)step =0;
+ else if(delay_stop(t)>=100)
+ {
+ t = delay_start();
+ return 0;
+ }
+ break;
+ }
+ return 2;
+}
+

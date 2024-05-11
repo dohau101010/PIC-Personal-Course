@@ -1,0 +1,36 @@
+[PROJECT]
+Target=dem_len_xuong_t0.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=dem_len_xuong_t0.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[dem_len_xuong_t0.c]
+Type=4
+[mru-list]
+1=dem_len_xuong_t0.c
+[Opened Files]
+1=thi_vxl_t6.c
+2=tv_kit_vdk_pic_all.c
+3=tv_05_i2c_ds13_pcf.c
+4=bai_tong_hop.c
+5=Bai_test_1.c
+6=bai_tong_hop_2.c
+7=bai_tong_hop_1.c
+8=bai_tong_hop_tv.c
+9=CaoNgocDuy_19151211.c
+10=bai_706_lcd_gp2d12_do_kcach.c
+11=bai_633_glcd_dong_ho_gio_phut_giay.c
+12=bai_624_glcd_bitmap_spkt.c
+13=bai_413_dem_xung_t0_stop_run_ud_32led.c
+14=bai_413_dem_xung_t0_stop_run_ud_32led_thay_PHU.c
+15=dem_len_xuong_t0.c
+16=bai_415_dem_xung_t0_stop_run_32led_gh_mtp4x4.c
+17=bai_622_glcd_dem_sp_t0_run_UD.c
+18=bai_622_t0_tv.c
+19=
+[Units]
+Count=1
+1=dem_len_xuong_t0 (main)

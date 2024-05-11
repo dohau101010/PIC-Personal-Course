@@ -1,0 +1,43 @@
+ÀÄdc_motor
+   ÀÄMAIN  0/220  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄdc_motor_enable  0/8  Ram=0
+      ³  ÀÄxuat_buzzer_relay  0/32  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄphim_bt0_c2  0/68  Ram=3
+      ³  ÀÄ@delay_us1  0/26  Ram=1
+      ÃÄquay_thuan_tang_toc  0/52  Ram=0
+      ³  ÃÄdc_motor_ktao_ccpx  0/12  Ram=0
+      ³  ³  ÃÄdc_motor_ktao_ccp1_thuan  0/24  Ram=0
+      ³  ³  ÀÄdc_motor_ktao_ccp2_nghich  0/20  Ram=0
+      ³  ÃÄ@MUL1616  0/30  Ram=5
+      ³  ÀÄdc_motor_set_pwmx_duty  0/84  Ram=0
+      ÃÄphim_bt2_c2  0/68  Ram=3
+      ³  ÀÄ@delay_us1  0/26  Ram=1
+      ÃÄdong_co_giam_toc  0/52  Ram=0
+      ³  ÃÄdc_motor_ktao_ccpx  0/12  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÃÄ@MUL1616  0/30  Ram=5
+      ³  ÀÄdc_motor_set_pwmx_duty  0/84  Ram=0
+      ÀÄmotor_dc_stop  0/18  Ram=0
+         ÃÄdc_motor_set_pwmx_duty  0/84  Ram=0
+         ÀÄdc_motor_pwm_ccp1_ccp2_stop  0/18  Ram=0
+            ÃÄdc_motor_ktao_ccpx  0/12  Ram=0
+            ³  ÀÄ*
+            ÀÄdc_motor_set_pwmx_duty  0/84  Ram=0

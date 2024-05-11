@@ -1,0 +1,33 @@
+[PROJECT]
+Target=bai_315_32led_1dsp_mp.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_315_32led_1dsp_mp.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_315_32led_1dsp_mp.c]
+Type=4
+[mru-list]
+1=bai_315_32led_1dsp_mp.c
+[Opened Files]
+1=bai_311_32led_sd_pst.c
+2=bai_313_32led_sd_tnv.c
+3=bai_315_32led_1dsp_mp.c
+4=
+5=bai_306_32led_std_tnv.c
+6=bai_307_32led_std_ttr.c
+7=bai_309_32led_std_tsp.c
+8=bai_310_32led_tong_hop.c
+9=bai_308_32led_std_pst.c
+10=bai_311_32led_sd_pst.c
+11=bai_312_32led_sd_tsp.c
+12=bai_313_32led_sd_tnv.c
+13=bai_314_32led_sd_ttr.c
+14=bai_315_32led_1dsp_mp.c
+15=..\..\..\VDK_VXL\SANG DON 8LED.C
+16=
+[Units]
+Count=1
+1=bai_315_32led_1dsp_mp (main)

@@ -1,0 +1,20 @@
+[PROJECT]
+Target=bai_610_lcd_4led_dem_sp_t0_matrix_key.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_610_lcd_4led_dem_sp_t0_matrix_key.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_610_lcd_4led_dem_sp_t0_matrix_key.c]
+Type=4
+[mru-list]
+1=bai_610_lcd_4led_dem_sp_t0_matrix_key.c
+[Opened Files]
+1=..\..\..\..\TTVXL\TTVXL\THU VIEN 18F6722\TAO LOGO.c
+2=bai_610_lcd_4led_dem_sp_t0_matrix_key.c
+3=
+[Units]
+Count=1
+1=bai_610_lcd_4led_dem_sp_t0_matrix_key (main)

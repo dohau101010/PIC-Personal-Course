@@ -1,0 +1,12 @@
+#include "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\THU VIEN PIC 18F4550\tv_kit_vdk_pic_all.c"
+
+void main()
+{
+   set_up_port(); 
+   buzzer_on();
+   while(true)
+   {
+     
+
+   }
+}

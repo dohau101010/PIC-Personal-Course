@@ -1,0 +1,45 @@
+#include <tv_kit_vdk_pic_all.c>
+
+unsigned INT8 t0, t0_tam,g_han;
+void hienthi_8led7doanquet()
+{
+   md8l7d_gma_2so_vitri_vn (t0, 0, cx_vn) ;
+   md8l7d_gma_2so_vitri_vn (g_han, 2, cx_vn);
+   hien_thi_8led_7doan_quet();
+}
+void tatled()
+{
+   dl_8l7dq[0]=0xff;
+   dl_8l7dq[0]=0xff;
+   hien_thi_8led_7doan_quet();
+}
+void b511_dem_sp_t0()
+{
+   t0 = get_timer0 ();
+
+   IF (t0_tam != t0)
+   {
+      t0_tam = t0;
+      b511_hienthi_8led7doanquet();
+
+      IF (t0 >= g_han)
+      {
+         set_timer0 (0) ;
+         buzzer_on_off (300);
+      }
+   }
+}
+
+void main()
+{
+   set_up_port();
+   setup_timer_0(t0_ext_l_to_h|t0_div_1);
+   set_timer0(0); t0_tam=1; g_han=50;
+   //b511_hienthi_8led7doanquet();
+   while(true)
+   {
+      b511_hienthi_8led7doanquet();
+      b511_dem_sp_t0();
+   }
+}
+

@@ -1,0 +1,58 @@
+#define hstd 20 //he so toc do
+unsigned int16 pwm_tdo=0;
+signed int8 i;
+
+int1 tt_onoff=0;
+usi16 lt=0, lp=0;
+
+void hienthi()
+{
+    md4l7d_giaima_2so_vitri_vn(pwm_tdo,1,0);
+    dl_4l7d[1]=dl_4l7d[1]-128;
+    md4l7d_giaima_2so_vitri_vn(pwm_duty,3,0);
+    xuat_4led_7doan_4so();
+}
+
+
+void phim_up()
+{
+   if(phim_up_c2(10)&&(pwm_tdo<50))
+   {
+      pwm_tdo++;
+      pwm_duty=pwm_tdo*hstd;
+      set_pwm1_duty(pwm_duty);
+      hienthi();   tt_onoff=1;
+      lt=0xff; lp=0xff;
+      xuat_32led_don_2word(lt,lp);
+   }
+}
+
+void phim_dw()
+{
+   if(phim_dw_c2(10)&&(pwm_tdo>0))
+   {
+      pwm_tdo--;
+      pwm_duty=pwm_tdo*hstd;
+      set_pwm1_duty(pwm_duty);
+      hienthi();  
+      if(pwm_duty==0)
+      {
+         lt=0; lp=0;
+         xuat_32led_don_2word(lt,lp);
+      }
+   }
+}
+
+void phim_stop()
+{
+   if(!input(stop)&&(tt_onoff))
+   {
+      tt_onoff=0;
+      pwm_tdo=0;
+      pwm_duty=pwm_tdo*hstd;
+      set_pwm1_duty(pwm_duty);
+      lt=0; lp=0;
+      xuat_32led_don_2word(lt,lp);
+      hienthi();
+   }
+}

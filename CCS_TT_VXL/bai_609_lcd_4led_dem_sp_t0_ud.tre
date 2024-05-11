@@ -1,0 +1,107 @@
+ÀÄbai_609_lcd_4led_dem_sp_t0_ud
+   ÀÄMAIN  0/262  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ÀÄxuat_32led_don_4byte  0/36  Ram=4
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄlcd_setup  0/72  Ram=0
+      ³  ÃÄlcd_command  0/10  Ram=1
+      ³  ³  ÀÄlcd_xuat  0/38  Ram=1
+      ³  ³     ÃÄxuat_lcd  0/16  Ram=2
+      ³  ³     ³  ÀÄxuat_glcd_lcd  0/36  Ram=0
+      ³  ³     ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ³     ÀÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÀÄxuat_lcd  0/16  Ram=2
+      ³  ³        ÀÄ*
+      ³  ÃÄlcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄlcd_command  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄlcd_goto_xy  0/26  Ram=3
+      ³  ÃÄ@const986  0/20  Ram=0
+      ³  ÀÄlcd_command  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄ@PSTRINGC_977  0/32  Ram=2
+      ³  ÀÄlcd_data  0/10  Ram=1
+      ³     ÀÄlcd_xuat  0/38  Ram=1
+      ³        ÀÄ*
+      ÃÄlcd_goto_xy  0/26  Ram=3
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_977  0/32  Ram=2
+      ³  ÀÄ*
+      ÃÄb609_dem_sp_t0  0/38  Ram=0
+      ³  ÃÄb609_hienthi_4led7doan  0/32  Ram=0
+      ³  ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/142  Ram=6
+      ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ³  ÀÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/142  Ram=6
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄxuat_4led_7doan_4so  0/36  Ram=0
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÀÄxuat_1byte  0/38  Ram=2
+      ³  ÀÄbuzzer_on_off  0/36  Ram=3
+      ³     ÃÄxuat_buzzer_relay  0/30  Ram=2
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÀÄxuat_buzzer_relay  0/30  Ram=2
+      ³        ÀÄ*
+      ÃÄlcd_hienthi_gt_cai  0/62  Ram=1
+      ³  ÃÄlcd_goto_xy  0/26  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄlcd_data  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÀÄlcd_data  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄlcd_hienthi_gt_dem  0/64  Ram=1
+      ³  ÃÄlcd_goto_xy  0/26  Ram=3
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÃÄlcd_data  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ÀÄlcd_data  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄphim_bt0_c2  0/68  Ram=3
+      ³  ÀÄ@delay_us1  0/26  Ram=1
+      ÃÄb609_dem_sp_t0  0/38  Ram=0
+      ³  ÀÄ*
+      ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ÀÄ*
+      ÃÄphim_bt1_c2  0/68  Ram=3
+      ³  ÀÄ@delay_us1  0/26  Ram=1
+      ÀÄxuat_32led_don_2word  0/36  Ram=8
+         ÀÄ*

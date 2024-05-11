@@ -1,0 +1,63 @@
+#include "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\THU VIEN PIC 18F4550\tv_kit_vdk_pic_all.c"
+
+unsigned int8 mp;
+signed int8 i;
+unsigned int8 status;
+
+unsigned int8 m_4led[8] = {0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,0x7f};
+
+void hienthi_4led7doan()
+{
+   for(i=0;i<4;i++)
+   dl_4l7d[i]=m_4led[i+4];
+   xuat_4led_7doan_4so();
+}
+
+void xoamang()
+{
+   for(i=0;i<7;i++)
+   m_4led[i]=0xff;
+   m_4led[7]= 0x7f;
+}
+void b402_dich_ma_phim()
+{
+    mp = key_4x4_dw();
+      if((mp != 0xff)&&(mp<10))
+      {
+         for(i=0;i<7;i++)
+         m_4led[i]=m_4led[i+1];
+         m_4led[7]=ma7doan[mp];
+         if(status<4) status++;
+         hienthi_4led7doan();
+      }
+      else if(mp==12)
+      {
+         if(status>0)
+         {
+            for(i=7;i>0;i--)
+            m_4led[i]=m_4led[i-1];
+            m_4led[0]=0xff;
+            hienthi_4led7doan();
+            status--;
+         }
+
+      }
+      else if(mp==11)
+      {
+         status=0;
+         for(i=0;i<7;i++)
+         m_4led[i]=0xff;
+         m_4led[7]= 0x7f;
+         hienthi_4led7doan();
+      }
+}
+void main()                                                        
+{                                               
+   set_up_port(); 
+   status =0;
+   hienthi_4led7doan();
+   while(true)                                        
+   {                                                                   
+      b402_dich_ma_phim();
+   }      
+}

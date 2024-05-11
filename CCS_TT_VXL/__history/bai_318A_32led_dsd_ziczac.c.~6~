@@ -1,0 +1,47 @@
+#include <tv_kit_vdk_pic_all.c>
+
+// 1 diem sang don dich Zic Zac tu ngoai vao 
+void b317B_32led_1dsdon_ziczac(usi16 dl)
+{
+  usi32 u = 0;
+  usi32 v = 0x00000001;
+  usi32 led;
+  usi8 k, i, n;
+  xuat_32led_don_1dw(0);   delay_ms(dl); 
+  for(k=32;k>0;k--)
+   {
+      if(k==32)
+      {
+          //xuat_32led_don_1dw(0);   delay_ms(dl);  
+          xuat_32led_don_1dw(1);   delay_ms(dl);  
+      }
+      //u=u|v;
+      for(n=k-1;n>0;n--)
+      {
+          v = v<<1;
+          led = u|v;
+          xuat_32led_don_1dw(led);     delay_ms(dl);
+      }
+      k--;
+      //u = u|v;
+      for(i=k-1;i>0;i--)
+      {
+          v = v>>1;
+          led = u|v;
+          xuat_32led_don_1dw(led);     delay_ms(dl);
+      }
+      //u = u|v;
+      //k--;
+   }
+}
+
+//=============================================//
+//======= Chuong Trinh Chinh ======//
+void main()                                                        
+{                                               
+   set_up_port();                                                                       
+   while(true)                                        
+   {     
+      b317B_32led_1dsdon_ziczac(150);
+   }      
+} 

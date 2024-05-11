@@ -1,0 +1,176 @@
+
+ROM used:   13624/32768 (42%)
+            13624/32768 (42%) including unused fragments
+
+            1.9 Average locations per line
+            8.1 Average locations per statement
+
+RAM used:   1196/2048 (58%) at main() level
+            1276/2048 (62%) worst case
+
+Stack used: 9 worst case (9 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  126    72   4  Bai_test_1.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   3  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   5  tv_01_4_nutnhan.c
+   98    63   4  tv_02_matran_phim4x4_138.c
+ 2229   257  15  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   3  tv_04_4led_7doan.c
+  112    48   3  tv_05_8led_7doan_quet.c
+  137    45   3  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  435   206  12  tv_06_lcd.c
+   76    35   2  tv_dht11.c
+  123    37   2  tv_08_relay_triac_buzzer_dc.c
+  419    72   4  tv_07_adc_cb.c
+   90    39   2  tv_07_ds18b20.c
+  230    54   3  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   60    20   1  tv_09_matran_led_mbi.c
+  357   100   6  tv_06_glcd.c
+  540   163  10  C:\Program Files (x86)\PICC\Drivers\graphics.c
+  138    79   5  glcd_dong_ho_kim_gio_phut_giay_tv.c
+   37    17   1  ds18b20_do_ndo_lcd_tv.c
+   36    15   1  do_nhiet_do_lm35_tv.c
+   82    33   2  tv_08_dc_motor.c
+   64    29   2  tv_08_step_motor.c
+  102    65   4  motor_on_off_tn_theo_giay_tv.c
+----- -----
+ 7027  1684 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   0    1             @delay_ms1
+0     32   0    1             @delay_us1
+0    106   0    3             @I2C_READ_1
+0    118   0    1             @I2C_WRITE_1
+0     32   0    0             @const667
+0     42   0    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0    112   0    0   396  1.4  xoa_tat_6module
+0     58   0    0   253  2.3  set_up_port
+0    124   0   10             @FLT
+0     60   0    4             @SFTOI
+0     54   0    2             @ITOF
+0    246   1   11             @MULFF
+0    632   2   16             @ADDFF
+0    350   1   14             @DIVFF
+0     80   0    2             @SITOF
+0    904   3   46  1146  9.9  cos
+0     76   0    8    44  1.9  sin
+0     44   0    0   152  1.8  xuat_4led_7doan_4so
+0    164   1    6   305  5.1  md4l7d_giaima_2so_vitri_vn
+0     44   0    3             @DIV88
+0     70   0    5             @DIV1616
+0    168   1    3   262  4.6  ds1307_cap_nhat_time
+0    190   1    4   280  4.0  ds1307_doc_time
+0     30   0    0    89  1.5  ds1307_kiem_tra_ma
+0     34   0    0   152  1.8  xuat_glcd_lcd
+0     20   0    2   104  3.0  xuat_lcd
+0     20   0    2   104  3.0  xuat_glcd
+0     38   0    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     92   0    0   297  2.3  lcd_setup
+0     20   0    0             @const986
+0     34   0    3   145  3.9  lcd_goto_xy
+0     76   0    0             @const992
+0     80   0    0             @const996
+0     60   0    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0    112   0    6   280  5.8  lcd_hien_thi_so_to
+0     78   0    2             @MUL88
+0     64   0    4   241  5.3  lcd_xoa_so_to
+0    144   1   11   366  5.3  lcd_gm_ht_2so_nho_xvn
+0    154   1    9   419  5.9  lcd_gm_ht_2so_to_xvn
+0      2   0    0             @const1100
+0     32   0    2             @PSTRINGC_977
+0    190   1    6   239  3.2  lcd_hien_thi_3so_tp_nho
+0      2   0    0             @const1106
+0      2   0    0             @const1111
+0     10   0    0             @const1121
+0     22   0    0             @const1123
+0     34   0    2   158  2.7  xuat_buzzer_relay
+0    246   1    4   127  3.1  float_to_ng_2so_tp
+0     64   0    1   176  2.3  touch_read_bit
+0     42   0    2   149  4.3  touch_read_byte
+0    116   0    1   450  3.3  touch_write_bit
+0     54   0    3   185  5.6  touch_write_byte
+0     90   0    2   260  3.2  touch_present
+0     28   0    0    43  1.3  ds18b20_no_ds18b
+0     12   0    0             @const1182
+0     78   0    4   260  2.9  ds18b20_read_temp
+0     38   0    1   123  2.2  glcd_xuat_db
+0     10   0    1    43  1.5  glcd_command
+0     12   0    1    43  1.5  glcd_data
+0     88   0    1   285  1.9  setup_glcd
+0    122   0    7   338  5.1  glcd_mau_nen
+0     34   0    5    48  1.1  @MUL1616
+0    268   1    6   510  8.0  glcd_pixel
+0    238   1    3   447  5.2  gdram_vdk_to_gdram_glcd_all
+0    272   1    0   125  3.4  @const1307
+0    236   1    0   125  3.4  @const1311
+0    310   1   17  1519  9.2  glcd_line
+0     84   0    6    43  1.5  @MULS1616
+0    532   2   12  1846  8.8  glcd_circle
+0    442   2   20  1601 11.1  glcd_text57
+0    472   2   20  2005  4.0  glcd_ve_cac_vong_tron_so
+0    580   2    7   438  5.6  tinh_vi_tri_kim_giay
+0    582   2    7   438  5.6  tinh_vi_tri_kim_phut
+0    584   2    7   438  5.6  tinh_vi_tri_kim_gio
+0    196   1    4   569  2.5  glcd_ve_kim_giay
+0     76   0    4   221  2.4  glcd_ve_kim_phut
+0    102   0    4   295  2.4  glcd_ve_kim_gio
+0     28   0    0  2563 10.9  @const1429
+0    476   2    1  1030  3.4  glcd_dong_ho_so
+0     64   0    4   185  4.1  ds18b20_a_ht_lcd
+0     72   0    0   167  3.9  ds18b20_a_doc_xuly_hthi
+0     94   0    5   114  2.2  adc_lm35a_doc_xuly
+0     84   0    2   104  3.3  hthi_lcd_thi
+0      8   0    0    29  1.2  dc_motor_enable
+0     12   0    0    32  1.0  dc_motor_stop
+0     24   0    0    48  1.1  dc_motor_ktao_ccp1_thuan
+0     20   0    0    48  1.1  dc_motor_ktao_ccp2_nghich
+0     12   0    0    38  1.9  dc_motor_ktao_ccpx
+0     84   0    0    48  2.1  dc_motor_set_pwmx_duty
+0     22   0    0    76  1.6  dc_motor_pwm_ccp1_ccp2_stop
+0     56   0    0   125  3.4  step_motor_quay_thuan_fs
+0     56   0    0   125  3.4  step_motor_quay_nghich_fs
+0     14   0    0    38  1.9  step_motor_run_tn_fs
+0     60   0    1   160  2.9  ht_on_off
+0      4   0    0  1195  5.4  @const1486
+0      4   0    0  2884  9.4  @const1487
+0     32   0    0    43  1.3  ht_quay_thuan
+0      6   0    0   221  4.9  @const1489
+0     32   0    0    43  1.3  ht_quay_nghich
+0      6   0    0   250  5.0  @const1491
+0    216   1    3  1119  6.3  dkdc_theo_giay
+0      6   0    0   181  3.1  @const1494
+0    112   0    4   322  3.7  lcd_ht_sv_to_sb
+0    870   3    1  2951  8.4  MAIN
+ Inline         0  2853  9.9  @cinit1
+
+Program metrics:
+    Functions               83
+    Statements              1684
+    Comments                1817
+    Volume (V)              69664
+    Difficulty (D)          325.9
+    Effort to implement (E) 22705175
+    Time to implement (T)   350 hours, 23 minutes
+    Est Delivered Bugs (B)  27
+    Cyclomatic Complexity   116
+    Maintainability (MI)    128
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  13620  19144  
+
+
+

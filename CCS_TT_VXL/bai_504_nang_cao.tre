@@ -1,0 +1,39 @@
+ÀÄbai_504_nang_cao
+   ÀÄMAIN  0/332  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄcopy_8byte_hthi  0/58  Ram=4
+      ³  ÀÄ@const1199  0/46  Ram=0
+      ÃÄhien_thi_8led_7doan_quet  0/52  Ram=2
+      ³  ÃÄxuat_8led_7doan_quet  0/50  Ram=3
+      ³  ³  ÃÄ@const907  0/26  Ram=0
+      ³  ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄtat_8led_7doan_quet  0/12  Ram=0
+      ³     ÀÄxuat_8led_7doan_quet  0/50  Ram=3
+      ³        ÀÄ*
+      ÃÄhien_thi_8led_7doan_quet  0/52  Ram=2
+      ³  ÀÄ*
+      ÃÄ@delay_ms1  0/38  Ram=1
+      ÃÄcopy_8byte_hthi  0/58  Ram=4
+      ³  ÀÄ*
+      ÃÄhien_thi_8led_7doan_quet  0/52  Ram=2
+      ³  ÀÄ*
+      ÃÄhien_thi_8led_7doan_quet  0/52  Ram=2
+      ³  ÀÄ*
+      ÀÄ@delay_ms1  0/38  Ram=1

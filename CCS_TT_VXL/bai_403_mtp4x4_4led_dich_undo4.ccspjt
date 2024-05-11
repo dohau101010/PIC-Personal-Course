@@ -1,0 +1,34 @@
+[PROJECT]
+Target=bai_403_mtp4x4_4led_dich_undo4.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_403_mtp4x4_4led_dich_undo4.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_403_mtp4x4_4led_dich_undo4.c]
+Type=4
+[mru-list]
+1=bai_403_mtp4x4_4led_dich_undo4.c
+[Opened Files]
+1=bai_322_on_off_inv_8led.c
+2=tv_kit_vdk_pic_all.c
+3=tv_00_define_18f4550.c
+4=bai_403_mtp4x4_4led_dich_undo4.c
+5=..\..\..\..\TTVXL\TTVXL\THU VIEN 18F6722\TAO LOGO.c
+6=
+7=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\EXAMPLE_6_LCD.c
+8=bai_403_mtp4x4_4led_dich_undo4.c
+9=
+10=bai_403_mtp4x4_4led_dich_undo4.c
+11=
+12=bai_711_ds18b20_lcd_7doan_den_buz.c
+13=bai_802_step_motor_on_off_inv_hthi_sb.c
+14=bai_801_step_motor_tv.c
+15=bai_806_step_motor_cai_sovong_mtp4x4_tn_hs.c
+16=bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.c
+17=
+[Units]
+Count=1
+1=bai_403_mtp4x4_4led_dich_undo4 (main)

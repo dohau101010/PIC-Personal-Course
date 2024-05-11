@@ -1,0 +1,88 @@
+
+ROM used:   2108/32768 (6%)
+            2108/32768 (6%) including unused fragments
+
+            0.3 Average locations per line
+            1.6 Average locations per statement
+
+RAM used:   1107/2048 (54%) at main() level
+            1128/2048 (55%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   18     9   1  bai_624_glcd_bitmap_spkt.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  tv_01_4_nutnhan.c
+   94    64   5  tv_02_matran_phim4x4_138.c
+ 2229   257  20  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   4  tv_05_8led_7doan_quet.c
+  137    45   3  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  435   206  16  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  419    72   6  tv_07_adc_cb.c
+  106    48   4  tv_07_ds18b20.c
+  230    54   4  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   64    29   2  tv_08_step_motor.c
+   82    33   3  tv_08_dc_motor.c
+   60    20   2  tv_09_matran_led_mbi.c
+  392   100   8  tv_06_glcd.c
+----- -----
+ 6113  1292 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   1    1             @delay_ms1
+0     42   1    2   239  4.3  xuat_1byte
+0     22   1    4   131  2.8  xuat_1word
+0    112   3    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     36   1    0   152  1.8  xuat_glcd_lcd
+0     20   0    2   104  3.0  xuat_glcd
+0      2   0    0             @const1097
+0      2   0    0             @const1103
+0      2   0    0             @const1108
+0     10   0    0             @const1118
+0     22   1    0             @const1120
+0     12   0    0             @const1184
+0     38   1    1   123  2.2  glcd_xuat_db
+0     10   0    1    43  1.5  glcd_command
+0     10   0    1    43  1.5  glcd_data
+0     88   2    1   285  1.9  setup_glcd
+0    124   3    7   338  5.1  glcd_mau_nen
+0     34   1    5             @MUL1616
+0    270   6    6   510  8.0  glcd_pixel
+0    230   5    3   447  5.2  gdram_vdk_to_gdram_glcd_all
+0    526  12    0             @const1300
+0    146   3   13   574  8.0  glcd_xuat_anh
+0    248   6    0   172  2.2  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               15
+    Statements              1292
+    Comments                1568
+    Volume (V)              6546
+    Difficulty (D)          50.0
+    Effort to implement (E) 327588
+    Time to implement (T)   5 hours, 3 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   12
+    Maintainability (MI)    60
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  2104  30660  
+
+
+

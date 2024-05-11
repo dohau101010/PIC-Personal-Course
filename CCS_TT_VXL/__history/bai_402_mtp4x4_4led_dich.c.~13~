@@ -1,0 +1,17 @@
+#include <tv_kit_vdk_pic_all.c>
+unsigned int8 mp;
+signed int8 i;
+ 
+void main() 
+{ 
+   set_up_port(); 
+  
+   while(true) 
+   { 
+   dl_4l7d[3]=0XA4; 
+   dl_4l7d[2]=0x90;
+   dl_4l7d[1]=0x80;
+   xuat_4led_7doan_4so();
+     
+   }
+}

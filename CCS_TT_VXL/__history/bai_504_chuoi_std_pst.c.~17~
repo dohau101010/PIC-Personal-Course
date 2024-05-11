@@ -1,0 +1,31 @@
+#include <tv_kit_vdk_pic_all.c>
+const unsigned int8 ma_7doan[24]={0xFF,0XFF,0XFF,0XFF,0xFF,0XFF,0XFF,0XFF,0xFF,0XFF,0XFF,0XFF
+                                 ,0xC6,0X88,0X8E,0X86,0XC6,0XC0,0XC6,0X88,0XC6,0XC0,0XC7,0X88};
+usi8 i;
+
+void lay_ma()
+{
+   for(i=0;i<12;i++)
+   {
+      dl_8l7dq[7-i]=ma_7doan[i+12];
+   }
+}
+
+void lay_ma2()
+{
+   for(i=0;i<24;i++)
+   {
+      ma_7doan[i+1]=ma_7doan[i];
+   }
+}
+void main()
+{
+   set_up_port();
+   
+   while(true)
+   {
+      lay_ma();
+      lay_ma2();
+      hien_thi_8led_7doan_quet();
+   }
+}

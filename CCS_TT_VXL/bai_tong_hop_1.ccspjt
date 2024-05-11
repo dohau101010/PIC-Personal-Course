@@ -1,0 +1,49 @@
+[PROJECT]
+Target=bai_tong_hop_1.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_tong_hop_1.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_tong_hop_1.c]
+Type=4
+[mru-list]
+1=bai_tong_hop_1.c
+[Opened Files]
+1=thi_vxl_t6.c
+2=CaoNgocDuy_19151211.c
+3=bai_tong_hop.c
+4=bai_tong_hop_1.c
+5=bai_tong_hop_2.c
+6=bai_tong_hop_tv.c
+7=desangCN.c
+8=dem_sp_ud_mtp.c
+9=bai_624_glcd_bitmap_spkt.c
+10=tv_06_glcd.c
+11=bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+12=tv_kit_vdk_pic_all.c
+13=tv_05_i2c_ds13_pcf.c
+14=
+15=bai_818_dc_motor_tv.c
+16=bai_815_dc_motor_tv.c
+17=bai_815_dc_motor_pwm_ccp1_up_dw_stop.c
+18=dc_motor.c
+19=bai_tong_hop_2.c
+20=tv_02_matran_phim4x4_138.c
+21=bai_633_glcd_dong_ho_gio_phut_giay.c
+22=tv_05_i2c_ds13_pcf.c
+23=thi_vxl_t6.c
+24=bai_603_lcd_hang0_dich_trai_phai_3btn.c
+25=bai_607_lcd_mtp4x4_buzzer_on_off.c
+26=bai_711_ds18a_tv.c
+27=bai_616_ds1307_3key_tv.c
+28=bai_616_clock_ds1307_lcd_tv.c
+29=bai_414_dem_xung_t0_stop_run_32led_gh.c
+30=bai_608_lcd_4led_dem_sp_t0.c
+31=tv_kit_vdk_pic_all.c
+32=
+[Units]
+Count=1
+1=bai_tong_hop_1 (main)

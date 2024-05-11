@@ -1,0 +1,140 @@
+
+ROM used:   5284/32768 (16%)
+            5284/32768 (16%) including unused fragments
+
+            0.9 Average locations per line
+            4.4 Average locations per statement
+
+RAM used:   65/2048 (3%) at main() level
+            96/2048 (5%) worst case
+
+Stack used: 9 worst case (9 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   44    25   2  bai_705_lcd_7doan_lm35a_b_den_buz_bt3.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  tv_01_4_nutnhan.c
+   98    63   5  tv_02_matran_phim4x4_138.c
+ 2229   257  21  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   4  tv_05_8led_7doan_quet.c
+  137    45   4  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  435   206  17  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  419    72   6  tv_07_adc_cb.c
+   90    39   3  tv_07_ds18b20.c
+  230    54   5  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   60    20   2  tv_09_matran_led_mbi.c
+   34    16   1  bai_701_lm35a_tv.c
+   34    16   1  bai_701_lm35b_tv.c
+   27    13   1  bai_701_bt3_lcd_tv.c
+   35    18   2  bai_705_bt_up_dw_lcd_tv.c
+----- -----
+ 5719  1199 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0    1             @delay_ms1
+0     26   0    1             @delay_us1
+0     32   0    0             @const667
+0     38   0    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0     88   1    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     68   1    3   198  3.6  phim_bt0_c2
+0     68   1    3   194  3.9  phim_bt1_c2
+0     68   1    3   190  4.4  phim_bt3_c2
+0     56   1    4             @SFTOI
+0     54   1    2             @ITOF
+0    244   2   11             @MULFF
+0    618   6   16             @ADDFF
+0    346   3   14             @DIVFF
+0     44   0    4   160  1.8  xuat_32led_don_4byte
+0     38   0    8   245  3.1  xuat_32led_don_2word
+0     36   0    9   120  2.8  xuat_32led_don_1dw
+0     42   0    0   152  1.8  xuat_4led_7doan_4so
+0    146   1    6   305  5.1  md4l7d_giaima_2so_vitri_vn
+0     40   0    3             @DIV88
+0     66   1    5             @DIV1616
+0     36   0    0   152  1.8  xuat_glcd_lcd
+0     16   0    2   104  3.0  xuat_lcd
+0     38   0    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     72   1    0   297  2.3  lcd_setup
+0     20   0    0             @const986
+0     26   0    3   145  3.9  lcd_goto_xy
+0     76   1    0             @const992
+0     80   1    0             @const996
+0     44   0    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0    100   1    6   280  5.8  lcd_hien_thi_so_to
+0     76   1    2             @MUL88
+0     58   1    4   241  5.3  lcd_xoa_so_to
+0    134   1    9   419  5.9  lcd_gm_ht_2so_to_xvn
+0     80   1    4   189  3.3  lcd_hien_thi_2so_tp_nho
+0      2   0    0             @const1100
+0     32   0    2             @PSTRINGC_977
+0      2   0    0             @const1106
+0      2   0    0   485  6.6  @const1111
+0     10   0    0             @const1121
+0     22   0    0    29  1.2  @const1123
+0     34   0    2   158  2.7  xuat_buzzer_relay
+0      6   0    0    29  1.2  buzzer_on
+0      6   0    0    29  1.2  buzzer_off
+0      6   0    0    29  1.2  triac_2_on
+0      6   0    0    32  0.8  triac_2_off
+0    198   2    6   271  5.3  h701_adc_read
+0    218   2    4   127  3.1  float_to_ng_2so_tp
+0     92   1    3   381  4.7  so_sanh_1nd
+0    134   1    5   505  5.5  so_sanh_and_2nd
+0    134   1    5   525  6.0  so_sanh_or_2nd
+0     70   1    5   233  2.7  so_sanh_nd_dk_buzzer
+0     12   0    0   260  2.9  @const1182
+0    112   1    5   162  2.6  h701_adc_lm35a_doc_xuly
+0     70   1    5   242  3.7  h701_adc_lm35a_ht_lcd
+0     22   0    2    96  2.1  h701_adc_lm35a_ht_7doan
+0    114   1    5   162  2.6  h702_adc_lm35b_doc_xuly
+0     70   1    5   242  3.7  h702_adc_lm35b_ht_lcd
+0     22   0    2    96  2.1  h702_adc_lm35b_ht_7doan
+0     26   0    0    43  1.3  lcd_ena_buz_on
+0      4   0    0   447  5.2  @const1253
+0     20   0    0    43  1.3  lcd_ena_buz_off
+0      4   0    0   447  5.2  @const1255
+0     40   0    0   132  2.9  phim_bt3_tat_mo_buzz
+0    104   1    2   114  3.0  hienthi_nd_tren
+0    104   1    2   114  3.0  hienthi_nd_duoi
+0     44   0    0   100  3.2  chinh_nd_tren
+0     46   0    0   100  3.2  chinh_nd_duoi
+0    346   3    0   679  2.8  MAIN
+0     22   0    0  1519  9.2  @const1264
+0      6   0    0  1071  6.1  @const1265
+0      6   0    0  2563 10.9  @const1266
+ Inline         0  1601 11.1  @cinit1
+
+Program metrics:
+    Functions               58
+    Statements              1199
+    Comments                1391
+    Volume (V)              34798
+    Difficulty (D)          214.8
+    Effort to implement (E) 7476239
+    Time to implement (T)   115 hours, 22 minutes
+    Est Delivered Bugs (B)  13
+    Cyclomatic Complexity   90
+    Maintainability (MI)    137
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  5280  27484  
+
+
+

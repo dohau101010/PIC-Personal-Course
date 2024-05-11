@@ -1,0 +1,273 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   step_motor_enable
+004-005 rbdc
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006-007 dl_btn
+008-00B dl_4l7d
+00C-013 dl_8l7dq
+014-01C time_w
+01D-025 time_r
+026-029 g_lcd
+02A     lcd_ctrl
+02A.0   lcd_e
+02A.1   lcd_rw
+02A.2   lcd_rs
+02A.3   lcd_p
+02B-02C so_ng
+02D-02E so_tp
+02F-030 nd_tren
+031-032 nd_duoi
+033.0   ttqn
+033.1   buz_ena
+033.2   stepmotor_tn
+033.3   stepmotor_onoff
+033.4   stepmotor_fh
+034-03B stepmotor_fs
+03C-04B stepmotor_hs
+04C     stepmotor_i
+04D     stepmotor_delay
+04E-04F lt
+050-051 lp
+052-053 sb
+054-055 sbt
+056-057 sv
+058-059 svt
+05A     lcd_ht_sv_to_sb.x
+05A-05B xuat_32led_don_2word.wld1
+05A-05B phim_bt3_c2.dl
+05A-05B phim_bt2_c2.dl
+05A-05B md4l7d_giaima_3so_vitri_vn.x
+05A-05B buzzer_on_off.dl
+05A-05B xuat_1word.w
+05A-05D atan2.y
+05A     lcd_khoi_tao_cgram_so_to.i
+05A     hienthi_sb_sv_l7d.@SCRATCH1
+05A     MAIN.@SCRATCH1
+05B     lcd_ht_sv_to_sb.y
+05B     lcd_khoi_tao_cgram_so_to.@SCRATCH1
+05B     hienthi_sb_sv_l7d.@SCRATCH2
+05C-05D xuat_32led_don_2word.wld0
+05C     xuat_buzzer_relay.rbdc1
+05C     xuat_1word.b1
+05C     lcd_ht_sv_to_sb.ht_lcd
+05C     md4l7d_giaima_3so_vitri_vn.y
+05C     phim_bt2_c2.@SCRATCH1
+05C     phim_bt3_c2.@SCRATCH1
+05C     buzzer_on_off.@SCRATCH1
+05C     hienthi_sb_sv_l7d.@SCRATCH3
+05D     xuat_buzzer_relay.rbdc2
+05D     @delay_us1.P1
+05D     xuat_1word.b0
+05D     @delay_ms1.P1
+05D     lcd_ht_sv_to_sb.ht_tp
+05D     md4l7d_giaima_3so_vitri_vn.xvn
+05E     xuat_32led_don_2word.b3
+05E-061 atan2.x
+05E-05F lcd_gm_ht_2so_to_xvn.so
+05E     md4l7d_giaima_3so_vitri_vn.@SCRATCH1
+05E     lcd_ht_sv_to_sb.@SCRATCH1
+05F-060 lcd_hien_thi_3so_tp_nho.tp
+05F     xuat_32led_don_2word.b2
+05F     md4l7d_giaima_3so_vitri_vn.@SCRATCH2
+060     xuat_32led_don_2word.b1
+060     lcd_gm_ht_2so_to_xvn.x
+060     md4l7d_giaima_3so_vitri_vn.@SCRATCH3
+061     lcd_hien_thi_3so_tp_nho.x
+061     xuat_32led_don_2word.b0
+061     lcd_gm_ht_2so_to_xvn.y
+061     md4l7d_giaima_3so_vitri_vn.@SCRATCH4
+062-065 atan2.z
+062     lcd_gm_ht_2so_to_xvn.xvn
+062     xuat_32led_don_4byte.bld3
+062     lcd_hien_thi_3so_tp_nho.y
+062     md4l7d_giaima_3so_vitri_vn.@SCRATCH5
+063     lcd_gm_ht_2so_to_xvn.ch
+063     xuat_32led_don_4byte.bld2
+063     @PSTRINGC_977.@SCRATCH1
+063     lcd_hien_thi_3so_tp_nho.@SCRATCH1
+064     lcd_gm_ht_2so_to_xvn.dv
+064     xuat_32led_don_4byte.bld1
+064     @PSTRINGC_977.@SCRATCH2
+064     lcd_hien_thi_3so_tp_nho.@SCRATCH2
+065     xuat_32led_don_4byte.bld0
+065     lcd_xoa_so_to.x
+065     lcd_gm_ht_2so_to_xvn.@SCRATCH1
+066     lcd_xoa_so_to.y
+066     lcd_hien_thi_so_to.so
+066.0   atan2.sign
+066     lcd_gm_ht_2so_to_xvn.@SCRATCH2
+067     lcd_hien_thi_so_to.x
+067     atan2.quad
+067     lcd_xoa_so_to.i
+067-068 @DIV1616.P1
+068     lcd_hien_thi_so_to.y
+068     lcd_xoa_so_to.@SCRATCH1
+069-06A @DIV1616.P1
+069     lcd_hien_thi_so_to.i
+06A     @MUL88.P1
+06A     lcd_hien_thi_so_to.@SCRATCH1
+06B     lcd_goto_xy.x
+06B     lcd_data.db
+06B     @MUL88.P1
+06B     @DIV1616.@SCRATCH1
+06B     lcd_hien_thi_so_to.@SCRATCH2
+06C     lcd_goto_xy.y
+06D     lcd_goto_xy.@SCRATCH1
+06E     lcd_command.db
+06F     lcd_xuat.db
+070     xuat_lcd.lcd_ctr
+071     xuat_lcd.lcd_dta
+072     xuat_1byte.x
+072.7   xuat_1byte.msb
+073     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  lcd_vitri.call
+000034  lcd_vitri.data
+000038  lcd_so_to.call
+000048  lcd_so_to.data
+000084  lcd_ma_8doan.call
+000094  lcd_ma_8doan.data
+0000D4  @const1100.call
+0000D6  @const1106.call
+0000D8  @const1111.call
+0000DA  @const1121.call
+0000E4  @const1123.call
+0000FA  @const1182.call
+000106  @const1245.call
+00010C  @const1246.call
+000112  @const1248.call
+000118  @const1250.call
+00011E  @const1251.call
+000124  @const1262.call
+000130  xuat_1byte
+000156  xuat_1word
+00016C  xoa_tat_6module
+0001C4  set_up_port
+0001FE  xuat_glcd_lcd
+000222  xuat_lcd
+000232  lcd_xuat
+000258  lcd_command
+000262  @delay_ms1
+000288  lcd_setup
+0002D0  lcd_data
+0002DA  lcd_khoi_tao_cgram_so_to
+000306  lcd_goto_xy
+000320  @PSTRINGC_977
+000340  lcd_ht_stop
+000354  lcd_ht_full_half
+00037A  @DIV1616
+0003BC  @MUL88
+000408  lcd_hien_thi_so_to
+000464  lcd_xoa_so_to
+000498  lcd_gm_ht_2so_to_xvn
+000518  lcd_hien_thi_3so_tp_nho
+0005BA  lcd_ht_sv_to_sb
+000618  md4l7d_giaima_3so_vitri_vn
+000752  xuat_4led_7doan_4so
+000776  hienthi_sb_sv_l7d
+0007BA  xuat_32led_don_4byte
+0007DE  xuat_32led_don_2word
+000802  lcd_ht_for_inv
+000826  @delay_us1
+000840  phim_bt2_c2
+000884  xuat_buzzer_relay
+0008A2  buzzer_on_off
+0008C4  step_motor_on_off_inv
+000950  phim_bt3_c2
+000994  phim_bt3_fs_hs
+0009D2  step_motor_quay_thuan_fs
+000A00  step_motor_quay_nghich_fs
+000A2E  step_motor_run_tn_fs
+000A3C  step_motor_quay_thuan_hs
+000A6A  step_motor_quay_nghich_hs
+000A98  step_motor_run_tn_hs
+000AA6  step_motor_run_fs_hs
+000AB2  @cinit1
+000AB2  MAIN
+000B0C  @cinit2
+
+Project Directory:
+    E:\CCS VXL\THUC TAP VXL_SP\VXL_MANH_CRE\tt_vxl_d501_thay_phu\
+
+Project Files:
+    bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.c         [20-May-22 13:36  CRC=0AAEF741]
+    C:\Program Files (x86)\PICC\Drivers\tv_kit_vdk_pic_all.c [09-Feb-22 11:37  CRC=95887F12]
+    C:\Program Files (x86)\PICC\Drivers\tv_00_define_18f4550.c [30-Sep-21 12:29  CRC=91C401BF]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    C:\Program Files (x86)\PICC\Drivers\tv_01_4_nutnhan.c   [06-Jan-22 21:24  CRC=24896EA4]
+    C:\Program Files (x86)\PICC\Drivers\tv_02_matran_phim4x4_138.c [04-Oct-21 08:38  CRC=26E88B80]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    C:\Program Files (x86)\PICC\Drivers\tv_03_32led_don.c   [15-Oct-21 08:09  CRC=01B74A28]
+    C:\Program Files (x86)\PICC\Drivers\tv_04_4led_7doan.c  [15-Oct-21 08:11  CRC=4A84D16F]
+    C:\Program Files (x86)\PICC\Drivers\tv_05_8led_7doan_quet.c [25-Mar-22 13:13  CRC=1A33A3DD]
+    C:\Program Files (x86)\PICC\Drivers\tv_05_i2c_ds13_pcf.c [05-Jun-22 14:58  CRC=97278EF6]
+    C:\Program Files (x86)\PICC\Drivers\tv_06_lcd_glcd.c    [15-Oct-21 08:17  CRC=2A209586]
+    C:\Program Files (x86)\PICC\Drivers\tv_06_lcd.c         [02-Jun-22 21:59  CRC=7B0F485F]
+    C:\Program Files (x86)\PICC\Drivers\tv_dht11.c          [13-May-22 16:42  CRC=D54B50C8]
+    C:\Program Files (x86)\PICC\Drivers\tv_08_relay_triac_buzzer_dc.c [15-Oct-21 08:37  CRC=97FC1465]
+    C:\Program Files (x86)\PICC\Drivers\tv_07_adc_cb.c      [13-May-22 13:20  CRC=6B8BEF4B]
+    C:\Program Files (x86)\PICC\Drivers\tv_07_ds18b20.c     [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    C:\Program Files (x86)\PICC\Drivers\tv_07_i2c_at24cxx.c [15-Oct-21 08:41  CRC=A7D8AEFA]
+    C:\Program Files (x86)\PICC\Drivers\tv_09_matran_led_mbi.c [15-Oct-21 08:44  CRC=A571EA9E]
+    C:\Program Files (x86)\PICC\Drivers\tv_08_step_motor.c  [07-Feb-21 19:06  CRC=F99683B1]
+    bai_805_step_motor_tv.c                                 [20-May-22 13:36  CRC=F2ED0F4F]
+
+Source signature=ED338194
+
+Units:
+    bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.xsym
+    Errors:      bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.err
+    Ext Symbols: bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.esym
+    INHX32:      bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.hex
+    Symbols:     bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.sym
+    List:        bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.lst
+    Debug/COFF:  bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.cof
+    Project:     bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.ccspjt
+    Call Tree:   bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.tre
+    Statistics:  bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.STA

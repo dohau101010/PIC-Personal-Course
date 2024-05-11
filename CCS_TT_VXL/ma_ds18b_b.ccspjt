@@ -1,0 +1,16 @@
+[PROJECT]
+Target=ma_ds18b_b.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=ma_ds18b_b.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[ma_ds18b_b.c]
+Type=4
+[mru-list]
+1=ma_ds18b_b.c
+[Units]
+Count=1
+1=ma_ds18b_b (main)

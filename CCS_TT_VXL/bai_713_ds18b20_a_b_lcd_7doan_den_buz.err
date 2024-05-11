@@ -1,0 +1,4 @@
+>>> Warning 202 "E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\bai_711_2ds18_tv.c" Line 4(16,23): Variable never used:   ds18b_w
+      Memory usage:   ROM=11%      RAM=5% - 7%
+      0 Errors,  1 Warnings.
+Build Successful.

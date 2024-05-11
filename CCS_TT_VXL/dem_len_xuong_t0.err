@@ -1,0 +1,5 @@
+>>> Warning 204 "dem_len_xuong_t0.c" Line 49(1,1): Condition always FALSE   mode
+*** Error 12 "dem_len_xuong_t0.c" Line 49(7,11): Undefined identifier
+*** Error 51 "dem_len_xuong_t0.c" Line 53(4,8): A numeric expression must appear here
+      2 Errors,  1 Warnings.
+Build Failed.

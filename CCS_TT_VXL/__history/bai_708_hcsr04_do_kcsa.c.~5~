@@ -1,0 +1,49 @@
+#include <tv_kit_vdk_pic_all.c> 
+
+float kcs;
+
+void tao_xung_trigger() 
+{ 
+    output_high(trig); 
+    delay_us(20); 
+    output_low(trig); 
+ 
+    set_timer3(0); 
+    while(!(input(echo))); 
+    setup_timer_3(t3_internal|t3_div_by_8); 
+    
+    while(input(echo)); 
+    setup_timer_3(t3_disabled);
+    kcs = get_timer3();
+} 
+void cbkc_hc04() 
+{ 
+    usi16 kc_ng,kc_tp;
+    
+    tao_xung_trigger();
+    kcs=kcs*1.6; 
+    kcs=(kcs/58); 
+    
+    float_to_ng_2so_tp(kcs); 
+    kc_ng = so_ng;
+    kc_tp = so_tp;
+}
+void hienthi7d()
+{
+    md4l7d_giaima_2so_vitri_vn( kc_ng,1,0);
+    dl_4l7d[1]=dl_4l7d[1]-128;
+    md4l7d_giaima_2so_vitri_vn( kc_tp,3,0);
+    xuat_4led_7doan_4so();
+}
+ 
+void main() 
+{ 
+    set_up_port(); 
+    lcd_setup();
+
+    while(true)
+    { 
+       cbkc_hc04(); 
+       hienthi7d();
+    } 
+}

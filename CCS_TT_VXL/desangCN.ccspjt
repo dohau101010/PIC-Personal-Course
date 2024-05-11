@@ -1,0 +1,25 @@
+[PROJECT]
+Target=desangCN.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=desangCN.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[desangCN.c]
+Type=4
+[mru-list]
+1=desangCN.c
+[Opened Files]
+1=thi_vxl_t6.c
+2=desangCN.c
+3=
+4=bai_tong_hop_1.c
+5=bai_tong_hop_2.c
+6=bai_tong_hop_tv.c
+7=desangCN.c
+8=
+[Units]
+Count=1
+1=desangCN (main)

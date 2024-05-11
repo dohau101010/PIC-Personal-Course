@@ -1,0 +1,37 @@
+[PROJECT]
+Target=NguyenDucManh.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=NguyenDucManh.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[NguyenDucManh.c]
+Type=4
+[mru-list]
+1=NguyenDucManh.c
+[Opened Files]
+1=c3_vd_for_ì_2.c
+2=NguyenDucManh.c
+3=
+4=bai_tong_hop_1.c
+5=bai_tong_hop_2.c
+6=bai_tong_hop_tv.c
+7=desangCN.c
+8=dem_sp_ud_mtp.c
+9=bai_624_glcd_bitmap_spkt.c
+10=tv_06_glcd.c
+11=bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+12=tv_kit_vdk_pic_all.c
+13=tv_05_i2c_ds13_pcf.c
+14=bai_633_glcd_dong_ho_gio_phut_giay.c
+15=bai_633_glcd_kim_gio_phut_giay_tv.c
+16=NguyenDucManh.c
+17=bai_413_dem_xung_t0_stop_run_ud_32led_thay_PHU.c
+18=bai_721_do_nhiet_do_do_am_DHT11.c
+19=bai_721_dht11_tv.c
+20=
+[Units]
+Count=1
+1=NguyenDucManh (main)

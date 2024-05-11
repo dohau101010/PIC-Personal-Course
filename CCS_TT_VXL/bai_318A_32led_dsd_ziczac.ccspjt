@@ -1,0 +1,22 @@
+[PROJECT]
+Target=bai_318A_32led_dsd_ziczac.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_318A_32led_dsd_ziczac.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_318A_32led_dsd_ziczac.c]
+Type=4
+[mru-list]
+1=bai_318A_32led_dsd_ziczac.c
+[Opened Files]
+1=bai_311_32led_sd_pst.c
+2=bai_313_32led_sd_tnv.c
+3=bai_315_32led_1dsp_mp.c
+4=bai_318A_32led_dsd_ziczac.c
+5=
+[Units]
+Count=1
+1=bai_318A_32led_dsd_ziczac (main)

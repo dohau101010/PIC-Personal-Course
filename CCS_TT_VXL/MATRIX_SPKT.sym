@@ -1,0 +1,74 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-023 DL_COT
+024     COT
+025     K
+026     @TRIS_C
+027     @delay_ms1.P1
+027-02A QUETCOT.DL_COT
+027     MAIN.@SCRATCH1
+02B     QUETCOT.@SCRATCH1
+02C     QUETCOT.@SCRATCH2
+02D     QUETCOT.@SCRATCH3
+02E     QUETCOT.@SCRATCH4
+02F     QUETCOT.@SCRATCH5
+030     XUAT_1BYTE.BYTEXUAT
+030.7   XUAT_1BYTE.BSER
+031     XUAT_1BYTE.I
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  SPKT.call
+000008  SPKT.data
+000028  XUAT_1BYTE
+000040  QUETCOT
+000069  @delay_ms1
+00007F  MAIN
+00007F  @cinit1
+000093  @cinit2
+
+Project Directory:
+    E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\
+
+Project Files:
+    MATRIX_SPKT.c                                           [22-Jun-23 18:49  CRC=A16BFDED]
+    C:\Program Files (x86)\PICC\Devices\16F887.H            [12-Nov-13 14:35  CRC=6CB1A611]
+
+Source signature=7ACF4A0F
+
+Units:
+    MATRIX_SPKT (main)
+
+Compiler Settings:
+    Processor:      PIC16F887
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   MATRIX_SPKT.xsym
+    Errors:      MATRIX_SPKT.err
+    Ext Symbols: MATRIX_SPKT.esym
+    INHX8:       MATRIX_SPKT.hex
+    Symbols:     MATRIX_SPKT.sym
+    List:        MATRIX_SPKT.lst
+    Debug/COFF:  MATRIX_SPKT.cof
+    Project:     MATRIX_SPKT.ccspjt
+    Call Tree:   MATRIX_SPKT.tre
+    Statistics:  MATRIX_SPKT.STA

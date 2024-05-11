@@ -1,0 +1,34 @@
+ÀÄbai_325_16led_up_dn_clr_2
+   ÀÄMAIN  0/156  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄphim_up  0/86  Ram=2
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄxuat_32led_don_2word  0/36  Ram=8
+      ³     ÀÄxuat_32led_don_4byte  0/36  Ram=4
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄphim_dw  0/60  Ram=1
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄxuat_32led_don_2word  0/36  Ram=8
+      ³     ÀÄ*
+      ÀÄphim_clr  0/48  Ram=0
+         ÃÄ@delay_ms1  0/38  Ram=1
+         ÀÄxuat_32led_don_2word  0/36  Ram=8
+            ÀÄ*

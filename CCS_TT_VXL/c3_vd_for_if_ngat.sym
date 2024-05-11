@@ -1,0 +1,191 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016     @INTERRUPT_AREA
+017-018 rbdc
+017.0   step_motor_enable
+017.1   step_motor_in1
+017.2   step_motor_in2
+017.3   step_motor_in3
+017.4   step_motor_in4
+017.5   dc_enable
+017.6   pwrkey
+018.0   buzzer
+018.1   triac_1
+018.2   triac_2
+018.3   relay_1
+018.4   relay_2
+019-01A dl_btn
+01B-01E dl_4l7d
+01F-026 dl_8l7dq
+027-02F time_w
+030-038 time_r
+039-03C g_lcd
+03D.0   lcd_e
+03D     lcd_ctrl
+03D.1   lcd_rw
+03D.2   lcd_rs
+03D.3   lcd_p
+03E-03F so_ng
+040-041 so_tp
+042-043 nd_tren
+044-045 nd_duoi
+046.0   ttqn
+046.1   buz_ena
+046.2   status
+047-048 b309_32led_std_tsp.dl
+047-04A atan2.y
+047-048 b308_32led_std_pst.dl
+047-048 xuat_1word.w
+047     MAIN.@SCRATCH1
+049     xuat_1word.b1
+049     b309_32led_std_tsp.i
+049     b308_32led_std_pst.i
+04A     xuat_1word.b0
+04A-04D b309_32led_std_tsp.x
+04A-04D b308_32led_std_pst.x
+04B-04E atan2.x
+04E-051 xuat_32led_don_1dw.dwld
+04E     b308_32led_std_pst.@SCRATCH1
+04E     b309_32led_std_tsp.@SCRATCH1
+04F-052 atan2.z
+04F     b308_32led_std_pst.@SCRATCH2
+04F     b309_32led_std_tsp.@SCRATCH2
+050     b308_32led_std_pst.@SCRATCH3
+050     b309_32led_std_tsp.@SCRATCH3
+051     b308_32led_std_pst.@SCRATCH4
+051     b309_32led_std_tsp.@SCRATCH4
+052-053 xuat_32led_don_1dw.wd1
+052     b308_32led_std_pst.@SCRATCH5
+052     b309_32led_std_tsp.@SCRATCH5
+053.0   atan2.sign
+054-055 xuat_32led_don_1dw.wd0
+054     atan2.quad
+056-057 xuat_32led_don_2word.wld1
+056     xuat_32led_don_1dw.@SCRATCH1
+058-059 xuat_32led_don_2word.wld0
+05A     xuat_32led_don_2word.b3
+05B     xuat_32led_don_2word.b2
+05C     xuat_32led_don_2word.b1
+05D     xuat_32led_don_2word.b0
+05E     xuat_32led_don_4byte.bld3
+05F     xuat_32led_don_4byte.bld2
+060     xuat_32led_don_4byte.bld1
+061     xuat_32led_don_4byte.bld0
+062     xuat_1byte.x
+062.7   xuat_1byte.msb
+063     xuat_1byte.sb
+064     phim_bt1_c1.ktnp
+065-066 phim_bt1_c1.dl
+067     phim_bt1_c1.@SCRATCH1
+068     @delay_ms1.P1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PACKED_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  @const1100.call
+000098  @const1106.call
+00009A  @const1111.call
+00009C  @const1121.call
+0000A6  @const1123.call
+0000BC  @const1182.call
+0000C8  @delay_ms1
+0000EE  phim_bt1_c1
+000136  ngat_portb
+00014E  xuat_1byte
+000174  xuat_1word
+00018A  xoa_tat_6module
+0001E2  set_up_port
+00021C  xuat_32led_don_4byte
+000240  xuat_32led_don_2word
+000266  xuat_32led_don_1dw
+00028A  b308_32led_std_pst
+00036E  b309_32led_std_tsp
+000448  MAIN
+000448  @cinit1
+000482  @cinit2
+
+Project Directory:
+    E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\
+
+Project Files:
+    c3_vd_for_if_ngat.c                                     [13-Jun-23 18:37  CRC=BC45EDAA]
+    C:\Program Files (x86)\PICC\Drivers\tv_kit_vdk_pic_all.c [09-Feb-22 11:37  CRC=95887F12]
+    C:\Program Files (x86)\PICC\Drivers\tv_00_define_18f4550.c [30-Sep-21 12:29  CRC=91C401BF]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    C:\Program Files (x86)\PICC\Drivers\tv_01_4_nutnhan.c   [06-Jan-22 21:24  CRC=24896EA4]
+    C:\Program Files (x86)\PICC\Drivers\tv_02_matran_phim4x4_138.c [04-Oct-21 08:38  CRC=26E88B80]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    C:\Program Files (x86)\PICC\Drivers\tv_03_32led_don.c   [15-Oct-21 08:09  CRC=01B74A28]
+    C:\Program Files (x86)\PICC\Drivers\tv_04_4led_7doan.c  [15-Oct-21 08:11  CRC=4A84D16F]
+    C:\Program Files (x86)\PICC\Drivers\tv_05_8led_7doan_quet.c [25-Mar-22 13:13  CRC=1A33A3DD]
+    C:\Program Files (x86)\PICC\Drivers\tv_05_i2c_ds13_pcf.c [05-Jun-22 14:58  CRC=97278EF6]
+    C:\Program Files (x86)\PICC\Drivers\tv_06_lcd_glcd.c    [15-Oct-21 08:17  CRC=2A209586]
+    C:\Program Files (x86)\PICC\Drivers\tv_06_lcd.c         [02-Jun-22 21:59  CRC=7B0F485F]
+    C:\Program Files (x86)\PICC\Drivers\tv_dht11.c          [13-May-22 16:42  CRC=D54B50C8]
+    C:\Program Files (x86)\PICC\Drivers\tv_08_relay_triac_buzzer_dc.c [15-Oct-21 08:37  CRC=97FC1465]
+    C:\Program Files (x86)\PICC\Drivers\tv_07_adc_cb.c      [13-May-22 13:20  CRC=6B8BEF4B]
+    C:\Program Files (x86)\PICC\Drivers\tv_07_ds18b20.c     [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    C:\Program Files (x86)\PICC\Drivers\tv_07_i2c_at24cxx.c [15-Oct-21 08:41  CRC=A7D8AEFA]
+    C:\Program Files (x86)\PICC\Drivers\tv_09_matran_led_mbi.c [15-Oct-21 08:44  CRC=A571EA9E]
+
+Source signature=64CBC04C
+
+Units:
+    c3_vd_for_if_ngat (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   c3_vd_for_if_ngat.xsym
+    Errors:      c3_vd_for_if_ngat.err
+    Ext Symbols: c3_vd_for_if_ngat.esym
+    INHX32:      c3_vd_for_if_ngat.hex
+    Symbols:     c3_vd_for_if_ngat.sym
+    List:        c3_vd_for_if_ngat.lst
+    Debug/COFF:  c3_vd_for_if_ngat.cof
+    Project:     c3_vd_for_if_ngat.ccspjt
+    Call Tree:   c3_vd_for_if_ngat.tre
+    Statistics:  c3_vd_for_if_ngat.STA

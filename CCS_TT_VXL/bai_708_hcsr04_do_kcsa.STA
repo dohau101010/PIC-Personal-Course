@@ -1,0 +1,107 @@
+
+ROM used:   3894/32768 (12%)
+            3894/32768 (12%) including unused fragments
+
+            0.7 Average locations per line
+            3.2 Average locations per statement
+
+RAM used:   83/2048 (4%) at main() level
+            111/2048 (5%) worst case
+
+Stack used: 9 worst case (9 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   56    34   3  bai_708_hcsr04_do_kcsa.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  tv_01_4_nutnhan.c
+   94    64   5  tv_02_matran_phim4x4_138.c
+ 2229   257  21  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   4  tv_05_8led_7doan_quet.c
+  137    45   4  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  435   206  17  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  419    72   6  tv_07_adc_cb.c
+  106    48   4  tv_07_ds18b20.c
+  230    54   4  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   64    29   2  tv_08_step_motor.c
+   82    33   3  tv_08_dc_motor.c
+   60    20   2  tv_09_matran_led_mbi.c
+----- -----
+ 5759  1217 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   0    1             @delay_ms1
+0     32   0    0             @const667
+0     38   0    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0     88   1    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     56   1    4             @SFTOI
+0     54   1    2             @ITOF
+0    242   3   11             @MULFF
+0    620   8   16             @ADDFF
+0    346   4   14             @DIVFF
+0     44   1    0   152  1.8  xuat_4led_7doan_4so
+0     40   1    3             @DIV88
+0     66   1    5             @DIV1616
+0    448   6    9   759  5.4  md4l7d_giaima_4so_vitri_vn
+0     36   0    0   152  1.8  xuat_glcd_lcd
+0     16   0    2   104  3.0  xuat_lcd
+0     38   0    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     72   1    0   297  2.3  lcd_setup
+0     20   0    0             @const983
+0     26   0    3   145  3.9  lcd_goto_xy
+0     76   1    0             @const989
+0     80   1    0             @const993
+0     44   1    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0     94   1    6   280  5.8  lcd_hien_thi_so_to
+0     76   1    2             @MUL88
+0     52   1    4   241  5.3  lcd_xoa_so_to
+0    128   2    9   419  5.9  lcd_gm_ht_2so_to_xvn
+0     82   1    4   189  3.3  lcd_hien_thi_2so_tp_nho
+0      2   0    0             @const1097
+0     32   0    2             @PSTRINGC_974
+0      2   0    0             @const1103
+0      2   0    0             @const1108
+0     10   0    0             @const1118
+0     22   0    0             @const1120
+0    220   3    4   127  3.1  float_to_ng_2so_tp
+0     12   0    0             @const1184
+0     24   0    0    43  1.3  lcd_hien_thi_hcsr04
+0      8   0    0             @const1253
+0     76   1    0   226  3.2  tao_xung_trigger
+0    212   3    6   430  4.2  cbkc_hc04
+0    216   3    0    95  1.6  MAIN
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               23
+    Statements              1217
+    Comments                1400
+    Volume (V)              9325
+    Difficulty (D)          69.1
+    Effort to implement (E) 644185
+    Time to implement (T)   9 hours, 56 minutes
+    Est Delivered Bugs (B)  2
+    Cyclomatic Complexity   12
+    Maintainability (MI)    52
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  3890  28874  
+
+
+

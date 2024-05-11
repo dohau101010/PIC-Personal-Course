@@ -1,0 +1,34 @@
+[PROJECT]
+Target=bai_411_dem_xung_t0.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_411_dem_xung_t0.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_411_dem_xung_t0.c]
+Type=4
+[mru-list]
+1=bai_411_dem_xung_t0.c
+[Opened Files]
+1=C:\Program Files (x86)\PICC\Drivers\tv_kit_vdk_pic_all.c
+2=bai_302_32led_choptat.c
+3=C:\Program Files (x86)\PICC\Drivers\tv_00_define_18f4550.c
+4=bai_402_mtp4x4_4led_dich.c
+5=bai_502_8so_chop_tat.c
+6=“bai_602_lcd_ht_2hang_dich_trai.c
+7=bai_601_lcd_hienthi_4hang.c
+8=bai_621_glcd_hien_thi_chuoi.c
+9=bai_321_on_off_8led.c
+10=bai_401_mtp4x4_7doan.c
+11=C:\Program Files (x86)\PICC\Drivers\tv_02_matran_phim4x4_138.c
+12=bai_403_mtp4x4_4led_dich_undo4.c
+13=bai_411_dem_xung_t0.c
+14=
+15=bai_411_dem_xung_t0.c
+16=bai_412_dem_xung_t0_stop_run_32led.c
+17=
+[Units]
+Count=1
+1=bai_411_dem_xung_t0 (main)

@@ -1,0 +1,213 @@
+ÀÄEXAMPLE_6_GLCD
+   ÀÄMAIN  0/460  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄsystem_init  0/122  Ram=0
+      ³  ÃÄprivate_write_buzzer_relay  0/28  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/118  Ram=1
+      ³  ÃÄled32_display  0/40  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/118  Ram=1
+      ³  ÃÄd7seg_display  0/40  Ram=0
+      ³  ³  ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/118  Ram=1
+      ³  ÃÄs7seg_display  0/106  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³  ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ³  ÀÄSSPI_WRITE  0/118  Ram=1
+      ³  ÃÄwrite_lcd20x4  0/26  Ram=2
+      ³  ³  ÀÄprivate_write_glcd_lcd  0/38  Ram=0
+      ³  ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³  ³     ÀÄSSPI_WRITE  0/118  Ram=1
+      ³  ÃÄwrite_glcd128x64  0/24  Ram=2
+      ³  ³  ÀÄprivate_write_glcd_lcd  0/38  Ram=0
+      ³  ³     ÀÄ*
+      ³  ÀÄwrite_ledmatrix  0/104  Ram=10
+      ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³     ÃÄSSPI_WRITE  0/118  Ram=1
+      ³     ÀÄSSPI_WRITE  0/118  Ram=1
+      ÃÄglcd_setup  0/72  Ram=0
+      ³  ÃÄglcd_command  0/46  Ram=1
+      ³  ³  ÃÄwrite_glcd128x64  0/24  Ram=2
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄwrite_glcd128x64  0/24  Ram=2
+      ³  ³     ÀÄ*
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÃÄglcd_command  0/46  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÃÄglcd_command  0/46  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄglcd_clear  0/164  Ram=11
+      ³  ÀÄglcd_update  0/330  Ram=8
+      ³     ÃÄglcd_command  0/46  Ram=1
+      ³     ³  ÀÄ*
+      ³     ÃÄglcd_command  0/46  Ram=1
+      ³     ³  ÀÄ*
+      ³     ÃÄ@MUL1616  0/34  Ram=5
+      ³     ÃÄglcd_data  0/44  Ram=1
+      ³     ³  ÃÄwrite_glcd128x64  0/24  Ram=2
+      ³     ³  ³  ÀÄ*
+      ³     ³  ÀÄwrite_glcd128x64  0/24  Ram=2
+      ³     ³     ÀÄ*
+      ³     ÃÄ@MUL1616  0/34  Ram=5
+      ³     ÀÄglcd_data  0/44  Ram=1
+      ³        ÀÄ*
+      ÃÄglcd_spkt_logo_raw  0/180  Ram=11
+      ³  ÃÄGLCD_UPDATE_COORDINATE  0/74  Ram=5
+      ³  ÃÄ@const1013  0/526  Ram=0
+      ³  ÀÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³     ÃÄ@MUL1616  0/34  Ram=5
+      ³     ÀÄ@MUL1616  0/34  Ram=5
+      ÃÄglcd_update  0/330  Ram=8
+      ³  ÀÄ*
+      ÃÄglcd_circle  0/590  Ram=15
+      ³  ÃÄGLCD_HORIZONE_LINE  0/1590  Ram=18
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÃÄ@MUL1616  0/34  Ram=5
+      ³  ³  ÀÄ@MUL1616  0/34  Ram=5
+      ³  ÃÄGLCD_HORIZONE_LINE  0/1590  Ram=18
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_HORIZONE_LINE  0/1590  Ram=18
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_HORIZONE_LINE  0/1590  Ram=18
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄ@MUL88  0/78  Ram=2
+      ³  ÃÄ@MUL88  0/78  Ram=2
+      ³  ÀÄGLCD_UPDATE_COORDINATE  0/74  Ram=5
+      ÃÄglcd_update  0/330  Ram=8
+      ³  ÀÄ*
+      ÃÄglcd_rect  0/198  Ram=11
+      ³  ÃÄGLCD_HORIZONE_LINE  0/1590  Ram=18
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_VERTICAL_LINE  0/44  Ram=5
+      ³  ³  ÀÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³     ÀÄ*
+      ³  ÃÄGLCD_VERTICAL_LINE  0/44  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_HORIZONE_LINE  0/1590  Ram=18
+      ³  ³  ÀÄ*
+      ³  ÃÄGLCD_HORIZONE_LINE  0/1590  Ram=18
+      ³  ³  ÀÄ*
+      ³  ÀÄGLCD_UPDATE_COORDINATE  0/74  Ram=5
+      ÃÄglcd_update  0/330  Ram=8
+      ³  ÀÄ*
+      ÃÄglcd_triangle  0/1270  Ram=58
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@DIVS1616  0/120  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@DIVS1616  0/120  Ram=6
+      ³  ÃÄGLCD_VERTICAL_LINE  0/44  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@DIVS1616  0/120  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@DIVS1616  0/120  Ram=6
+      ³  ÃÄGLCD_VERTICAL_LINE  0/44  Ram=5
+      ³  ³  ÀÄ*
+      ³  ÃÄglcd_line  0/374  Ram=21
+      ³  ³  ÃÄGLCD_UPDATE_COORDINATE  0/74  Ram=5
+      ³  ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³     ÀÄ*
+      ³  ÃÄglcd_line  0/374  Ram=21
+      ³  ³  ÀÄ*
+      ³  ÃÄglcd_line  0/374  Ram=21
+      ³  ³  ÀÄ*
+      ³  ÀÄGLCD_UPDATE_COORDINATE  0/74  Ram=5
+      ÃÄglcd_update  0/330  Ram=8
+      ³  ÀÄ*
+      ÃÄglcd_line  0/374  Ram=21
+      ³  ÀÄ*
+      ÃÄglcd_update  0/330  Ram=8
+      ³  ÀÄ*
+      ÃÄglcd_bar  0/796  Ram=29
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄGLCD_UPDATE_COORDINATE  0/74  Ram=5
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÃÄ@MULS1616  0/84  Ram=6
+      ³  ÀÄGLCD_PIXEL_TEMP  0/270  Ram=8
+      ³     ÀÄ*
+      ÃÄglcd_update  0/330  Ram=8
+      ³  ÀÄ*
+      ÃÄglcd_text_setup  0/36  Ram=7
+      ÃÄ@PSTRINGC_961  0/34  Ram=2
+      ³  ÀÄglcd_text  0/434  Ram=15
+      ³     ÃÄglcd_rect  0/198  Ram=11
+      ³     ³  ÀÄ*
+      ³     ÃÄ@const1005  0/272  Ram=0
+      ³     ÃÄ@const1009  0/236  Ram=0
+      ³     ÃÄGLCD_HORIZONE_LINE  0/1590  Ram=18
+      ³     ³  ÀÄ*
+      ³     ÀÄGLCD_UPDATE_COORDINATE  0/74  Ram=5
+      ÃÄglcd_update  0/330  Ram=8
+      ³  ÀÄ*
+      ÃÄglcd_text_setup  0/36  Ram=7
+      ÃÄ@PRINTF_D0_961  0/190  Ram=6
+      ³  ÃÄ@DIV88  0/44  Ram=3
+      ³  ÃÄ@DIV88  0/44  Ram=3
+      ³  ÃÄglcd_text  0/434  Ram=15
+      ³  ³  ÀÄ*
+      ³  ÃÄglcd_text  0/434  Ram=15
+      ³  ³  ÀÄ*
+      ³  ÃÄglcd_text  0/434  Ram=15
+      ³  ³  ÀÄ*
+      ³  ÀÄglcd_text  0/434  Ram=15
+      ³     ÀÄ*
+      ÃÄglcd_update  0/330  Ram=8
+      ³  ÀÄ*
+      ÃÄ@DIV88  0/44  Ram=3
+      ÀÄ@delay_ms1  0/40  Ram=1

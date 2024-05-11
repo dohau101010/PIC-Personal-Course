@@ -1,0 +1,63 @@
+ÀÄbai_611b_lcd_traitim
+   ÀÄMAIN  0/284  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄlcd_setup  0/72  Ram=0
+      ³  ÃÄlcd_command  0/10  Ram=1
+      ³  ³  ÀÄlcd_xuat  0/38  Ram=1
+      ³  ³     ÃÄxuat_lcd  0/16  Ram=2
+      ³  ³     ³  ÀÄxuat_glcd_lcd  0/36  Ram=0
+      ³  ³     ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ³     ÀÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÀÄxuat_lcd  0/16  Ram=2
+      ³  ³        ÀÄ*
+      ³  ÃÄlcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄlcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÀÄlcd_command  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄlcd_goto_xy  0/26  Ram=3
+      ³  ÃÄ@const986  0/20  Ram=0
+      ³  ÀÄlcd_command  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄ@PSTRINGC_977  0/34  Ram=2
+      ³  ÀÄlcd_data  0/10  Ram=1
+      ³     ÀÄlcd_xuat  0/38  Ram=1
+      ³        ÀÄ*
+      ÃÄlcd_command  0/10  Ram=1
+      ³  ÀÄ*
+      ÃÄ@const1199  0/32  Ram=0
+      ÃÄlcd_data  0/10  Ram=1
+      ³  ÀÄ*
+      ÃÄlcd_goto_xy  0/26  Ram=3
+      ³  ÀÄ*
+      ÃÄlcd_data  0/10  Ram=1
+      ³  ÀÄ*
+      ÃÄlcd_data  0/10  Ram=1
+      ³  ÀÄ*
+      ÃÄlcd_goto_xy  0/26  Ram=3
+      ³  ÀÄ*
+      ÃÄlcd_data  0/10  Ram=1
+      ³  ÀÄ*
+      ÃÄlcd_goto_xy  0/26  Ram=3
+      ³  ÀÄ*
+      ÀÄlcd_data  0/10  Ram=1
+         ÀÄ*

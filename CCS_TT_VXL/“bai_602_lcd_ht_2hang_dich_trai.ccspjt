@@ -1,0 +1,68 @@
+[PROJECT]
+Target=“bai_602_lcd_ht_2hang_dich_trai.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=“bai_602_lcd_ht_2hang_dich_trai.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\
+[“bai_602_lcd_ht_2hang_dich_trai.c]
+Type=4
+[mru-list]
+1=“bai_602_lcd_ht_2hang_dich_trai.c
+[Opened Files]
+1=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\TEST NHANH PROTEUS.c
+2=
+3=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_304_BIS1_SANGDAN_HAICHIEU.c
+4=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_304_BIS_1_BT2_SANG5_TAT7.c
+5=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_311_STD_PST_32LED_NO_LOOP.c
+6=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_312_STD_PST_TSP_32LED.c
+7=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_314_TONGHOP_32LED_C2_TT_CT.c
+8=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_306_BIS_SANGDAN_2BEN_10LED_VA_16LED.c
+9=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_BIS_MORONG_12LED.c
+10=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_321_ON_OFF_8LED.c
+11=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_322_ON_OFF_INV_8LED.c
+12=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_323_ON_OFF_INV_CDOI_8LED.c
+13=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_324_16LED_UP_DW_CLR_1.c
+14=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_325_16LED_UP_DN_CLR_2.c
+15=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_326_UP_DW_CLR_TONGHOP.c
+16=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\TEST NHANH PROTEUS.c
+17=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_332_MATRANPHIM_LEDDON.c
+18=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_333_MATRANPHIM_8LED_ON_OFF.c
+19=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_337_TONGHOP_UP_DN_CLR.c
+20=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAI_BIS_311_SANGDAN_HAICHIEU.c
+21=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\“BAI_334_MATRANPHIM_8LED_16_BTN_ON_OFF.c
+22=“bai_602_lcd_ht_2hang_dich_trai.c
+23=
+24=
+25=bai_503_16so_luan_phien.c
+26=bai_504_chuoi_std_pst.c
+27=bai_506_mtp4x4_8led_dich.c
+28=bai_507_mtp4x4_cai_gh_2so.c
+29=bai_504_nang_cao.c
+30=bai_508_mtp4x4_cai_gh_3so.c
+31=bai_511_counter_t0_led7doan.c
+32=bai_513_dem_giay_cx.c
+33=bai_514_dem_phut_giay.c
+34=bai_515_dem_gio_phut_giay.c
+35=bai_516_gpg_tv.c
+36=bai_516_gio_phut_giay_3key.c
+37=bai_517_gio_phut_giay_mt4x4.c
+38=bai_517_gpg_tv.c
+39=bai_518_clock_ds1307_8led7doan.c
+40=tv_05_i2c_ds13_pcf.c
+41=bai_519_clock_ds1307_8led7doan_full.c
+42=bai_520_clock_ds1307_8led7doan_full_3key.c
+43=bai_520_ds1307_3key_tv.c
+44=bai_521_tong_hop_3module_ds1307.c
+45=bai_601_lcd_hienthi_4hang.c
+46=“bai_602_lcd_ht_2hang_dich_trai.c
+47=bai_603_lcd_hang0_dich_trai_phai_3btn.c
+48=bai_605_lcd_ mtp4x4_dich_hang1.c
+49=bai_604_lcd_hang0_dich_trai_phai_1btn.c
+50=tv_06_lcd.c
+51=
+[Units]
+Count=1
+1=“bai_602_lcd_ht_2hang_dich_trai (main)

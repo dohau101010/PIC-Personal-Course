@@ -1,0 +1,156 @@
+#include <tv_kit_vdk_pic_all.c>
+usi8 bdn;
+usi8 gio=23,phut=59,giay=0,mode=1,mp;
+#int_timer1
+void ngat_timer1() 
+{
+   bdn++;
+   set_timer1(3036);
+}
+void xu_ly_gpg() 
+{
+   if(bdn>=10)
+   {
+      bdn=bdn-10;
+      giay=giay+1;
+      if(giay>59)
+      {
+         giay=0; phut=phut+1;
+      }
+      if(phut>59)
+      {
+         phut=0; gio=gio+1;
+      }
+      if(gio>23) gio=0;
+   }
+}
+void phim_F()
+{
+    mp = key_4x4_dw();
+   if ( mp == 15 )
+            {            
+               lcd_goto_xy(2,0); printf(lcd_data, "                    ");
+               lcd_goto_xy(3,0); printf(lcd_data, "                    ");
+               if(mode>3) mode=1;
+               else        mode++;
+            }
+}
+void hienthi_khi_nhan_F() 
+{       
+                 if(mode==1)
+                 {
+                     lcd_goto_xy(2,0); printf(lcd_data, "%02u %02u %02u      ",gio,phut,giay);                   
+                 }
+                 else if(mode==2)
+                 {
+                     
+                     lcd_gm_ht_2so_to_xvn(gio,2, 0,0); 
+                     lcd_goto_xy(2,7);
+                     printf(lcd_data, "%02u %02u",phut,giay);
+                 }
+                 else if(mode==3)
+                 { 
+                     lcd_gm_ht_2so_to_xvn(gio,2, 0,0);
+                     lcd_gm_ht_2so_to_xvn(phut,2,7,0);
+                     lcd_goto_xy(2,14);
+                     printf(lcd_data, "%02u"giay);
+                     
+                 }
+                 else if ( mode == 4 )
+                 {
+                     lcd_gm_ht_2so_to_xvn(gio,2, 0,0);
+                     lcd_gm_ht_2so_to_xvn(phut,2, 7,0);
+                     lcd_gm_ht_2so_to_xvn(giay,2, 14,0);                  
+                 }else;          
+}
+usi8 i,h=0;
+int1 status=0;
+void module_8led_quet()
+{
+   usi8 i;
+   mp = key_4x4_dw(); // key_4x4_dw_c2(100)     
+      if ( mp<10 )
+      {
+         h++;
+         for(i=4;i>0;i--)
+         {
+            
+            dl_8l7dq[i] = dl_8l7dq[i-1];
+         }
+         dl_8l7dq[0] = ma7doan[mp];
+         
+       if ( h >= 5 ) {status=1;}  
+       else  {status=0;}
+      }
+     
+   if ( mp==13 ) {status=0;h=0;}
+              
+   if ( status==1 ){ buzzer_on();}
+   else buzzer_off();
+   
+
+  
+}
+
+void sang_tatled()
+{
+   if ( bdn <2)xuat_32led_don_1dw(0xffffffff);
+   else if ( bdn < 4)xuat_32led_don_1dw(0);
+   else;
+   if ( bdn>=5) bdn=bdn-5;
+}
+usi8 sp;
+void dem_sp()
+{
+   sp=get_timer0();
+   if(sp<21)
+   {
+     sang_tatled();
+   }
+   else if ( sp >=21 && sp <=41)
+   {
+      xuat_32led_don_1dw(0xffffffff);
+   }
+   else {sp=1;set_timer0(1);}
+   
+   md4l7d_giaima_2so_vitri_vn (sp, 1, cx_vn) ;
+   xuat_4led_7doan_4so(); 
+   
+}
+void main() 
+{
+   set_up_port ();
+   lcd_setup();
+   setup_timer_1 (t1_internal|t1_div_by_8);
+   set_timer1 (3036);
+   enable_interrupts(global) ;
+   enable_interrupts(int_timer1) ;
+   lcd_khoi_tao_cgram_so_to();
+
+   lcd_goto_xy(0,0); printf(lcd_data, " LUU DUONG MINH HUY ");
+   lcd_goto_xy(1,0); printf(lcd_data, "      21161128      ");
+   
+   dl_8l7dq[0]=0xff-1;
+   dl_8l7dq[1]=0xff-1;
+   dl_8l7dq[2]=0xff-1;
+   dl_8l7dq[3]=0xff-1;
+   dl_8l7dq[4]=0xff-1;
+   dl_8l7dq[5]=0xff-1;
+   dl_8l7dq[6]=0xff-1;
+   dl_8l7dq[7]=0xff-1;
+
+   
+   setup_timer_0(t0_ext_l_to_h|t0_div_1);
+   while(true)
+   {
+         hien_thi_8led_7doan_quet();
+         module_8led_quet();
+          lcd_goto_xy(1,0); printf(lcd_data, "%u %u ",h,status);
+         dem_sp();
+         phim_F();//#3ct duoi nay tat moi chay duoc cai module_8led_quet
+         hienthi_khi_nhan_F();
+        xu_ly_gpg();
+       //  
+         
+   }
+}

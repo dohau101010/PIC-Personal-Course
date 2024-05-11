@@ -1,0 +1,68 @@
+
+usi8 ttl,tt_ct;
+usi32 x;
+
+void h327_reset_bien() 
+{
+   ttl = 0; x = 0;
+}
+
+void h327_32led_std_tsp_IF() 
+{
+   IF (ttl < 32)
+   {
+      x = (x>>1) + 0x80000000;
+      xuat_32led_don_1dw (x) ;
+      ttl++;
+   }
+
+   else IF (ttl < 64)
+   {
+      x = (x>>1);
+      xuat_32led_don_1dw (x) ;
+      ttl++;
+   }
+
+   else h327_reset_bien();
+}
+
+void h327_32led_std_pst_IF() 
+{
+   IF (ttl < 32)
+   {
+      x = (x<<1) + 1;
+      xuat_32led_don_1dw (x) ;
+      ttl++;
+   }
+
+   else IF (ttl < 64)
+   {
+      x = (x<<1);
+      xuat_32led_don_1dw (x) ;
+      ttl++;
+   }
+
+   else h327_reset_bien();
+}
+
+void h327_16led_tp_std_pst()
+{                            
+   usi16 LT; usi16 LP;
+   LT=0;  LP=0; 
+   if(ttl<16)
+   {
+      LT = (LT>>1)+0x8000;
+      LP = (LP<<1)+0x0001;
+      xuat_32led_don_2word(LT, LP);
+      ttl++;
+   } 
+   else if(ttl<32)
+   {
+      LT = (LT>>1);
+      LP = (LP<<1);
+      xuat_32led_don_2word(LT, LP);
+      ttl++;
+   } 
+   else h327_reset_bien();
+}
+

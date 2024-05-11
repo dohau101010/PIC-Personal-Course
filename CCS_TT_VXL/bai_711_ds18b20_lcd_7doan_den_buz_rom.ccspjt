@@ -1,0 +1,29 @@
+[PROJECT]
+Target=bai_711_ds18b20_lcd_7doan_den_buz_rom.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_711_ds18b20_lcd_7doan_den_buz_rom.c]
+Type=4
+[mru-list]
+1=bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+[Opened Files]
+1=C:\Program Files (x86)\PICC\Drivers\tv_kit_vdk_pic_all.c
+2=bai_302_32led_choptat.c
+3=C:\Program Files (x86)\PICC\Drivers\tv_00_define_18f4550.c
+4=bai_402_mtp4x4_4led_dich.c
+5=bai_502_8so_chop_tat.c
+6=bai_802_step_motor_on_off_inv_hthi_sb.c
+7=bai_701_lcd_7doan_lm35a_den_buz_bt3.c
+8=bai_701_lm35a_tv.c
+9=bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+10=bai_708_hcsr04_do_kcsa.c
+11=
+12=
+[Units]
+Count=1
+1=bai_711_ds18b20_lcd_7doan_den_buz_rom (main)

@@ -1,0 +1,91 @@
+
+ROM used:   9286/32768 (28%)
+            9286/32768 (28%) including unused fragments
+
+            1.9 Average locations per line
+            9.4 Average locations per statement
+
+RAM used:   1072/2048 (52%) at main() level
+            1159/2048 (57%) worst case
+
+Stack used: 6 worst case (6 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   69    25   3  EXAMPLE_6_GLCD.c
+   32     0   0  C:\Program Files (x86)\PICC\Drivers\tv_boards.c
+  239   186  19  C:\Program Files (x86)\PICC\Drivers\TV_D501_TH.C
+  135     0   0  C:\Program Files (x86)\PICC\Drivers\TV_D501_TH.h
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+ 2229   257  26  C:\Program Files (x86)\PICC\Drivers\math.h
+  180    80   8  C:\Program Files (x86)\PICC\Drivers\TV_LOWLEVER.C
+    7     0   0  C:\Program Files (x86)\PICC\Drivers\TV_LOWLEVER.H
+ 1034   439  44  C:\Program Files (x86)\PICC\Drivers\tv_glcd.c
+  195     0   0  C:\Program Files (x86)\PICC\Drivers\tv_glcd.h
+----- -----
+ 4957   987 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   0    1             @delay_ms1
+0     40   0    0   221  2.6  led32_display
+0     40   0    0   221  2.6  d7seg_display
+0    106   1    1   355  6.1  s7seg_display
+0     38   0    0   172  2.1  private_write_glcd_lcd
+0     26   0    2   120  3.4  write_lcd20x4
+0     24   0    2   120  3.4  write_glcd128x64
+0    104   1   10   362  3.3  write_ledmatrix
+0     28   0    0   151  2.5  private_write_buzzer_relay
+0    122   1    0   561  3.8  system_init
+0    118   1    1  1217  3.8  SSPI_WRITE
+0    272   1    0             @const1005
+0    236   1    0             @const1009
+0    526   3    0             @const1013
+0     74   0    5   672  6.3  GLCD_UPDATE_COORDINATE
+0    164   1   11   553  6.1  glcd_clear
+0     34   0    5             @MUL1616
+0    270   1    8   520  8.3  GLCD_PIXEL_TEMP
+0    330   2    8  1558  8.7  glcd_update
+0     44   0    5   209  5.4  GLCD_VERTICAL_LINE
+0   1590   9   18  2513 13.4  GLCD_HORIZONE_LINE
+0     36   0    7   299  3.5  glcd_text_setup
+0    434   2   15  2264 10.6  glcd_text
+0    180   1   11   648  6.9  glcd_spkt_logo_raw
+0    374   2   21  1983  9.4  glcd_line
+0    198   1   11  1026  6.6  glcd_rect
+0    796   4   29  3516 11.1  glcd_bar
+0     84   0    6             @MULS1616
+0    590   3   15  2424  9.8  glcd_circle
+0     78   0    2             @MUL88
+0   1270   7   58  5421  8.8  glcd_triangle
+0    120   1    6             @DIVS1616
+0     44   0    1    98  2.0  glcd_data
+0     46   0    1    98  2.0  glcd_command
+0     72   0    0   212  2.7  glcd_setup
+0    460   2    0   995  3.4  MAIN
+0      6   0    0             @const1143
+0     34   0    2             @PSTRINGC_961
+0     44   0    3             @DIV88
+0    190   1    6             @PRINTF_D0_961
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               28
+    Statements              987
+    Comments                888
+    Volume (V)              45849
+    Difficulty (D)          160.8
+    Effort to implement (E) 7373093
+    Time to implement (T)   113 hours, 47 minutes
+    Est Delivered Bugs (B)  13
+    Cyclomatic Complexity   87
+    Maintainability (MI)    106
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  9282  23482  
+
+
+

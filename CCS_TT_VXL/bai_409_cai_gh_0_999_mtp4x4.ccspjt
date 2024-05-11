@@ -1,0 +1,31 @@
+[PROJECT]
+Target=bai_409_cai_gh_0_999_mtp4x4.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_409_cai_gh_0_999_mtp4x4.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_409_cai_gh_0_999_mtp4x4.c]
+Type=4
+[mru-list]
+1=bai_409_cai_gh_0_999_mtp4x4.c
+[Opened Files]
+1=bai_409_cai_gh_0_999_mtp4x4.c
+2=
+3=bai_327_tv.c
+4=tv_04_4led_7doan.c
+5=tv_02_matran_phim4x4_138.c
+6=bai_401_mtp4x4_7doan.c
+7=bai_402_mtp4x4_4led_dich.c
+8=bai_403_mtp4x4_4led_dich_undo4.c
+9=bai_404_mtp4x4_on_off_8leddon.c
+10=bai_406_cai_gh_0_99_2bt_up_dw.c
+11=tv_01_4_nutnhan.c
+12=bai_408_cai_gh_0_99_mtp4x4.c
+13=bai_409_cai_gh_0_999_mtp4x4.c
+14=
+[Units]
+Count=1
+1=bai_409_cai_gh_0_999_mtp4x4 (main)

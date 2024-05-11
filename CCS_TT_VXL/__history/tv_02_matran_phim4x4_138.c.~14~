@@ -1,0 +1,119 @@
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//NGUYEN DINH PHU SU PHAM KY THUAT TP HCM
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+//const unsigned char maquet[4]= {0x3f,0x7f,0xbf,0xff};
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//ham quet phim ma tran 4x4                 
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+UNSIGNED INT8 HANG,COT,maphim,MPT;
+VOID TIMHANG ()
+{  HANG=0XFF;
+   IF(INPUT(PIN_B0)==0)  {HANG=0;}
+   ELSE IF (INPUT(PIN_B1)==0) {HANG=1;}
+   ELSE IF (INPUT(PIN_B2)==0) {HANG=2;}
+   ELSE IF (INPUT(PIN_B3)==0) {HANG=3;}
+}
+int8 KEY_nhan()
+{
+   maphim=0XFF;
+   
+   FOR (COT=0;COT< 4;COT++)
+   {
+      SWITCH(COT)
+      {  CASE 0:  OUTPUT_LOW(PIN_B7);
+                  TIMHANG();
+                  OUTPUT_HIGH(PIN_B7);
+                  BREAK;
+         CASE 1:  OUTPUT_LOW(PIN_B6);
+                  TIMHANG();
+                  OUTPUT_HIGH(PIN_B6);
+                  BREAK;
+         CASE 2:  OUTPUT_LOW(PIN_B5);
+                  TIMHANG();
+                  OUTPUT_HIGH(PIN_B5);
+                  BREAK;
+         CASE 3:  OUTPUT_LOW(PIN_B4);
+                  TIMHANG();
+                  OUTPUT_HIGH(PIN_B4);
+                  BREAK;
+      }
+      IF (HANG!=0XFF) {maphim=(COT*4)+HANG; BREAK;}
+      return maphim;
+   }
+  
+} 
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//ham quet ma tran phim va chong doi tich cuc khi nhan phim
+//cach 1             
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                        
+unsigned int key_4x4_dw()
+{     
+   unsigned int8 mp1, mp2;  
+   mp1=key_nhan();      
+   if(mp1!=0xff)                
+   {  
+      delay_ms(20);                                           
+      mp1=key_nhan();
+      do              
+      {         
+         delay_ms(5); 
+         mp2=key_nhan();     
+      }                    
+      while(mp2==mp1); 
+   }             
+   return(mp1);
+} 
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//ham quet ma tran phim va chong doi tich cuc khi nhan phim
+//cach 2
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx         
+unsigned int key_4x4_dw_c2(usi8 dl)
+{     
+   unsigned int8 mp;  
+   mp=key_nhan();         
+   if(mp!=0xff)                                   
+   {  
+      dl_btn++; delay_ms(1);        
+      if(dl_btn>=dl) 
+      {  
+         dl_btn=0; 
+         return mp;
+      }               
+      else  return 0xff; 
+   }
+   else  return 0xff;     
+} 
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+//ham quet ma tran phim va chong doi tich cuc khi nha phim
+//xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+unsigned int key_4x4_up()
+{                    
+   unsigned int8 mp1,mp2;  
+   mp1=key_nhan();
+   if(mp1!=0xff)   
+   {                       
+      if(mp2==0xff)             
+      {                                                        
+         delay_ms(20);   //chong doi
+         mp1=key_nhan();
+         if(mp1!=0xff)   mp2=mp1;
+         return(mp1);    //phim moi                  
+      }  
+      else               
+      {                                                                                                             
+         do
+         {                                                    
+            mp2=key_nhan();
+            delay_ms(5); 
+         } while(mp2!=0xff);                                                     
+         return(mp2);     //thoat khi nha phim          
+      }                
+   }           
+   else                  
+   {
+      mp2=mp1;
+      return(mp1);     //thoat vi khong nhan  
+   }      
+}
+                                       

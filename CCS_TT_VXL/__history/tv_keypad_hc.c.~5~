@@ -1,0 +1,55 @@
+UNSIGNED INT8 HANG,COT,GT,MPT;
+UNSIGNED INT8 HIEUCHINH[16]={7,4,1,10,8,5,2,0,9,6,3,11,12,13,14,15};
+VOID TIMHANG ()
+{  HANG=0XFF;
+        IF (INPUT(PIN_B2)==0)  {HANG=3;}
+   ELSE IF (INPUT(PIN_B3)==0) {HANG=2;}
+   ELSE IF (INPUT(PIN_B4)==0) {HANG=1;}
+   ELSE IF (INPUT(PIN_B5)==0) {HANG=0;}
+}
+VOID KEYPRESS()
+{
+   GT=0XFF;
+   
+   FOR (COT=0;COT< 4;COT++)
+   {
+      SWITCH(COT)
+      {  CASE 0:  OUTPUT_b(0x3f);
+                  TIMHANG();
+                 // OUTPUT_b(0xff);
+                  BREAK;
+         CASE 1:   OUTPUT_b(0x7f);
+                  TIMHANG();
+                 // OUTPUT_b(0xff);
+                  BREAK;
+         CASE 2:   OUTPUT_b(0xbf);
+                  TIMHANG();
+                 // OUTPUT_b(0xff);
+                  BREAK;
+         CASE 3:   OUTPUT_b(0xff);
+                  TIMHANG();
+                //  OUTPUT_b(0xff);
+                  BREAK;
+      }
+      IF (HANG!=0XFF) {GT=(COT*4)+HANG; BREAK;}
+   }
+   
+  
+}
+INT8 KEY_PAD()
+{
+   KEYPRESS();
+   IF (GT!=0XFF)
+   {
+      DELAY_MS(10);
+      KEYPRESS();
+      IF(GT!=0XFF)
+      {
+         MPT=GT;
+         
+         WHILE(GT!=0XFF) {KEYPRESS();}
+         GT=MPT;
+         RETURN(HIEUCHINH[GT]);
+      }
+   }
+}

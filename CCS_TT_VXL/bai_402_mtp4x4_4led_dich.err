@@ -1,0 +1,5 @@
+>>> Warning 202 "bai_402_mtp4x4_4led_dich.c" Line 2(15,17): Variable never used:   mp
+>>> Warning 202 "bai_402_mtp4x4_4led_dich.c" Line 3(13,14): Variable never used:   i
+      Memory usage:   ROM=1%      RAM=3% - 4%
+      0 Errors,  2 Warnings.
+Build Successful.

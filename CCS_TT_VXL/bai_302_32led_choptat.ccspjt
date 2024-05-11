@@ -1,0 +1,26 @@
+[PROJECT]
+Target=bai_302_32led_choptat.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_302_32led_choptat.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\;C:\Program Files (x86)\PICC\Drivers\C:\Program Files (x86)\PICC\Devices\
+[bai_302_32led_choptat.c]
+Type=4
+[mru-list]
+1=bai_302_32led_choptat.c
+[Opened Files]
+1=bai_302_32led_choptat.c
+2=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\test.c
+3=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\EXAMPLE_6_GLCD_1.c
+4=C:\Program Files (x86)\PICC\Drivers\tv_kit_vdk_pic_all.c
+5=C:\Program Files (x86)\PICC\Drivers\tv_00_define_18f4550.c
+6=C:\Program Files (x86)\PICC\Drivers\tv_06_lcd.c
+7=C:\Program Files (x86)\PICC\Devices\18f4550.h
+8=tv_08_step_motor.c
+9=
+[Units]
+Count=1
+1=bai_302_32led_choptat (main)

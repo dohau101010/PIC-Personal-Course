@@ -1,0 +1,63 @@
+ÀÄc3_vd_for_if_2
+   ÀÄMAIN  0/204  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄdc_motor_stop  0/10  Ram=0
+      ÃÄxulynutnhan  0/102  Ram=1
+      ³  ÃÄphim_bt0_c1  0/72  Ram=4
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄdc_motor_run  0/20  Ram=0
+      ³  ³  ÃÄdc_motor_quay_thuan  0/12  Ram=0
+      ³  ³  ÃÄdc_motor_quay_nghich  0/12  Ram=0
+      ³  ³  ÀÄdc_motor_stop  0/10  Ram=0
+      ³  ÃÄphim_bt1_c1  0/72  Ram=4
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄdc_motor_stop  0/10  Ram=0
+      ³  ÃÄphim_bt2_c1  0/72  Ram=4
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄxuat_32led_don_1dw  0/38  Ram=9
+      ³  ³  ÀÄxuat_32led_don_2word  0/38  Ram=8
+      ³  ³     ÀÄxuat_32led_don_4byte  0/36  Ram=4
+      ³  ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³        ÀÄxuat_1byte  0/38  Ram=2
+      ³  ÃÄdc_motor_stop  0/10  Ram=0
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄdc_motor_run  0/20  Ram=0
+      ³     ÀÄ*
+      ÀÄhienthi  0/30  Ram=0
+         ÃÄmd4l7d_giaima_3so_vitri_vn  0/314  Ram=9
+         ³  ÃÄ@DIV1616  0/66  Ram=5
+         ³  ÃÄ@const667  0/32  Ram=0
+         ³  ÃÄ@DIV1616  0/66  Ram=5
+         ³  ÃÄ@DIV1616  0/66  Ram=5
+         ³  ÃÄ@const667  0/32  Ram=0
+         ³  ÃÄ@DIV1616  0/66  Ram=5
+         ³  ÃÄ@DIV1616  0/66  Ram=5
+         ³  ÀÄ@const667  0/32  Ram=0
+         ÀÄxuat_4led_7doan_4so  0/36  Ram=0
+            ÃÄxuat_1byte  0/38  Ram=2
+            ÃÄxuat_1byte  0/38  Ram=2
+            ÃÄxuat_1byte  0/38  Ram=2
+            ÀÄxuat_1byte  0/38  Ram=2

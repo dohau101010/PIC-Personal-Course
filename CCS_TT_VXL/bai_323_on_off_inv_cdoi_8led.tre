@@ -1,0 +1,33 @@
+ÀÄbai_323_on_off_inv_cdoi_8led
+   ÀÄMAIN  0/178  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄxuat_32led_don_4byte  0/34  Ram=4
+      ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³  ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄphim_on  0/28  Ram=0
+      ³  ÀÄxuat_32led_don_4byte  0/34  Ram=4
+      ³     ÀÄ*
+      ÃÄphim_off  0/22  Ram=0
+      ³  ÀÄxuat_32led_don_4byte  0/34  Ram=4
+      ³     ÀÄ*
+      ÀÄphim_inv  0/42  Ram=0
+         ÃÄ@delay_ms1  0/40  Ram=1
+         ÀÄxuat_32led_don_4byte  0/34  Ram=4
+            ÀÄ*

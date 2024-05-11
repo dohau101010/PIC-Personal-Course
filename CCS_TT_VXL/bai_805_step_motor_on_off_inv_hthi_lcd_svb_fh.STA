@@ -1,0 +1,123 @@
+
+ROM used:   3112/32768 (9%)
+            3112/32768 (9%) including unused fragments
+
+            0.5 Average locations per line
+            2.5 Average locations per statement
+
+RAM used:   91/2048 (4%) at main() level
+            116/2048 (6%) worst case
+
+Stack used: 9 worst case (9 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   49    35   3  bai_805_step_motor_on_off_inv_hthi_lcd_svb_fh.c
+   24     0   0  C:\Program Files (x86)\PICC\Drivers\tv_kit_vdk_pic_all.c
+  212    46   4  C:\Program Files (x86)\PICC\Drivers\tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  C:\Program Files (x86)\PICC\Drivers\tv_01_4_nutnhan.c
+   98    63   5  C:\Program Files (x86)\PICC\Drivers\tv_02_matran_phim4x4_138.c
+ 2229   257  21  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  C:\Program Files (x86)\PICC\Drivers\tv_03_32led_don.c
+  105    47   4  C:\Program Files (x86)\PICC\Drivers\tv_04_4led_7doan.c
+  112    48   4  C:\Program Files (x86)\PICC\Drivers\tv_05_8led_7doan_quet.c
+  137    45   4  C:\Program Files (x86)\PICC\Drivers\tv_05_i2c_ds13_pcf.c
+   42    12   1  C:\Program Files (x86)\PICC\Drivers\tv_06_lcd_glcd.c
+  435   206  17  C:\Program Files (x86)\PICC\Drivers\tv_06_lcd.c
+   76    35   3  C:\Program Files (x86)\PICC\Drivers\tv_dht11.c
+  123    37   3  C:\Program Files (x86)\PICC\Drivers\tv_08_relay_triac_buzzer_dc.c
+  419    72   6  C:\Program Files (x86)\PICC\Drivers\tv_07_adc_cb.c
+   90    39   3  C:\Program Files (x86)\PICC\Drivers\tv_07_ds18b20.c
+  230    54   4  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  C:\Program Files (x86)\PICC\Drivers\tv_07_i2c_at24cxx.c
+   60    20   2  C:\Program Files (x86)\PICC\Drivers\tv_09_matran_led_mbi.c
+   64    29   2  C:\Program Files (x86)\PICC\Drivers\tv_08_step_motor.c
+   97    56   5  bai_805_step_motor_tv.c
+----- -----
+ 5755  1231 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     38   1    1             @delay_ms1
+0     26   0    1             @delay_us1
+0     32   1    0             @const667
+0     38   1    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0     88   1    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     68   1    3   192  4.2  phim_bt2_c2
+0     68   1    3   190  4.4  phim_bt3_c2
+0     36   1    4   160  1.8  xuat_32led_don_4byte
+0     36   1    8   245  3.1  xuat_32led_don_2word
+0     36   1    0   152  1.8  xuat_4led_7doan_4so
+0    314   5    9   531  5.4  md4l7d_giaima_3so_vitri_vn
+0     66   1    5             @DIV1616
+0     36   1    0   152  1.8  xuat_glcd_lcd
+0     16   0    2   104  3.0  xuat_lcd
+0     38   1    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     72   1    0   297  2.3  lcd_setup
+0     20   0    0             @const986
+0     26   0    3   145  3.9  lcd_goto_xy
+0     76   1    0             @const992
+0     80   1    0             @const996
+0     44   1    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0     92   1    6   280  5.8  lcd_hien_thi_so_to
+0     76   1    2             @MUL88
+0     52   1    4   241  5.3  lcd_xoa_so_to
+0    128   2    9   419  5.9  lcd_gm_ht_2so_to_xvn
+0      2   0    0             @const1100
+0     32   1    2             @PSTRINGC_977
+0    162   3    6   239  3.2  lcd_hien_thi_3so_tp_nho
+0      2   0    0             @const1106
+0      2   0    0             @const1111
+0     10   0    0             @const1121
+0     22   0    0             @const1123
+0     30   0    2   158  2.7  xuat_buzzer_relay
+0     34   1    3    94  1.7  buzzer_on_off
+0     12   0    0             @const1182
+0     46   1    0   125  3.4  step_motor_quay_thuan_fs
+0     46   1    0   125  3.4  step_motor_quay_nghich_fs
+0     14   0    0    38  1.9  step_motor_run_tn_fs
+0     46   1    0   125  3.4  step_motor_quay_thuan_hs
+0     46   1    0   125  3.4  step_motor_quay_nghich_hs
+0     14   0    0    38  1.9  step_motor_run_tn_hs
+0     12   0    0    38  1.9  step_motor_run_fs_hs
+0     68   1    3   110  3.4  hienthi_sb_sv_l7d
+0     36   1    0    82  2.2  lcd_ht_for_inv
+0      6   0    0   228  3.1  @const1245
+0      6   0    0    43  1.3  @const1246
+0     20   0    0    43  1.3  lcd_ht_stop
+0      6   0    0    82  2.2  @const1248
+0     38   1    0    82  2.2  lcd_ht_full_half
+0      6   0    0   114  3.0  @const1250
+0      6   0    0    43  1.3  @const1251
+0     94   2    5   302  3.7  lcd_ht_sv_to_sb
+0     62   1    0   186  3.5  phim_bt3_fs_hs
+0    140   2    0   573  4.8  step_motor_on_off_inv
+0    374   6    1   798  4.3  MAIN
+0     12   0    0    96  1.7  @const1262
+ Inline         0   990  5.8  @cinit1
+
+Program metrics:
+    Functions               46
+    Statements              1231
+    Comments                1414
+    Volume (V)              19060
+    Difficulty (D)          140.4
+    Effort to implement (E) 2676877
+    Time to implement (T)   41 hours, 19 minutes
+    Est Delivered Bugs (B)  6
+    Cyclomatic Complexity   43
+    Maintainability (MI)    123
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  3108  29656  
+
+
+

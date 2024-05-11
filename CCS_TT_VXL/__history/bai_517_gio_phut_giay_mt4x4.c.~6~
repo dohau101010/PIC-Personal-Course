@@ -1,0 +1,109 @@
+#include <tv_kit_vdk_pic_all.c>
+signed INT8 gio,phut,giay,bdn,gt_mod,tg_chinh=0;
+unsigned int8 mp;
+
+#INT_timer3
+
+void interrupt_timer3() 
+{
+   bdn++;
+   set_timer3 (3036);
+}
+
+void giai_ma_8led_quet() 
+{
+   md8l7d_gma_2so_vitri_vn (giay, 0, kx_vn);
+   md8l7d_gma_2so_vitri_vn (phut, 3, kx_vn);
+   md8l7d_gma_2so_vitri_vn (gio, 6, kx_vn);
+   IF (gt_mod == 1) dl_8l7dq[6] = dl_8l7dq[6]&0x7f;
+   IF (gt_mod == 2) dl_8l7dq[3] = dl_8l7dq[3]&0x7f;
+   IF (gt_mod == 3) dl_8l7dq[0] = dl_8l7dq[0]&0x7f;
+}
+
+void tat_2led_chinh()
+{
+   IF (gt_mod == 1) {dl_8l7dq[7] = 0xff; dl_8l7dq[6] = 0xff;}
+   IF (gt_mod == 2) {dl_8l7dq[4] = 0xff; dl_8l7dq[3] = 0xff;}
+   IF (gt_mod == 3) {dl_8l7dq[1] = 0xff; dl_8l7dq[0] = 0xff;}
+}
+
+void phim_mod(usi8 dl)
+{
+   IF (mp==14)
+   {
+      gt_mod++;
+      IF (gt_mod >= 4) gt_mod = 0;
+      tg_chinh = 0;
+   }
+}
+
+void bai_516_xu_ly_gpg() 
+{
+   bdn = bdn - 10;
+   tg_chinh++;
+   IF (tg_chinh == 10) gt_mod = 0;
+   giay++;
+
+   IF (giay == 60)
+   {
+      giay = 0; phut++;
+      IF (phut == 60)
+      {
+         phut = 0; gio++;
+         IF (gio == 24) gio = 0;
+      }
+   }
+
+   giai_ma_8led_quet ();
+}
+
+void xu_ly_choptat() 
+{
+   IF (gt_mod !=  0)
+   {
+      IF ( (bdn == 0)&& (input (up))&& (input (dw)))
+      tat_2led_chinh ();
+
+      else IF (bdn == 5)
+         giai_ma_8led_quet ();
+   }
+}
+
+void main()
+{
+   set_up_port ();
+   setup_timer_3 (t3_internal|t3_div_by_8);
+   set_timer1 (3036);
+   enable_interrupts (global) ;
+   enable_interrupts (INT_timer3) ;
+   giay = 0; bdn = 0;
+   phut = 0; gio = 0; gt_mod = 0;
+   WHILE (true)
+   {
+      mp= key_4x4_dw_c2(20);
+      if(mp==14)
+      {
+         IF (bdn < 10)
+         {
+            xu_ly_choptat ();
+            phim_mod (70);
+            hien_thi_8led_7doan_quet ();
+            dl_8l7dq[2] = 0xbf;
+            dl_8l7dq[5] = 0xbf;
+         }
+
+         ELSE bai_516_xu_ly_gpg ();
+      }
+      if(mp==15)
+      {
+         
+      }
+      if(mp==12)
+      {
+         giay = 0; bdn = 0;
+         phut = 0; gio = 0;
+         hien_thi_8led_7doan_quet ();
+      }
+   }
+}
+

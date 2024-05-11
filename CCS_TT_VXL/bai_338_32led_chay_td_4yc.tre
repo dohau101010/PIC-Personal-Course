@@ -1,0 +1,50 @@
+ÀÄbai_338_32led_chay_td_4yc
+   ÀÄMAIN  0/206  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ÀÄxuat_32led_don_2word  0/36  Ram=8
+      ³     ÀÄxuat_32led_don_4byte  0/36  Ram=4
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄh327_32led_std_pst_IF  0/114  Ram=5
+      ³  ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÀÄh327_reset_bien  0/20  Ram=0
+      ÃÄh327_32led_std_tsp_IF  0/104  Ram=5
+      ³  ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÀÄh327_reset_bien  0/20  Ram=0
+      ÃÄh327_16led_tp_std_pst_songsong  0/118  Ram=2
+      ³  ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÀÄh327_reset_bien  0/20  Ram=0
+      ÃÄh327_16led_tp_std_tsp_songsong  0/106  Ram=2
+      ³  ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ³  ÀÄ*
+      ³  ÀÄh327_reset_bien  0/20  Ram=0
+      ÀÄ@delay_ms1  0/40  Ram=1

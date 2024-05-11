@@ -1,0 +1,23 @@
+#include <tv_kit_vdk_pic_all.c> 
+
+void main() 
+{
+   set_up_port();
+   lcd_setup ();
+   lcd_GOTO_xy (0, 0);
+   lcd_data ("khoa dien - dien tu ");
+   lcd_GOTO_xy (1, 0);
+   lcd_data ("bm dieu khien tdong");
+   lcd_GOTO_xy (2, 0);
+   lcd_data ("nguyen duc manh ");
+   lcd_GOTO_xy (3, 0);
+   lcd_data ("MSSV: 19151253");
+   delay_ms (1000);
+
+   WHILE (true)
+   {
+      lcd_command (lcd_shift_left_1) ;
+      delay_ms (1000) ;
+   }
+}
+

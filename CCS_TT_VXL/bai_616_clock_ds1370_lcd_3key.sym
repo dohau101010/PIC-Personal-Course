@@ -1,0 +1,341 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016.0   step_motor_enable
+016-017 rbdc
+016.1   step_motor_in1
+016.2   step_motor_in2
+016.3   step_motor_in3
+016.4   step_motor_in4
+016.5   dc_enable
+016.6   pwrkey
+017.0   buzzer
+017.1   triac_1
+017.2   triac_2
+017.3   relay_1
+017.4   relay_2
+018-019 dl_btn
+01A-01D dl_4l7d
+01E-025 dl_8l7dq
+026-02E time_w
+02F-037 time_r
+038-03B g_lcd
+03C     lcd_ctrl
+03C.0   lcd_e
+03C.1   lcd_rw
+03C.2   lcd_rs
+03C.3   lcd_p
+03D-03E so_ng
+03F-040 so_tp
+041-042 nd_tren
+043-044 nd_duoi
+045.0   ttqn
+045.1   buz_ena
+045.2   stepmotor_tn
+045.3   stepmotor_fh
+045.4   dcmotor_tn
+045.5   dcmotor_onoff
+046-04D stepmotor_fs
+04E-05D stepmotor_hs
+05E     stepmotor_i
+05F-060 pwm_duty
+061     giay_tam
+062     bdn
+063     tt_ht
+064     tt_htg
+065     gt_mod
+066     tg_chinh
+067     tt_xoa
+068     ds1307_cap_nhat_time.sel
+068-069 phim_bt3_c2.dl
+068-06B atan2.y
+068     phim_mod.dl
+068     phim_up.dl
+068     phim_dw.dl
+068     lcd_khoi_tao_cgram_so_to.i
+068     ds1307_doc_time.j
+068-069 xuat_1word.w
+068     phim_chon_hthi.@SCRATCH1
+069     lcd_xoa_so_to.x
+069     ds1307_doc_time.i
+069     lcd_hthi_byte.sh
+069-06A phim_bt1_c2.dl
+069     md8l7d_gma_so_bcd_vitri_vn.x
+069     ds1307_luu_vao_ds.dcdt
+069     hien_thi_8led_7doan_quet.ttl
+069     ds1307_cap_nhat_time.i
+069     tang_or_giam_so_bcd.x
+069-06A phim_bt0_c2.dl
+069-06A phim_bt2_c2.dl
+069     xuat_32led_don_4byte.bld3
+069     lcd_khoi_tao_cgram_so_to.@SCRATCH1
+069     @PSTRINGC_974.@SCRATCH1
+069     ds1307_hthi_giay_lcd_soto.@SCRATCH1
+069     ds1307_hthi_phut_lcd_soto.@SCRATCH1
+069     ds1307_hthi_gio_lcd_soto.@SCRATCH1
+069     giai_ma_thu_8l7dq.@SCRATCH1
+06A     ds1307_luu_vao_ds.dt
+06A     @delay_ms1.P1
+06A     xuat_32led_don_4byte.bld2
+06A     tang_or_giam_so_bcd.sel
+06A     lcd_hthi_byte.x
+06A     xuat_1word.b1
+06A     lcd_hien_thi_so_to.so
+06A     lcd_xoa_so_to.y
+06A     md8l7d_gma_so_bcd_vitri_vn.y
+06A     phim_bt3_c2.@SCRATCH1
+06A     hien_thi_8led_7doan_quet.@SCRATCH1
+06A     ds1307_cap_nhat_time.@SCRATCH1
+06A     ds1307_doc_time.@SCRATCH1
+06A     @PSTRINGC_974.@SCRATCH2
+06B     lcd_hien_thi_so_to.x
+06B     tang_or_giam_so_bcd.y
+06B     lcd_hthi_byte.y
+06B     @I2C_WRITE_1.P1
+06B     xuat_1word.b0
+06B     md8l7d_gma_so_bcd_vitri_vn.xvn
+06B     xuat_32led_don_4byte.bld1
+06B     xuat_8led_7doan_quet.ttq
+06B     lcd_xoa_so_to.i
+06B     phim_bt0_c2.@SCRATCH1
+06B     phim_bt1_c2.@SCRATCH1
+06B     phim_bt2_c2.@SCRATCH1
+06B     ds1307_doc_time.@SCRATCH2
+06C-06F atan2.x
+06C     tang_or_giam_so_bcd.dv
+06C     @delay_us1.P1
+06C     lcd_hthi_byte.bh
+06C     lcd_hien_thi_so_to.y
+06C     @I2C_READ_1.P1
+06C     xuat_8led_7doan_quet.mht
+06C     xuat_32led_don_4byte.bld0
+06C     md8l7d_gma_so_bcd_vitri_vn.@SCRATCH1
+06C     lcd_xoa_so_to.@SCRATCH1
+06D     lcd_hthi_byte.bl
+06D     lcd_hien_thi_so_to.i
+06D     tang_or_giam_so_bcd.ch
+06D     @I2C_READ_1.@SCRATCH1
+06D     xuat_8led_7doan_quet.@SCRATCH1
+06D     md8l7d_gma_so_bcd_vitri_vn.@SCRATCH2
+06E     @MUL88.P1
+06E     tang_or_giam_so_bcd.v
+06E     @I2C_READ_1.@SCRATCH2
+06E     md8l7d_gma_so_bcd_vitri_vn.@SCRATCH3
+06E     lcd_hien_thi_so_to.@SCRATCH1
+06E     lcd_hthi_byte.@SCRATCH1
+06F     lcd_data.db
+06F     @MUL88.P1
+06F     @DIV88.P2
+06F     lcd_goto_xy.x
+06F     lcd_hien_thi_so_to.@SCRATCH2
+06F     tang_or_giam_so_bcd.@SCRATCH1
+070     @DIV88.P1
+070     lcd_goto_xy.y
+070-073 atan2.z
+071     @DIV88.@SCRATCH1
+071     lcd_goto_xy.@SCRATCH1
+072     lcd_command.db
+073     lcd_xuat.db
+074     xuat_lcd.lcd_ctr
+074.0   atan2.sign
+075     atan2.quad
+075     xuat_lcd.lcd_dta
+076     xuat_1byte.x
+076.7   xuat_1byte.msb
+077     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  ma7doan.call
+0000B0  ma7doan.data
+0000C0  ma_quet.call
+0000DA  ma_quet.data
+0000E4  lcd_vitri.call
+0000FE  lcd_vitri.data
+000102  lcd_so_to.call
+00011C  lcd_so_to.data
+000158  lcd_ma_8doan.call
+000172  lcd_ma_8doan.data
+0001B2  @const1097.call
+0001B4  @const1103.call
+0001B6  @const1108.call
+0001B8  @const1118.call
+0001C2  @const1120.call
+0001D8  @const1184.call
+0001E4  @const1259.call
+0001F2  @const1261.call
+0001FC  @const1262.call
+000206  @const1263.call
+000210  @const1264.call
+00021C  @const1265.call
+000228  @const1266.call
+000232  @const1267.call
+00023E  @const1269.call
+000242  @const1270.call
+000246  interrupt_timer3
+000256  xuat_1byte
+00027C  xuat_1word
+000292  xoa_tat_6module
+0002EA  set_up_port
+000324  @I2C_WRITE_1
+000390  @I2C_READ_1
+0003F6  ds1307_doc_time
+0004A0  ds1307_cap_nhat_time
+000534  ds1307_kiem_tra_ma
+000548  xuat_glcd_lcd
+00056C  xuat_lcd
+00057C  lcd_xuat
+0005A2  lcd_command
+0005AC  @delay_ms1
+0005D2  lcd_setup
+00061A  lcd_data
+000624  lcd_khoi_tao_cgram_so_to
+000650  lcd_goto_xy
+00066A  @PSTRINGC_974
+00068A  ds1307_hthi_text_lcd
+00069E  ds1307_hthi_thu_lcd
+00071C  @MUL88
+000768  lcd_hien_thi_so_to
+0007C4  lcd_xoa_so_to
+0007F6  ds1307_hthi_giay_lcd_soto
+000872  ds1307_hthi_phut_lcd_soto
+00089C  ds1307_hthi_gio_lcd_soto
+0008C4  lcd_hthi_byte
+000916  ds1307_hthi_ntn_lcd
+000956  tat_2led_chinh
+000990  md8l7d_gma_so_bcd_vitri_vn
+000A0E  giai_ma_gpg_8l7dq
+000A36  giai_ma_ntn_8l7dq
+000A5C  giai_ma_thu_8l7dq
+000A86  giai_ma_gpg_ntn_8l7dq
+000ABE  xu_ly_choptat
+000AE2  @delay_us1
+000AFC  phim_bt3_c2
+000B40  xuat_4led_7doan_4so
+000B6C  phim_chon_hthi
+000BB2  phim_bt1_c2
+000BF6  xuat_32led_don_4byte
+000C22  phim_mod
+000C4C  phim_bt0_c2
+000C90  @DIV88
+000CB8  tang_or_giam_so_bcd
+000D0A  ds1307_luu_vao_ds
+000D68  tang_giay
+000D8A  tang_phut
+000DAE  tang_gio
+000DD2  chinh_tang_gpg
+000DF2  tang_nam
+000E16  tang_thang
+000E3C  tang_ngay
+000E62  chinh_tang_ntn
+000E82  chinh_tang_thu
+000E9E  ds1307_hthi_lcd_all
+000ED0  xuat_8led_7doan_quet
+000F08  tat_8led_7doan_quet
+000F14  hien_thi_8led_7doan_quet
+000F4A  phim_up
+000F88  phim_bt2_c2
+000FCC  giam_giay
+000FF0  giam_phut
+001016  giam_gio
+00103C  chinh_giam_gpg
+00105C  giam_nam
+001082  giam_thang
+0010A8  giam_ngay
+0010CE  chinh_giam_ntn
+0010EE  chinh_giam_thu
+00110A  phim_dw
+001146  ds1307_hthi_lcd_soto
+00116A  @cinit1
+00116A  MAIN
+0011B0  @cinit2
+
+Project Directory:
+    E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\
+
+Project Files:
+    bai_616_clock_ds1370_lcd_3key.c                         [20-Nov-23 10:05  CRC=97FF6300]
+    tv_kit_vdk_pic_all.c                                    [15-Jul-23 08:40  CRC=2DEB1629]
+    tv_00_define_18f4550.c                                  [15-Jul-23 08:40  CRC=EBD97A3A]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [28-Aug-23 09:42  CRC=74AC6B76]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [25-Mar-22 13:13  CRC=1A33A3DD]
+    tv_05_i2c_ds13_pcf.c                                    [05-Jun-22 14:58  CRC=97278EF6]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [02-Jun-22 21:59  CRC=7B0F485F]
+    tv_dht11.c                                              [13-May-22 16:42  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [13-May-22 13:20  CRC=6B8BEF4B]
+    tv_07_ds18b20.c                                         [18-Jul-23 13:00  CRC=C870A0F3]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [15-Oct-21 08:41  CRC=A7D8AEFA]
+    tv_08_step_motor.c                                      [22-Jun-23 15:52  CRC=5ACE5D77]
+    tv_08_dc_motor.c                                        [27-May-22 16:39  CRC=81B98620]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+    bai_616_clock_ds1307_lcd_tv.c                           [22-Apr-22 14:10  CRC=2A2C3296]
+    bai_616_ds1307_3key_tv.c                                [22-Apr-22 14:10  CRC=92D10866]
+
+Source signature=D51291C0
+
+Units:
+    bai_616_clock_ds1370_lcd_3key (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_616_clock_ds1370_lcd_3key.xsym
+    Errors:      bai_616_clock_ds1370_lcd_3key.err
+    Ext Symbols: bai_616_clock_ds1370_lcd_3key.esym
+    INHX32:      bai_616_clock_ds1370_lcd_3key.hex
+    Symbols:     bai_616_clock_ds1370_lcd_3key.sym
+    List:        bai_616_clock_ds1370_lcd_3key.lst
+    Debug/COFF:  bai_616_clock_ds1370_lcd_3key.cof
+    Project:     bai_616_clock_ds1370_lcd_3key.ccspjt
+    Call Tree:   bai_616_clock_ds1370_lcd_3key.tre
+    Statistics:  bai_616_clock_ds1370_lcd_3key.STA

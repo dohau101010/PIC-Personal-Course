@@ -1,0 +1,50 @@
+ÀÄbai_327_32led_3y_cau_up_dw_if
+   ÀÄMAIN  0/196  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄh327_reset_bien  0/20  Ram=0
+      ÃÄb327_32led_std_pst_tsp_tat_3bt_IF  0/50  Ram=1
+      ³  ÃÄphim_bt0_c1  0/72  Ram=4
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄh327_reset_bien  0/20  Ram=0
+      ³  ÃÄphim_bt1_c1  0/72  Ram=4
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄh327_reset_bien  0/20  Ram=0
+      ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ÀÄxuat_32led_don_2word  0/38  Ram=8
+      ³     ÀÄxuat_32led_don_4byte  0/36  Ram=4
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄh327_32led_std_pst_IF  0/114  Ram=5
+      ³  ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÀÄh327_reset_bien  0/20  Ram=0
+      ÃÄh327_32led_std_tsp_IF  0/104  Ram=5
+      ³  ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÃÄxuat_32led_don_1dw  0/36  Ram=9
+      ³  ³  ÀÄ*
+      ³  ÀÄh327_reset_bien  0/20  Ram=0
+      ÀÄ@delay_ms1  0/38  Ram=1

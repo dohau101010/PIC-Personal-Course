@@ -1,0 +1,134 @@
+
+ROM used:   3340/32768 (10%)
+            3340/32768 (10%) including unused fragments
+
+            0.6 Average locations per line
+            2.6 Average locations per statement
+
+RAM used:   1088/2048 (53%) at main() level
+            1110/2048 (54%) worst case
+
+Stack used: 10 worst case (10 in main + 0 for interrupts)
+Stack size: 31
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+   41    30   2  bai_622_glcd_dem_sp_t0_run_UD.c
+   24     0   0  tv_kit_vdk_pic_all.c
+  212    46   4  tv_00_define_18f4550.c
+  837     0   0  C:\Program Files (x86)\PICC\Devices\18f4550.h
+  209    88   7  tv_01_4_nutnhan.c
+   98    63   5  tv_02_matran_phim4x4_138.c
+ 2229   257  20  C:\Program Files (x86)\PICC\Drivers\math.h
+   41    15   1  tv_03_32led_don.c
+  105    47   4  tv_04_4led_7doan.c
+  112    48   4  tv_05_8led_7doan_quet.c
+  137    45   3  tv_05_i2c_ds13_pcf.c
+   42    12   1  tv_06_lcd_glcd.c
+  435   206  16  tv_06_lcd.c
+   76    35   3  tv_dht11.c
+  123    37   3  tv_08_relay_triac_buzzer_dc.c
+  419    72   6  tv_07_adc_cb.c
+   90    39   3  tv_07_ds18b20.c
+  230    54   4  C:\Program Files (x86)\PICC\Drivers\touch.c
+   66    27   2  tv_07_i2c_at24cxx.c
+   60    20   2  tv_09_matran_led_mbi.c
+  357   100   8  tv_06_glcd.c
+  120    60   5  bai_622_t0_tv.c
+----- -----
+ 6063  1301 Total
+
+Page ROM  %  RAM   Vol Diff  Functions:
+---- --- --- ---   --- ----  ----------
+0     40   1    1             @delay_ms1
+0     32   0    1             @delay_us1
+0     32   0    0             @const667
+0     42   1    2   239  4.3  xuat_1byte
+0     22   0    4   131  2.8  xuat_1word
+0    112   2    0   396  1.4  xoa_tat_6module
+0     58   1    0   253  2.3  set_up_port
+0     80   1    3   198  3.6  phim_bt0_c2
+0     80   1    3   194  3.9  phim_bt1_c2
+0     80   1    3   192  4.2  phim_bt2_c2
+0     36   1    4   160  1.8  xuat_32led_don_4byte
+0     36   1    8   245  3.1  xuat_32led_don_2word
+0     36   1    0   152  1.8  xuat_4led_7doan_4so
+0    162   2    6   305  5.1  md4l7d_giaima_2so_vitri_vn
+0     44   1    3             @DIV88
+0     70   1    5             @DIV1616
+0     34   1    0   152  1.8  xuat_glcd_lcd
+0     20   0    2   104  3.0  xuat_lcd
+0     20   0    2   104  3.0  xuat_glcd
+0     38   1    1   123  2.2  lcd_xuat
+0     10   0    1    43  1.5  lcd_command
+0     10   0    1    43  1.5  lcd_data
+0     92   1    0   297  2.3  lcd_setup
+0     20   0    0             @const986
+0     34   1    3   145  3.9  lcd_goto_xy
+0     76   1    0             @const992
+0     80   1    0             @const996
+0     60   1    2   127  3.5  lcd_khoi_tao_cgram_so_to
+0    112   2    6   280  5.8  lcd_hien_thi_so_to
+0     80   1    2             @MUL88
+0     64   1    4   241  5.3  lcd_xoa_so_to
+0    156   2    9   419  5.9  lcd_gm_ht_2so_to_xvn
+0      2   0    0             @const1100
+0     32   0    2             @PSTRINGC_977
+0      2   0    0             @const1106
+0      2   0    0             @const1111
+0     10   0    0             @const1121
+0     22   0    0             @const1123
+0     30   0    2   158  2.7  xuat_buzzer_relay
+0     44   1    3    94  1.7  buzzer_on_off
+0     12   0    0             @const1182
+0     38   1    1   123  2.2  glcd_xuat_db
+0     10   0    1    43  1.5  glcd_command
+0     10   0    1    43  1.5  glcd_data
+0     90   1    1   285  1.9  setup_glcd
+0     28   0    0    43  1.3  lcd_hienthi_up
+0      4   0    0             @const1301
+0     28   0    0    43  1.3  lcd_hienthi_dw
+0      4   0    0             @const1303
+0     28   0    0    43  1.3  lcd_hienthi_run
+0      6   0    0             @const1305
+0     28   0    0    43  1.3  lcd_hienthi_stop
+0      6   0    0             @const1307
+0     22   0    1    74  3.1  tinh_t0_ud
+0     42   1    0    96  1.7  hienthi_4led7doan
+0     90   1    1   110  2.5  lcd_hienthi_gh_soto
+0    106   2    4   283  5.5  glcd_hthi_t0
+0     30   0    0    54  1.5  lcd_hienthi_t0_soto
+0     64   1    0   204  3.6  dem_xung_ngoai_t0
+0     72   1    1   226  4.5  phim_ud
+0     46   1    1   117  3.0  phim_stop
+0     52   1    1   129  3.4  phim_run
+0    374   6    0   703  2.8  MAIN
+0     22   0    0             @const1323
+0      4   0    0             @const1324
+0      4   0    0             @const1325
+0     22   0    0             @const1326
+0     16   0    0             @const1327
+0     32   0    2             @PSTRINGC_1234
+0     18   0    0             @const1329
+0     16   0    0             @const1330
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               43
+    Statements              1301
+    Comments                1532
+    Volume (V)              15533
+    Difficulty (D)          120.7
+    Effort to implement (E) 1875167
+    Time to implement (T)   28 hours, 56 minutes
+    Est Delivered Bugs (B)  5
+    Cyclomatic Complexity   23
+    Maintainability (MI)    94
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00002     4  0  
+00004-07FFE  3336  29428  
+
+
+

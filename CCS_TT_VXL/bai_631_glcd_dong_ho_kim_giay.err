@@ -1,0 +1,4 @@
+*** Error 12 "bai_631_glcd_dong_ho_kim_giay.c" Line 69(36,37): Undefined identifier  -- b339_32led_tong_hop_tu_dong_if
+*** Error 12 "bai_631_glcd_dong_ho_kim_giay.c" Line 70(28,29): Undefined identifier  -- b411_dem_xung_ngoai_t0
+      2 Errors,  0 Warnings.
+Build Failed.

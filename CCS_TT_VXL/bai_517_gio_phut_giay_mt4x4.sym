@@ -1,0 +1,250 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016-017 rbdc
+016.0   step_motor_enable
+016.1   step_motor_in1
+016.2   step_motor_in2
+016.3   step_motor_in3
+016.4   step_motor_in4
+016.5   dc_enable
+016.6   pwrkey
+017.0   buzzer
+017.1   triac_1
+017.2   triac_2
+017.3   relay_1
+017.4   relay_2
+018-019 dl_btn
+01A-01D dl_4l7d
+01E-025 dl_8l7dq
+026-02E time_w
+02F-037 time_r
+038-03B g_lcd
+03C.0   lcd_e
+03C     lcd_ctrl
+03C.1   lcd_rw
+03C.2   lcd_rs
+03C.3   lcd_p
+03D-03E so_ng
+03F-040 so_tp
+041-042 nd_tren
+043-044 nd_duoi
+045.0   ttqn
+045.1   buz_ena
+045.2   stepmotor_tn
+045.3   stepmotor_fh
+045.4   dcmotor_tn
+045.5   dcmotor_onoff
+046-04D stepmotor_fs
+04E-05D stepmotor_hs
+05E     stepmotor_i
+05F-060 pwm_duty
+061     gio
+062     phut
+063     giay
+064     bdn
+065     tg_chinh
+066     ch_gio
+067     dv_gio
+068     ch_phut
+069     dv_phut
+06A     ch_giay
+06B     dv_giay
+06C     mp
+06D     vt
+06E     buzzer_bip.k
+06E-071 xuat_32led_don_1dw.dwld
+06E     md8l7d_gma_2so_vitri_vn.x
+06E-071 atan2.y
+06E     md4l7d_giaima_2so_vitri_vn.x
+06E-06F xuat_1word.w
+06E     key_4x4_dw_c2.dl
+06E     nhap_tinh_gpg.@SCRATCH1
+06E     chinh_gpg_mtp4x4.@SCRATCH1
+06F     hien_thi_8led_7doan_quet.ttl
+06F     md4l7d_giaima_2so_vitri_vn.y
+06F     xuat_buzzer_relay.rbdc1
+06F     key_4x4_dw_c2.mp
+06F     md8l7d_gma_2so_vitri_vn.y
+070     @delay_ms1.P1
+070     md4l7d_giaima_2so_vitri_vn.xvn
+070     key_nhan.maphim
+070     xuat_buzzer_relay.rbdc2
+070     xuat_1word.b1
+070     md8l7d_gma_2so_vitri_vn.xvn
+070     hien_thi_8led_7doan_quet.@SCRATCH1
+071     xuat_8led_7doan_quet.ttq
+071     key_nhan.hang
+071     xuat_1word.b0
+071     md4l7d_giaima_2so_vitri_vn.@SCRATCH1
+071     md8l7d_gma_2so_vitri_vn.@SCRATCH1
+072-073 xuat_32led_don_1dw.wd1
+072     xuat_8led_7doan_quet.mht
+072     key_nhan.cot
+072-075 atan2.x
+072     md4l7d_giaima_2so_vitri_vn.@SCRATCH2
+072     md8l7d_gma_2so_vitri_vn.@SCRATCH2
+073     key_nhan.@SCRATCH1
+073     md4l7d_giaima_2so_vitri_vn.@SCRATCH3
+073     xuat_8led_7doan_quet.@SCRATCH1
+073     md8l7d_gma_2so_vitri_vn.@SCRATCH3
+074-075 xuat_32led_don_1dw.wd0
+074     @DIV88.P1
+075     @DIV88.P1
+076-079 atan2.z
+076-077 xuat_32led_don_2word.wld1
+076     xuat_32led_don_1dw.@SCRATCH1
+076     @DIV88.@SCRATCH1
+078-079 xuat_32led_don_2word.wld0
+07A.0   atan2.sign
+07A     xuat_32led_don_2word.b3
+07B     atan2.quad
+07B     xuat_32led_don_2word.b2
+07C     xuat_32led_don_2word.b1
+07D     xuat_32led_don_2word.b0
+07E     xuat_32led_don_4byte.bld3
+07F     xuat_32led_don_4byte.bld2
+080     xuat_32led_don_4byte.bld1
+081     xuat_32led_don_4byte.bld0
+082     xuat_1byte.x
+082.7   xuat_1byte.msb
+083     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  ma7doan.call
+0000B0  ma7doan.data
+0000C0  maquet.call
+0000DA  maquet.data
+0000DE  ma_quet.call
+0000F8  ma_quet.data
+000102  @const1100.call
+000104  @const1106.call
+000106  @const1111.call
+000108  @const1121.call
+000112  @const1123.call
+000128  @const1182.call
+000134  interrupt_timer3
+000144  xuat_1byte
+00016A  xuat_1word
+000180  xoa_tat_6module
+0001D8  set_up_port
+000212  @DIV88
+00023A  md8l7d_gma_2so_vitri_vn
+0002C8  giai_ma_8led_quet
+0002EC  xoa_gpg
+000306  key_nhan
+000378  @delay_ms1
+00039E  key_4x4_dw_c2
+0003DA  xuat_32led_don_4byte
+0003FE  xuat_32led_don_2word
+000424  xuat_32led_don_1dw
+000448  xuat_4led_7doan_4so
+00046C  tang_vt
+000478  xuat_buzzer_relay
+000496  buzzer_on
+00049E  xuat_8led_7doan_quet
+0004D0  tat_8led_7doan_quet
+0004DC  hien_thi_8led_7doan_quet
+000510  buzzer_off
+000518  buzzer_bip
+00052C  nhap_ch_dv_gio
+000568  nhap_ch_dv_phut
+000594  nhap_ch_dv_giay
+0005C0  nhap_tinh_gpg
+0005FE  md4l7d_giaima_2so_vitri_vn
+00068E  tat_1led_chinh
+0006C8  chinh_gpg_mtp4x4
+000772  xu_ly_tang_gpg
+00079A  @cinit1
+00079A  MAIN
+0007E2  @cinit2
+
+Project Directory:
+    E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\
+
+Project Files:
+    bai_517_gio_phut_giay_mt4x4.c                           [01-Apr-22 15:07  CRC=7FDF8F8F]
+    tv_kit_vdk_pic_all.c                                    [09-Jun-23 18:15  CRC=2DEB1629]
+    tv_00_define_18f4550.c                                  [30-Sep-21 12:29  CRC=91C401BF]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [04-Oct-21 08:38  CRC=26E88B80]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [25-Mar-22 13:13  CRC=1A33A3DD]
+    tv_05_i2c_ds13_pcf.c                                    [05-Jun-22 14:58  CRC=97278EF6]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [02-Jun-22 21:59  CRC=7B0F485F]
+    tv_dht11.c                                              [13-May-22 16:42  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [13-May-22 13:20  CRC=6B8BEF4B]
+    tv_07_ds18b20.c                                         [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [15-Oct-21 08:41  CRC=A7D8AEFA]
+    tv_08_step_motor.c                                      [22-Jun-23 15:52  CRC=5ACE5D77]
+    tv_08_dc_motor.c                                        [27-May-22 16:39  CRC=81B98620]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+    bai_517_gpg_tv.c                                        [01-Apr-22 16:41  CRC=122CF5B7]
+
+Source signature=1C37DDAF
+
+Units:
+    bai_517_gio_phut_giay_mt4x4 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_517_gio_phut_giay_mt4x4.xsym
+    Errors:      bai_517_gio_phut_giay_mt4x4.err
+    Ext Symbols: bai_517_gio_phut_giay_mt4x4.esym
+    INHX32:      bai_517_gio_phut_giay_mt4x4.hex
+    Symbols:     bai_517_gio_phut_giay_mt4x4.sym
+    List:        bai_517_gio_phut_giay_mt4x4.lst
+    Debug/COFF:  bai_517_gio_phut_giay_mt4x4.cof
+    Project:     bai_517_gio_phut_giay_mt4x4.ccspjt
+    Call Tree:   bai_517_gio_phut_giay_mt4x4.tre
+    Statistics:  bai_517_gio_phut_giay_mt4x4.STA

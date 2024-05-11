@@ -1,0 +1,50 @@
+#include <tv_kit_vdk_pic_all.c>
+#include <tv_06_glcd.c>
+#include <graphics.c>//duoi tv_pic_glcd
+#include <bai_630_glcd_kim_gio_phut_giay_tv.c>
+usi8 giay_tam, giay_bin,phut_bin,gio_bin;
+
+void main()
+{
+   set_up_port();
+   setup_glcd(glcd_text_mode);
+   delay_ms(10);
+   setup_glcd(glcd_graphic_mode);
+   glcd_mau_nen(0);
+   ds1307_kiem_tra_ma();
+   
+   glcd_ve_cac_vong_tron_so();
+   giay_bin=(giay_ds/16)*10+(giay_ds%16);
+   glcd_ve_kim_giay(bks,giay_bin,0);
+   giay_tam=0x60;
+   
+   phut_bin= (phut_ds/16)*10+(phut_ds%16);
+   glcd_ve_kim_phut(bkm,phut_bin,1);
+   
+   phut_bin= (gio_ds/16)*10+(gio_ds%16);
+   glcd_ve_kim_gio(bkm,gio_bin,1);
+   
+   while(true)
+   {
+      ds1307_doc_time(8);
+      if(giay_tam!=giay_ds)
+      {
+         giay_tam=giay_ds;
+         giay_bin=(giay_ds/16)*10+(giay_ds%16);
+         if(giay_ds==0)
+         {
+            phut_bin=(phut_ds/16)*10+(phut_ds%16);
+            glcd_ve_kim_phut(bkm,phut_bin,1);
+            if(phut_ds==0)
+            {
+               gio_bin=(phut_ds/16)*10+(phut_ds%16);
+               glcd_ve_kim_gio(bkm,gio_bin,1);
+            }
+            
+         }
+         glcd_ve_kim_giay(bks,giay_bin,1);
+         gdram_vdk_to_gdram_glcd_all();
+         glcd_dong_ho_so();
+      }
+   }
+}

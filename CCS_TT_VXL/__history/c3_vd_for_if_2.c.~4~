@@ -1,0 +1,65 @@
+#include <tv_kit_vdk_pic_all.c>
+int1 status;
+usi8 x, i;
+void reset()
+{
+   i=0; x=0; 
+}
+void b308_32led_std_pst(usi16 dl) 
+{
+   usi8 i; usi32 x;
+   x = 0;
+   if(i<32)
+   {
+      x = (x << 1) + 1;
+      xuat_32led_don_1dw (x); delay_ms (dl);
+      i++;
+   }
+  else if(i<64)
+   {
+      x = (x << 1);
+      xuat_32led_don_1dw (x); delay_ms (dl);
+      i++;
+   } else  reset();
+}
+
+void b309_32led_std_tsp(usi16 dl) 
+{
+   usi8 i; usi32 x;
+   x = 0;
+   if(i<32)
+   {
+      x = (x>>1) + 0x80000000;
+      xuat_32led_don_1dw (x); delay_ms (dl);
+      i++;
+   }
+   else if(i<64)
+   {
+      x = (x>>1);
+      xuat_32led_don_1dw (x); delay_ms (dl);
+      i++;
+   } else reset();
+}
+
+void b326_32led_std_pst_tsp_tat_3bt() 
+{
+   if(phim_bt1_c1(1,0))
+   {
+      status=~status;
+      reset();
+   }
+}
+
+void main()
+{
+   set_up_port();
+   status=0;
+   reset();
+   while(true)
+   {
+      b326_32led_std_pst_tsp_tat_3bt ();
+      if(status == 0) b308_32led_std_pst (200);
+      if(status == 1) b309_32led_std_tsp (200);
+   }
+}
+

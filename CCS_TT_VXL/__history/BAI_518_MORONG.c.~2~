@@ -1,0 +1,62 @@
+#include <tv_pickit2_shift_1.c>
+signed int8 sp, sec;
+int1 tt_onoff;
+
+void  phim_start_stop()
+{
+   if(!input(bt0))
+   {
+      delay_ms(20);
+      if(!input(bt0))
+      {
+         tt_onoff=!tt_onoff;
+         if(!tt_onoff) 
+         {
+            setup_timer_0(t0_ext_l_to_h|t0_div_1);
+            xuat_32led_don_1dw(0xffffffff);
+         }
+         else          
+         {
+            setup_timer_0(t0_off);
+            xuat_32led_don_1dw(0);
+         }
+         while(!input(bt0));
+      }
+   }
+}
+void phim_clr()
+{
+   if(!input(clr))
+   {
+      sp=0;
+      set_timer0(0);
+   }
+}
+void giaima_7doan()
+{
+   led_7dq[7]=ma7doan[sp/10];
+   led_7dq[6]=ma7doan[sp%10];
+}
+
+void main()
+{
+   set_up_port_ic_chot();
+   setup_timer_0(t0_off);
+   set_timer0(0);
+   tt_onoff=1;
+   sp=0;
+   while(true)
+   {
+      sp=get_timer0();
+      if(sp>99)
+      {
+         sp=0;
+         set_timer0(0);
+      }
+      phim_start_stop();
+      phim_clr();
+      giaima_7doan();
+      hien_thi_8led_7doan_quet_all ();
+   }
+}
+

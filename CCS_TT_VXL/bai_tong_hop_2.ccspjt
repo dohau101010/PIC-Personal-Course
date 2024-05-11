@@ -1,0 +1,49 @@
+[PROJECT]
+Target=bai_tong_hop_2.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_tong_hop_2.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_tong_hop_2.c]
+Type=4
+[mru-list]
+1=bai_tong_hop_2.c
+[Opened Files]
+1=bai_818_dkdc_dc_quay_thuan_nghich_PWM_For_Rev.c
+2=bai_tong_hop.c
+3=bai_801_step_motor_on_off_inv.c
+4=bai_801_step_motor_tv.c
+5=bai_tong_hop_1.c
+6=bai_tong_hop_tv.c
+7=bai_713_ds18b20_a_b_lcd_7doan_den_buz.c
+8=bai_711_ds18b20_lcd_7doan_den_buz.c
+9=bai_711_ds18b20_lcd_7doan_den_buz_rom.c
+10=tv_06_lcd.c
+11=bai_705_lcd_7doan_lm35a_b_den_buz_bt3.c
+12=tv_07_adc_cb.c
+13=bai_701_lm35a_tv.c
+14=bai_721_do_nhiet_do_do_am_DHT11.c
+15=bai_818_dc_motor_tv.c
+16=bai_815_dc_motor_tv.c
+17=bai_815_dc_motor_pwm_ccp1_up_dw_stop.c
+18=dc_motor.c
+19=bai_tong_hop_2.c
+20=tv_02_matran_phim4x4_138.c
+21=bai_633_glcd_dong_ho_gio_phut_giay.c
+22=tv_05_i2c_ds13_pcf.c
+23=thi_vxl_t6.c
+24=bai_603_lcd_hang0_dich_trai_phai_3btn.c
+25=bai_607_lcd_mtp4x4_buzzer_on_off.c
+26=bai_711_ds18a_tv.c
+27=bai_616_ds1307_3key_tv.c
+28=bai_616_clock_ds1307_lcd_tv.c
+29=bai_414_dem_xung_t0_stop_run_32led_gh.c
+30=bai_608_lcd_4led_dem_sp_t0.c
+31=tv_kit_vdk_pic_all.c
+32=
+[Units]
+Count=1
+1=bai_tong_hop_2 (main)

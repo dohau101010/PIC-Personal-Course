@@ -1,0 +1,21 @@
+[PROJECT]
+Target=bai_201_4LED_choptat.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_201_4LED_choptat.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\DriversC:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_201_4LED_choptat.c]
+Type=4
+[mru-list]
+1=bai_201_4LED_choptat.c
+[Opened Files]
+1=bai_201_4LED_choptat.c
+2=
+3=C:\Program Files (x86)\PICC\Drivers\tv_08_dc_motor.c
+4=
+[Units]
+Count=1
+1=bai_201_4LED_choptat (main)

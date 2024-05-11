@@ -1,0 +1,39 @@
+ÀÄbai_406_cai_gh_0_99_2bt_up_dw
+   ÀÄMAIN  0/164  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄb406_hienthi_4led7doan  0/18  Ram=0
+      ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/144  Ram=6
+      ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ÀÄ@const667  0/32  Ram=0
+      ³  ÀÄxuat_4led_7doan_4so  0/36  Ram=0
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÀÄxuat_1byte  0/38  Ram=2
+      ÀÄb406_up_dw_g_han  0/56  Ram=1
+         ÃÄphim_bt0_c2  0/68  Ram=3
+         ³  ÀÄ@delay_us1  0/26  Ram=1
+         ÃÄb406_hienthi_4led7doan  0/18  Ram=0
+         ³  ÀÄ*
+         ÃÄphim_bt2_c2  0/68  Ram=3
+         ³  ÀÄ@delay_us1  0/26  Ram=1
+         ÀÄb406_hienthi_4led7doan  0/18  Ram=0
+            ÀÄ*

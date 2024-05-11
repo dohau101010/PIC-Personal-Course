@@ -1,0 +1,14 @@
+#include <tv_kit_vdk_pic_all.c> 
+#include <bai_327_tv.c>
+
+void main()
+{ 
+   set_up_port(); 
+   tt_ct=0;
+   while(true) 
+   { 
+      bai_338_32led_chay_td_4yc_if();
+      //tt_ct++;
+      delay_ms(100);
+   }
+}

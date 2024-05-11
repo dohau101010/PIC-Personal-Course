@@ -1,0 +1,4 @@
+>>> Warning 202 "bai_518_clock_ds1307_8led7doan.c" Line 4(6,14): Variable never used:   giay_tam
+      Memory usage:   ROM=4%      RAM=4% - 5%
+      0 Errors,  1 Warnings.
+Build Successful.

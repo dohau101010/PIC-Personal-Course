@@ -1,0 +1,26 @@
+[PROJECT]
+Target=c3_vd_for_if_3.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=c3_vd_for_if_3.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[c3_vd_for_if_3.c]
+Type=4
+[mru-list]
+1=c3_vd_for_if_3.c
+[Opened Files]
+1=c3_vd_for_ì_2.c
+2=c3_vd_for_if_3.c
+3=c3_vd_for_if_2.c
+4=bai_324_16led_up_dw_clr_1.c
+5=bai_321_on_off_8led.c
+6=bai_322_on_off_inv_8led.c
+7=c3_vd_for_if_1.c
+8=c3_vd_for_if_ngat.c
+9=
+[Units]
+Count=1
+1=c3_vd_for_if_3 (main)

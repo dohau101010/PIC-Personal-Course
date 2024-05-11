@@ -1,0 +1,64 @@
+ÀÄbai_415_dem_xung_t0_stop_run_32led_gh_mtp4x4
+   ÀÄMAIN  0/266  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ÀÄxuat_32led_don_4byte  0/36  Ram=4
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄb411_dem_sp_t0  0/38  Ram=0
+      ³  ÃÄb411_hienthi_4led7doan  0/40  Ram=1
+      ³  ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/142  Ram=6
+      ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ³  ÃÄ@DIV88  0/40  Ram=3
+      ³  ³  ³  ÀÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/142  Ram=6
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄxuat_4led_7doan_4so  0/36  Ram=0
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³  ³     ÀÄxuat_1byte  0/38  Ram=2
+      ³  ÀÄbuzzer_on_off  0/36  Ram=3
+      ³     ÃÄxuat_buzzer_relay  0/30  Ram=2
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÃÄ@delay_ms1  0/38  Ram=1
+      ³     ÀÄxuat_buzzer_relay  0/30  Ram=2
+      ³        ÀÄ*
+      ÃÄkey_4x4_dw  0/50  Ram=2
+      ³  ÃÄkey_nhan  0/112  Ram=4
+      ³  ³  ÀÄ@const704  0/20  Ram=0
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄkey_nhan  0/112  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄkey_nhan  0/112  Ram=4
+      ³     ÀÄ*
+      ÃÄb411_hienthi_4led7doan  0/40  Ram=1
+      ³  ÀÄ*
+      ÃÄb411_dem_sp_t0  0/38  Ram=0
+      ³  ÀÄ*
+      ÃÄxuat_32led_don_2word  0/36  Ram=8
+      ³  ÀÄ*
+      ÀÄxuat_32led_don_2word  0/36  Ram=8
+         ÀÄ*

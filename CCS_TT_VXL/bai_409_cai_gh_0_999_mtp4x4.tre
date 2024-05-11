@@ -1,0 +1,46 @@
+ÀÄbai_409_cai_gh_0_999_mtp4x4
+   ÀÄMAIN  0/288  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄb408_hienthi_4led7doan  0/82  Ram=2
+      ³  ÃÄ@MULS1616  0/80  Ram=6
+      ³  ÃÄ@MULS1616  0/80  Ram=6
+      ³  ÃÄmd4l7d_giaima_3so_vitri_vn  0/314  Ram=9
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÀÄ@const667  0/32  Ram=0
+      ³  ÀÄxuat_4led_7doan_4so  0/36  Ram=0
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄkey_4x4_dw  0/50  Ram=2
+      ³  ÃÄkey_nhan  0/112  Ram=4
+      ³  ³  ÀÄ@const704  0/20  Ram=0
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÃÄkey_nhan  0/112  Ram=4
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/38  Ram=1
+      ³  ÀÄkey_nhan  0/112  Ram=4
+      ³     ÀÄ*
+      ÀÄb408_hienthi_4led7doan  0/82  Ram=2
+         ÀÄ*

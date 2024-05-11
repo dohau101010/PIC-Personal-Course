@@ -1,0 +1,200 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   step_motor_enable
+004-005 rbdc
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006-007 dl_btn
+008-00B dl_4l7d
+00C-013 dl_8l7dq
+014-01C time_w
+01D-025 time_r
+026-029 g_lcd
+02A.0   lcd_e
+02A     lcd_ctrl
+02A.1   lcd_rw
+02A.2   lcd_rs
+02A.3   lcd_p
+02B-02C so_ng
+02D-02E so_tp
+02F.0   ttqn
+02F.1   buz_ena
+030-033 led
+034-037 ttl
+038     tt_ct
+039-03C led_p
+03D-040 led_t
+041     t0
+042     t0_tam
+043     g_han
+044-045 buzzer_on_off.dl
+044-047 xuat_32led_don_1dw.dwld
+044-045 xuat_1word.w
+044     md4l7d_giaima_2so_vitri_vn.x
+044-047 atan2.y
+044     h327_32led_std_pst_if.@SCRATCH1
+044     h327_32led_std_tsp_if.@SCRATCH1
+044     h327_32led_std_tnv_if.@SCRATCH1
+044     h327_32led_std_ttr_if.@SCRATCH1
+045     md4l7d_giaima_2so_vitri_vn.y
+045     h327_32led_std_pst_if.@SCRATCH2
+045     h327_32led_std_tsp_if.@SCRATCH2
+045     h327_32led_std_tnv_if.@SCRATCH2
+045     h327_32led_std_ttr_if.@SCRATCH2
+046     xuat_buzzer_relay.rbdc1
+046     xuat_1word.b1
+046     md4l7d_giaima_2so_vitri_vn.xvn
+046     buzzer_on_off.@SCRATCH1
+046     h327_32led_std_pst_if.@SCRATCH3
+046     h327_32led_std_tsp_if.@SCRATCH3
+046     h327_32led_std_tnv_if.@SCRATCH3
+046     h327_32led_std_ttr_if.@SCRATCH3
+047     xuat_1word.b0
+047     xuat_buzzer_relay.rbdc2
+047     @delay_ms1.P1
+047     md4l7d_giaima_2so_vitri_vn.@SCRATCH1
+047     h327_32led_std_pst_if.@SCRATCH4
+047     h327_32led_std_tsp_if.@SCRATCH4
+047     h327_32led_std_tnv_if.@SCRATCH4
+047     h327_32led_std_ttr_if.@SCRATCH4
+048-049 xuat_32led_don_1dw.wd1
+048-04B atan2.x
+048     md4l7d_giaima_2so_vitri_vn.@SCRATCH2
+048     h327_32led_std_pst_if.@SCRATCH5
+048     h327_32led_std_tsp_if.@SCRATCH5
+048     h327_32led_std_tnv_if.@SCRATCH5
+048     h327_32led_std_ttr_if.@SCRATCH5
+049     md4l7d_giaima_2so_vitri_vn.@SCRATCH3
+04A-04B xuat_32led_don_1dw.wd0
+04A     @DIV88.P1
+04B     @DIV88.P1
+04C-04F atan2.z
+04C-04D xuat_32led_don_2word.wld1
+04C     xuat_32led_don_1dw.@SCRATCH1
+04C     @DIV88.@SCRATCH1
+04E-04F xuat_32led_don_2word.wld0
+050     xuat_32led_don_2word.b3
+050.0   atan2.sign
+051     atan2.quad
+051     xuat_32led_don_2word.b2
+052     xuat_32led_don_2word.b1
+053     xuat_32led_don_2word.b0
+054     xuat_32led_don_4byte.bld3
+055     xuat_32led_don_4byte.bld2
+056     xuat_32led_don_4byte.bld1
+057     xuat_32led_don_4byte.bld0
+058     xuat_1byte.x
+058.7   xuat_1byte.msb
+059     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  @const1100.call
+000026  @const1111.call
+000030  @const1113.call
+000046  @const1158.call
+000052  xuat_1byte
+000078  xuat_1word
+00008E  xoa_tat_6module
+0000E6  set_up_port
+000120  xuat_32led_don_4byte
+000144  xuat_32led_don_2word
+00016A  xuat_32led_don_1dw
+00018E  h327_32led_std_pst_if
+000244  h327_32led_std_tsp_if
+0002F0  h327_32led_std_tnv_if
+00041A  h327_32led_std_ttr_if
+000566  bai338_32led_chay_td_4yc_dung_if
+000586  @DIV88
+0005AE  md4l7d_giaima_2so_vitri_vn
+00063C  xuat_4led_7doan_4so
+000660  b411_hienthi_4led7doan
+000680  xuat_buzzer_relay
+00069E  @delay_ms1
+0006C4  buzzer_on_off
+0006E8  b411_dem_sp_t0
+000710  MAIN
+000710  @cinit1
+00073E  @cinit2
+
+Project Directory:
+    E:\Downloads\TT VXL THAY PHU\tt_vxl_d501_thay_phu\tt_vxl_d501_thay_phu\
+
+Project Files:
+    bai_421_tong_hop_2module.c                              [23-Mar-22 00:02  CRC=F365C986]
+    tv_kit_vdk_pic_all.c                                    [09-Feb-22 11:37  CRC=95887F12]
+    tv_00_define_18f4550.c                                  [30-Sep-21 12:29  CRC=91C401BF]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [04-Oct-21 08:38  CRC=26E88B80]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [15-Oct-21 08:15  CRC=1A33A3DD]
+    tv_05_i2c_ds13_pcf.c                                    [15-Oct-21 08:16  CRC=97278EF6]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [15-Oct-21 08:30  CRC=EE6254ED]
+    tv_dht11.c                                              [24-Nov-21 12:49  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [29-Oct-21 18:52  CRC=8F6690CD]
+    tv_07_ds18b20.c                                         [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [15-Oct-21 08:41  CRC=A7D8AEFA]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+    bai_338_32led_3y_chay_td_4yc_dung_if.c                  [23-Mar-22 00:02  CRC=A68CF422]
+    bai_411_t0_tv.c                                         [18-Mar-22 12:47  CRC=341A58C8]
+
+Source signature=9C69054C
+
+Units:
+    bai_421_tong_hop_2module (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_421_tong_hop_2module.xsym
+    Errors:      bai_421_tong_hop_2module.err
+    Ext Symbols: bai_421_tong_hop_2module.esym
+    INHX32:      bai_421_tong_hop_2module.hex
+    Symbols:     bai_421_tong_hop_2module.sym
+    List:        bai_421_tong_hop_2module.lst
+    Debug/COFF:  bai_421_tong_hop_2module.cof
+    Project:     bai_421_tong_hop_2module.ccspjt
+    Call Tree:   bai_421_tong_hop_2module.tre
+    Statistics:  bai_421_tong_hop_2module.STA

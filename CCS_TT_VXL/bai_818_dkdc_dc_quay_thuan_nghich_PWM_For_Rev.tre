@@ -1,0 +1,80 @@
+ÀÄbai_818_dkdc_dc_quay_thuan_nghich_PWM_For_Rev
+   ÀÄMAIN  0/252  Ram=1
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄdc_motor_enable  0/8  Ram=0
+      ³  ÀÄxuat_buzzer_relay  0/32  Ram=2
+      ³     ÃÄxuat_1byte  0/38  Ram=2
+      ³     ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄgiai_ma_7doan_quet  0/32  Ram=0
+      ³  ÃÄmd8l7d_gma_4so_vitri_vn  0/440  Ram=9
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@const667  0/32  Ram=0
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÃÄ@DIV1616  0/66  Ram=5
+      ³  ³  ÀÄ@const667  0/32  Ram=0
+      ³  ÀÄmd8l7d_gma_2so_vitri_vn  0/144  Ram=6
+      ³     ÃÄ@DIV88  0/40  Ram=3
+      ³     ÃÄ@const667  0/32  Ram=0
+      ³     ÃÄ@DIV88  0/40  Ram=3
+      ³     ÃÄ@DIV88  0/40  Ram=3
+      ³     ÀÄ@const667  0/32  Ram=0
+      ÃÄphim_bt0_c2  0/68  Ram=3
+      ³  ÀÄ@delay_us1  0/26  Ram=1
+      ÃÄquay_thuan_tang_toc  0/78  Ram=0
+      ³  ÃÄdc_motor_ktao_ccpx  0/12  Ram=0
+      ³  ³  ÃÄdc_motor_ktao_ccp1_thuan  0/24  Ram=0
+      ³  ³  ÀÄdc_motor_ktao_ccp2_nghich  0/20  Ram=0
+      ³  ÃÄ@MUL1616  0/32  Ram=5
+      ³  ÃÄdc_motor_set_pwmx_duty  0/84  Ram=0
+      ³  ÃÄgiai_ma_7doan_quet  0/32  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÀÄxuat_32led_don_2word  0/36  Ram=8
+      ³     ÀÄxuat_32led_don_4byte  0/36  Ram=4
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÃÄxuat_1byte  0/38  Ram=2
+      ³        ÀÄxuat_1byte  0/38  Ram=2
+      ÃÄphim_bt2_c2  0/68  Ram=3
+      ³  ÀÄ@delay_us1  0/26  Ram=1
+      ÃÄquay_thuan_tang_toc  0/78  Ram=0
+      ³  ÀÄ*
+      ÃÄmotor_dc_stop  0/46  Ram=0
+      ³  ÃÄdc_motor_set_pwmx_duty  0/84  Ram=0
+      ³  ÃÄdc_motor_pwm_ccp1_ccp2_stop  0/18  Ram=0
+      ³  ³  ÃÄdc_motor_ktao_ccpx  0/12  Ram=0
+      ³  ³  ³  ÀÄ*
+      ³  ³  ÀÄdc_motor_set_pwmx_duty  0/84  Ram=0
+      ³  ÃÄgiai_ma_7doan_quet  0/32  Ram=0
+      ³  ³  ÀÄ*
+      ³  ÀÄxuat_32led_don_2word  0/36  Ram=8
+      ³     ÀÄ*
+      ÀÄhien_thi_8led_7doan_quet  0/54  Ram=2
+         ÃÄxuat_8led_7doan_quet  0/50  Ram=3
+         ³  ÃÄ@const907  0/26  Ram=0
+         ³  ÃÄxuat_1byte  0/38  Ram=2
+         ³  ÀÄxuat_1byte  0/38  Ram=2
+         ÃÄ@delay_ms1  0/40  Ram=1
+         ÀÄtat_8led_7doan_quet  0/12  Ram=0
+            ÀÄxuat_8led_7doan_quet  0/50  Ram=3
+               ÀÄ*

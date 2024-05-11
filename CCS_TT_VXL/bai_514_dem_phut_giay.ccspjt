@@ -1,0 +1,53 @@
+[PROJECT]
+Target=bai_514_dem_phut_giay.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_514_dem_phut_giay.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_514_dem_phut_giay.c]
+Type=4
+[mru-list]
+1=bai_514_dem_phut_giay.c
+[Opened Files]
+1=bai_338_32led_3y_chay_td_4yc_dung_if.c
+2=bai_327_32led_3y_cau_up_dw_if.c
+3=bai_327_tv.c
+4=tv_04_4led_7doan.c
+5=tv_02_matran_phim4x4_138.c
+6=bai_401_mtp4x4_7doan.c
+7=bai_402_mtp4x4_4led_dich.c
+8=bai_403_mtp4x4_4led_dich_undo4.c
+9=bai_404_mtp4x4_on_off_8leddon.c
+10=bai_406_cai_gh_0_99_2bt_up_dw.c
+11=tv_01_4_nutnhan.c
+12=bai_408_cai_gh_0_99_mtp4x4.c
+13=bai_409_cai_gh_0_999_mtp4x4.c
+14=bai_411_t0_tv.c
+15=bai_411_dem_xung_t0.c
+16=bai_412_dem_xung_t0_stop_run_32led.c
+17=C:\Program Files (x86)\PICC\Devices\18f4550.h
+18=bai_413_dem_xung_t0_stop_run_ud_32led.c
+19=bai_413_dem_xung_t0_stop_run_ud_32led_thay_PHU.c
+20=bai_414_dem_xung_t0_stop_run_32led_gh.c
+21=bai_415_dem_xung_t0_stop_run_32led_gh_mtp4x4.c
+22=bai_421_tong_hop_2module.c
+23=bai_501_hienthi_8so.c
+24=tv_05_8led_7doan_quet.c
+25=bai_502_8so_chop_tat.c
+26=bai_503_16so_luan_phien.c
+27=bai_504_chuoi_std_pst.c
+28=bai_506_mtp4x4_8led_dich.c
+29=bai_507_mtp4x4_cai_gh_2so.c
+30=bai_504_nang_cao.c
+31=bai_508_mtp4x4_cai_gh_3so.c
+32=bai_511_counter_t0_led7doan.c
+33=bai_513_dem_giay_cx.c
+34=bai_514_dem_phut_giay.c
+35=bai_515_dem_gio_phut_giay.c
+36=
+[Units]
+Count=1
+1=bai_514_dem_phut_giay (main)

@@ -1,0 +1,37 @@
+
+#include <tv_kit_vdk_pic_all.c>
+usi8 y;
+void phim_inv()
+{
+   if(!input(inv))
+   {
+      delay_ms (20) ;
+      {
+         if(!input(inv))
+         {
+            y = ~y;
+            xuat_32led_don_4byte (0,0,0,y);
+            while(!input(inv));
+         }
+      }
+   }
+}
+
+void main()
+{
+   set_up_port();
+   y = 0x00;
+   xuat_32led_don_4byte (0, 0, 0, 0) ;
+   WHILE (true)
+   {
+      if(!input(on)) 
+      {
+         xuat_32led_don_4byte (0, 0, 0, 0x0f);
+         phim_inv();
+      }
+     else if(input (off)) 
+     xuat_32led_don_4byte (0, 0, 0, 0) ;
+     else;
+   }
+}
+

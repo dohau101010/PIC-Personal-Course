@@ -1,0 +1,23 @@
+[PROJECT]
+Target=EXAMPLE_6_GLCD.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=EXAMPLE_6_GLCD.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[EXAMPLE_6_GLCD.c]
+Type=4
+[mru-list]
+1=EXAMPLE_6_GLCD.c
+[Opened Files]
+1=..\..\..\..\TTVXL\TTVXL\Thuc Hanh\EXAMPLE_6_GLCD.c
+2=C:\Program Files (x86)\PICC\Drivers\tv_boards.c
+3=C:\Program Files (x86)\PICC\Drivers\TV_D401_TH.C
+4=C:\Program Files (x86)\PICC\Drivers\TV_MOPHONG.C
+5=C:\Program Files (x86)\PICC\Drivers\TV_D501_TH.C
+6=
+[Units]
+Count=1
+1=EXAMPLE_6_GLCD (main)

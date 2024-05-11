@@ -1,0 +1,200 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004-005 rbdc
+004.0   step_motor_enable
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006-007 dl_btn
+008-00B dl_4l7d
+00C-013 dl_8l7dq
+014-01C time_w
+01D-025 time_r
+026-029 g_lcd
+02A     lcd_ctrl
+02A.0   lcd_e
+02A.1   lcd_rw
+02A.2   lcd_rs
+02A.3   lcd_p
+02B-02C so_ng
+02D-02E so_tp
+02F-030 nd_tren
+031-032 nd_duoi
+033.0   ttqn
+033.1   buz_ena
+033.2   stepmotor_tn
+033.3   stepmotor_fh
+033.4   dcmotor_tn
+033.5   dcmotor_onoff
+034-03B stepmotor_fs
+03C-04B stepmotor_hs
+04C     stepmotor_i
+04D-04E pwm_duty
+04F.0   glcd_psb
+04F     glcd_ctr
+04F.1   glcd_nc
+04F.2   glcd_e
+04F.3   glcd_rw
+04F.4   glcd_rs
+04F.5   glcd_p
+050     doc
+051     ngang
+052-452 gdram_vdk
+453     glcd_xuat_anh.width
+453     setup_glcd.glcd_fs_mode
+453-454 xuat_1word.w
+453     glcd_mau_nen.glcd_color
+453-456 atan2.y
+453     gdram_vdk_to_gdram_glcd_all.@SCRATCH1
+454     @delay_ms1.P1
+454     glcd_xuat_anh.height
+454     glcd_command.db
+454-455 glcd_mau_nen.d
+454     gdram_vdk_to_gdram_glcd_all.@SCRATCH2
+455     xuat_1word.b1
+455     glcd_xuat_anh.x
+455     gdram_vdk_to_gdram_glcd_all.@SCRATCH3
+456     xuat_1word.b0
+456     glcd_xuat_anh.y
+456     glcd_data.db
+456     glcd_mau_nen.@SCRATCH1
+457-45A atan2.x
+457     glcd_xuat_anh.i
+457     glcd_xuat_db.db
+457     glcd_mau_nen.@SCRATCH2
+458     xuat_glcd.glcd_ctr
+458     glcd_xuat_anh.j
+458     glcd_mau_nen.@SCRATCH3
+459     glcd_xuat_anh.k
+459     xuat_glcd.glcd_dta
+459     glcd_mau_nen.@SCRATCH4
+45A     xuat_1byte.x
+45A-45B glcd_xuat_anh.n
+45A.7   xuat_1byte.msb
+45B     xuat_1byte.sb
+45B-45E atan2.z
+45C     glcd_xuat_anh.@SCRATCH1
+45D     glcd_xuat_anh.@SCRATCH2
+45E     glcd_xuat_anh.@SCRATCH3
+45F.0   atan2.sign
+45F     glcd_pixel.x
+45F     glcd_xuat_anh.@SCRATCH4
+460     atan2.quad
+460     glcd_pixel.y
+461     glcd_pixel.color
+462     glcd_pixel.b
+463-464 @MUL1616.P1
+463     glcd_pixel.@SCRATCH1
+464     glcd_pixel.@SCRATCH2
+465-466 @MUL1616.P1
+467     @MUL1616.@SCRATCH1
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PACKED_MEMORY.P1
+FE9-FEA @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P3
+FE9-FEA @READ_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  logo_spk.call
+000012  logo_spk.data
+000212  @const1097.call
+000214  @const1103.call
+000216  @const1108.call
+000218  @const1118.call
+000222  @const1120.call
+000238  @const1184.call
+000244  xuat_1byte
+00026E  xuat_1word
+000284  xoa_tat_6module
+0002F4  set_up_port
+00032E  xuat_glcd_lcd
+000352  xuat_glcd
+000366  glcd_xuat_db
+00038C  glcd_command
+000396  @delay_ms1
+0003BE  setup_glcd
+000416  @MUL1616
+000438  glcd_mau_nen
+0004B4  glcd_pixel
+0005C2  glcd_xuat_anh
+000654  glcd_data
+00065E  gdram_vdk_to_gdram_glcd_all
+000744  MAIN
+000744  @cinit1
+000786  @cinit2
+
+Project Directory:
+    E:\CCS VXL\THUC TAP VXL_SP\VXL_VIP_PRO\CCS_TT_VXL\
+
+Project Files:
+    bai_624_glcd_bitmap_spkt.c                              [05-Jun-22 13:13  CRC=F863E905]
+    tv_kit_vdk_pic_all.c                                    [15-Jul-23 08:40  CRC=2DEB1629]
+    tv_00_define_18f4550.c                                  [15-Jul-23 08:40  CRC=EBD97A3A]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [28-Aug-23 09:42  CRC=74AC6B76]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [25-Mar-22 13:13  CRC=1A33A3DD]
+    tv_05_i2c_ds13_pcf.c                                    [05-Jun-22 14:58  CRC=97278EF6]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [02-Jun-22 21:59  CRC=7B0F485F]
+    tv_dht11.c                                              [13-May-22 16:42  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [13-May-22 13:20  CRC=6B8BEF4B]
+    tv_07_ds18b20.c                                         [18-Jul-23 13:00  CRC=C870A0F3]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [15-Oct-21 08:41  CRC=A7D8AEFA]
+    tv_08_step_motor.c                                      [22-Jun-23 15:52  CRC=5ACE5D77]
+    tv_08_dc_motor.c                                        [27-May-22 16:39  CRC=81B98620]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+    tv_06_glcd.c                                            [18-Sep-23 10:22  CRC=46FC60B8]
+
+Source signature=73A195D3
+
+Units:
+    bai_624_glcd_bitmap_spkt (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_624_glcd_bitmap_spkt.xsym
+    Errors:      bai_624_glcd_bitmap_spkt.err
+    Ext Symbols: bai_624_glcd_bitmap_spkt.esym
+    INHX32:      bai_624_glcd_bitmap_spkt.hex
+    Symbols:     bai_624_glcd_bitmap_spkt.sym
+    List:        bai_624_glcd_bitmap_spkt.lst
+    Debug/COFF:  bai_624_glcd_bitmap_spkt.cof
+    Project:     bai_624_glcd_bitmap_spkt.ccspjt
+    Call Tree:   bai_624_glcd_bitmap_spkt.tre
+    Statistics:  bai_624_glcd_bitmap_spkt.STA

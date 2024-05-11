@@ -1,0 +1,50 @@
+
+typedef struct
+{
+      unsigned int8 key;
+}KEY4x4_STRUCT;
+KEY4x4_STRUCT  key4x4;
+//result key_4x4(void);
+
+
+result key4x4()
+{      
+         static unsigned int8  step=0;
+         static unsigned int16 t;
+         key4x4.key = KEYREAD();
+         switch (step)
+         {
+             case 0:
+                   if( key4x4.key!=0xff)
+                      {     t   = delay_start();
+                            step=1;
+                      } 
+                    break;
+              case 1:
+                    if(key4x4.key==0xff)step =0;
+                    else if(delay_stop(t)>=BUTTON_HOLD_TIME)
+                    {   step = 2;
+                        t    = delay_start(); 
+                        return 0;
+                    }
+                    break; 
+              case 2:
+                    if(key4x4.key==0xff)step =0;
+                    else if(delay_stop(t)>=500)
+                       {
+                           t    = delay_start(); 
+                           step = 3;
+                       } 
+                    break;
+              case 3:
+                    if(key4x4.key==0xff)step =0;
+                    else if(delay_stop(t)>=100)
+                      {
+                         t    = delay_start(); 
+                         return 0;
+                      }
+                     break; 
+         }
+         return 2;
+}
+#endif

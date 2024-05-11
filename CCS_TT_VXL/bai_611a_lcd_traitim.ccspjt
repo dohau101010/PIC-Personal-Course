@@ -1,0 +1,76 @@
+[PROJECT]
+Target=bai_611a_lcd_traitim.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_611a_lcd_traitim.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_611a_lcd_traitim.c]
+Type=4
+[mru-list]
+1=bai_611a_lcd_traitim.c
+[Opened Files]
+1=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\“BAI_424_KEY_4X4_4LED_DICH_UNDO4”.c
+2=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\BAITONGHOP_CHUONG4_COUNTER_SP_3NUT.c
+3=..\..\..\..\TT - VDK - 22-23\TT_VXL_ST2_THAY N. ANH\TEST NHANH PROTEUS.c
+4=bai_611a_lcd_traitim.c
+5=
+6=bai_401_mtp4x4_7doan.c
+7=bai_402_mtp4x4_4led_dich.c
+8=bai_403_mtp4x4_4led_dich_undo4.c
+9=bai_404_mtp4x4_on_off_8leddon.c
+10=bai_406_cai_gh_0_99_2bt_up_dw.c
+11=tv_01_4_nutnhan.c
+12=bai_408_cai_gh_0_99_mtp4x4.c
+13=bai_409_cai_gh_0_999_mtp4x4.c
+14=bai_411_t0_tv.c
+15=bai_411_dem_xung_t0.c
+16=bai_412_dem_xung_t0_stop_run_32led.c
+17=bai_413_dem_xung_t0_stop_run_ud_32led.c
+18=bai_413_dem_xung_t0_stop_run_ud_32led_thay_PHU.c
+19=bai_414_dem_xung_t0_stop_run_32led_gh.c
+20=bai_415_dem_xung_t0_stop_run_32led_gh_mtp4x4.c
+21=bai_421_tong_hop_2module.c
+22=bai_501_hienthi_8so.c
+23=tv_05_8led_7doan_quet.c
+24=bai_502_8so_chop_tat.c
+25=bai_503_16so_luan_phien.c
+26=bai_504_chuoi_std_pst.c
+27=bai_506_mtp4x4_8led_dich.c
+28=bai_507_mtp4x4_cai_gh_2so.c
+29=bai_504_nang_cao.c
+30=bai_508_mtp4x4_cai_gh_3so.c
+31=bai_511_counter_t0_led7doan.c
+32=bai_513_dem_giay_cx.c
+33=bai_514_dem_phut_giay.c
+34=bai_515_dem_gio_phut_giay.c
+35=bai_516_gpg_tv.c
+36=bai_516_gio_phut_giay_3key.c
+37=bai_517_gio_phut_giay_mt4x4.c
+38=bai_517_gpg_tv.c
+39=bai_518_clock_ds1307_8led7doan.c
+40=tv_05_i2c_ds13_pcf.c
+41=bai_519_clock_ds1307_8led7doan_full.c
+42=bai_520_clock_ds1307_8led7doan_full_3key.c
+43=bai_521_tong_hop_3module_ds1307.c
+44=bai_601_lcd_hienthi_4hang.c
+45=“bai_602_lcd_ht_2hang_dich_trai.c
+46=bai_603_lcd_hang0_dich_trai_phai_3btn.c
+47=bai_605_lcd_ mtp4x4_dich_hang1.c
+48=bai_604_lcd_hang0_dich_trai_phai_1btn.c
+49=bai_606_lcd_mtp4x4_dich_3hang_123.c
+50=bai_607_lcd_mtp4x4_buzzer_on_off.c
+51=bai_520_dong_ho_thoi_gian_thuc_3nut_gpg_ntn_thu.c
+52=bai_521_ds1307_3key_tv.c
+53=bai_520_ds1307_3key_tv.c
+54=bai_608_lcd_4led_dem_sp_t0.c
+55=bai_609_lcd_4led_dem_sp_t0_ud.c
+56=bai_610_lcd_4led_dem_sp_t0_matrix_key.c
+57=bai_611_lcd_traitim.c
+58=bai_611a_lcd_traitim.c
+59=
+[Units]
+Count=1
+1=bai_611a_lcd_traitim (main)

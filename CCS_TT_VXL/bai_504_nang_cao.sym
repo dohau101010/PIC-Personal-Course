@@ -1,0 +1,149 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   step_motor_enable
+004-005 rbdc
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006-007 dl_btn
+008-00B dl_4l7d
+00C-013 dl_8l7dq
+014-01C time_w
+01D-025 time_r
+026-029 g_lcd
+02A     lcd_ctrl
+02A.0   lcd_e
+02A.1   lcd_rw
+02A.2   lcd_rs
+02A.3   lcd_p
+02B-02C so_ng
+02D-02E so_tp
+02F.0   ttqn
+02F.1   buz_ena
+030     i
+031     j
+032     n
+033     v
+034     m
+035     hien_thi_8led_7doan_quet.ttl
+035-036 xuat_1word.w
+035     copy_8byte_hthi.k
+035-038 atan2.y
+035     MAIN.@SCRATCH1
+036     @delay_ms1.P1
+036     hien_thi_8led_7doan_quet.@SCRATCH1
+036     copy_8byte_hthi.@SCRATCH1
+037     xuat_8led_7doan_quet.ttq
+037     xuat_1word.b1
+037     copy_8byte_hthi.@SCRATCH2
+038     xuat_1word.b0
+038     xuat_8led_7doan_quet.mht
+038     copy_8byte_hthi.@SCRATCH3
+039-03C atan2.x
+039     xuat_8led_7doan_quet.@SCRATCH1
+03A     xuat_1byte.x
+03A.7   xuat_1byte.msb
+03B     xuat_1byte.sb
+03D-040 atan2.z
+041.0   atan2.sign
+042     atan2.quad
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P1
+FE9-FEA @WRITE_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma_quet.call
+000014  ma_quet.data
+00001E  ma_7doan.call
+00002E  ma_7doan.data
+00004C  @const1100.call
+00004E  @const1111.call
+000058  @const1113.call
+00006E  @const1158.call
+00007A  xuat_1byte
+0000A0  xuat_1word
+0000B6  xoa_tat_6module
+00010E  set_up_port
+000148  copy_8byte_hthi
+000182  xuat_8led_7doan_quet
+0001B4  @delay_ms1
+0001DA  tat_8led_7doan_quet
+0001E6  hien_thi_8led_7doan_quet
+00021A  @cinit1
+00021A  MAIN
+000246  @cinit2
+
+Project Directory:
+    E:\Downloads\TT VXL THAY PHU\tt_vxl_d501_thay_phu\tt_vxl_d501_thay_phu\
+
+Project Files:
+    bai_504_nang_cao.c                                      [25-Mar-22 15:34  CRC=5F54CB2F]
+    tv_kit_vdk_pic_all.c                                    [09-Feb-22 11:37  CRC=95887F12]
+    tv_00_define_18f4550.c                                  [30-Sep-21 12:29  CRC=91C401BF]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [04-Oct-21 08:38  CRC=26E88B80]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [25-Mar-22 13:13  CRC=1A33A3DD]
+    tv_05_i2c_ds13_pcf.c                                    [15-Oct-21 08:16  CRC=97278EF6]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [15-Oct-21 08:30  CRC=EE6254ED]
+    tv_dht11.c                                              [24-Nov-21 12:49  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [29-Oct-21 18:52  CRC=8F6690CD]
+    tv_07_ds18b20.c                                         [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [15-Oct-21 08:41  CRC=A7D8AEFA]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+
+Source signature=9F084BE1
+
+Units:
+    bai_504_nang_cao (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_504_nang_cao.xsym
+    Errors:      bai_504_nang_cao.err
+    Ext Symbols: bai_504_nang_cao.esym
+    INHX32:      bai_504_nang_cao.hex
+    Symbols:     bai_504_nang_cao.sym
+    List:        bai_504_nang_cao.lst
+    Debug/COFF:  bai_504_nang_cao.cof
+    Project:     bai_504_nang_cao.ccspjt
+    Call Tree:   bai_504_nang_cao.tre
+    Statistics:  bai_504_nang_cao.STA

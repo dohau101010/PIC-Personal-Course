@@ -1,0 +1,118 @@
+#include <tv_kit_vdk_pic_all.c>
+usi8 mp, sp, gh, chuc, donvi;
+int1 status;
+void hienthigioihan()
+{
+  
+   gh=chuc*10+donvi;
+   sp=get_timer0();
+   if(sp>gh) 
+   {
+      set_timer0(1);
+      sp=1;
+   }
+   lcd_goto_xy(2,0);
+   printf(lcd_data, "GH: %02u  SP: %02u", gh, sp);
+}
+
+void hienthi7doan()
+{
+   if(status==0)
+   {
+    md4l7d_giaima_2so_vitri_vn(sp,1,0);
+    dl_4l7d[1]=dl_4l7d[1]-128;
+    dl_4l7d[2]=0xff-1-32-64-4-8;
+    dl_4l7d[3]=0xff-1-2-16-32-64;
+    xuat_4led_7doan_4so();
+   } else
+   {
+    md4l7d_giaima_2so_vitri_vn(sp,3,0);
+    dl_4l7d[0]=0xff-1-32-64-4-8;
+    dl_4l7d[1]=0xff-1-2-16-32-64-128;
+    xuat_4led_7doan_4so();
+   }
+}
+void nutnhan()
+{
+   mp=key_4x4_dw();
+   if(mp==15) 
+   {
+    status=!status;
+    hienthi7doan();
+   }
+   if(mp<10)
+   {
+      chuc=donvi;
+      donvi=mp;
+      hienthigioihan();
+   }
+   
+}
+void thoigianthuc()
+{
+   md8l7d_gma_so_bcd_vitri_vn(ngay_ds, 6, 0);  
+   md8l7d_gma_so_bcd_vitri_vn(thang_ds, 3, 0); 
+   md8l7d_gma_so_bcd_vitri_vn(nam_ds, 0, 0); 
+}
+usi16 lm35a_ng,lm35a_tp; 
+usi16 lm35b_ng,lm35b_tp; 
+ void adc_lm35a_doc_xuly(usi8 sl)
+{
+   float lm35a; 
+   lm35a=h701_adc_read(sl,chan_lm35a); 
+   lm35a = lm35a/2.046;
+   float_to_ng_2so_tp(lm35a); 
+   lm35a_ng = so_ng;
+   lm35a_tp = so_tp;
+}
+void adc_lm35b_doc_xuly(usi8 sl)
+{
+   float lm35b; 
+   lm35b=h701_adc_read(sl,chan_lm35b); 
+   lm35b = lm35b/2.046;
+   float_to_ng_2so_tp(lm35b); 
+   lm35b_ng = so_ng;
+   lm35b_tp = so_tp;
+}
+void hienthinhietdo()
+{
+   lcd_gm_ht_2so_to_xvn(lm35a_ng,0, 0,0);
+   lcd_gm_ht_2so_to_xvn(lm35b_ng,0, 13,0);
+}
+void xulynhiet()
+{
+      if(lm35a_ng>35 || lm_35b_ng>35)
+      {
+         buzzer_on();
+         xuat_32led_don_1dw(0xffffffff);
+         triac_2_off();
+      }
+      else
+      {
+         buzzer_off();
+         xuat_32led_don_1dw(0);
+         triac_2_on();
+      }
+}
+void main()
+{
+   set_up_port();
+   setup_timer_0(t0_ext_l_to_h|t0_div_1);
+   set_timer0(0);
+   lcd_setup();
+   lcd_khoi_tao_cgram_so_to();
+   ds1307_kiem_tra_ma(); 
+   while(true)
+   {
+      ds1307_doc_time(8);
+      thoigianthuc();
+      hien_thi_8led_7doan_quet();
+      nutnhan();
+      hienthigioihan();
+      hienthi7doan();
+      adc_lm35a_doc_xuly(10);
+      adc_lm35b_doc_xuly(10);
+      hienthinhietdo();
+      xulynhiet();
+   }
+}

@@ -1,0 +1,27 @@
+[PROJECT]
+Target=bai_310_32led_tong_hop.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_310_32led_tong_hop.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_310_32led_tong_hop.c]
+Type=4
+[mru-list]
+1=bai_310_32led_tong_hop.c
+[Opened Files]
+1=bai_404_mtp4x4_on_off_8leddon.c
+2=bai_406_cai_gh_0_99_2bt_up_dw.c
+3=C:\Program Files (x86)\PICC\Drivers\tv_kit_vdk_pic_all.c
+4=C:\Program Files (x86)\PICC\Drivers\tv_01_4_nutnhan.c
+5=bai_310_32led_tong_hop.c
+6=
+7=bai_309_32led_std_tsp.c
+8=bai_310_32led_tong_hop.c
+9=bai_308_32led_std_pst.c
+10=
+[Units]
+Count=1
+1=bai_310_32led_tong_hop (main)

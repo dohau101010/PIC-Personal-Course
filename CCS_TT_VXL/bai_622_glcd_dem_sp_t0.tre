@@ -1,0 +1,84 @@
+ÀÄbai_622_glcd_dem_sp_t0
+   ÀÄMAIN  0/196  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/112  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/42  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/42  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄsetup_glcd  0/90  Ram=1
+      ³  ÃÄglcd_command  0/10  Ram=1
+      ³  ³  ÀÄglcd_xuat_db  0/38  Ram=1
+      ³  ³     ÃÄxuat_glcd  0/20  Ram=2
+      ³  ³     ³  ÀÄxuat_glcd_lcd  0/36  Ram=0
+      ³  ³     ³     ÃÄxuat_1byte  0/42  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/42  Ram=2
+      ³  ³     ³     ÃÄxuat_1byte  0/42  Ram=2
+      ³  ³     ³     ÀÄxuat_1byte  0/42  Ram=2
+      ³  ³     ÀÄxuat_glcd  0/20  Ram=2
+      ³  ³        ÀÄ*
+      ³  ÃÄglcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄglcd_command  0/10  Ram=1
+      ³  ³  ÀÄ*
+      ³  ÃÄ@delay_ms1  0/40  Ram=1
+      ³  ÀÄglcd_command  0/10  Ram=1
+      ³     ÀÄ*
+      ÃÄglcd_command  0/10  Ram=1
+      ³  ÀÄ*
+      ÃÄ@PSTRINGC_1210  0/34  Ram=2
+      ³  ÀÄglcd_data  0/10  Ram=1
+      ³     ÀÄglcd_xuat_db  0/38  Ram=1
+      ³        ÀÄ*
+      ÀÄb622_dem_sp_glcd_4l7d_t0  0/66  Ram=0
+         ÃÄb622_hienthi_4led7doan  0/40  Ram=0
+         ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/158  Ram=6
+         ³  ³  ÃÄ@DIV88  0/44  Ram=3
+         ³  ³  ÃÄ@const667  0/32  Ram=0
+         ³  ³  ÃÄ@DIV88  0/44  Ram=3
+         ³  ³  ÃÄ@DIV88  0/44  Ram=3
+         ³  ³  ÀÄ@const667  0/32  Ram=0
+         ³  ÃÄmd4l7d_giaima_2so_vitri_vn  0/158  Ram=6
+         ³  ³  ÀÄ*
+         ³  ÀÄxuat_4led_7doan_4so  0/36  Ram=0
+         ³     ÃÄxuat_1byte  0/42  Ram=2
+         ³     ÃÄxuat_1byte  0/42  Ram=2
+         ³     ÃÄxuat_1byte  0/42  Ram=2
+         ³     ÀÄxuat_1byte  0/42  Ram=2
+         ÃÄh622_glcd_gma_hthi  0/166  Ram=6
+         ³  ÃÄ@DIV88  0/44  Ram=3
+         ³  ÃÄ@DIV88  0/44  Ram=3
+         ³  ÃÄ@DIV88  0/44  Ram=3
+         ³  ÃÄ@DIV88  0/44  Ram=3
+         ³  ÃÄglcd_command  0/10  Ram=1
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_data  0/10  Ram=1
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_data  0/10  Ram=1
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_data  0/10  Ram=1
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_data  0/10  Ram=1
+         ³  ³  ÀÄ*
+         ³  ÃÄglcd_data  0/10  Ram=1
+         ³  ³  ÀÄ*
+         ³  ÀÄglcd_data  0/10  Ram=1
+         ³     ÀÄ*
+         ÀÄbuzzer_on_off  0/44  Ram=3
+            ÃÄxuat_buzzer_relay  0/30  Ram=2
+            ³  ÃÄxuat_1byte  0/42  Ram=2
+            ³  ÀÄxuat_1byte  0/42  Ram=2
+            ÃÄ@delay_ms1  0/40  Ram=1
+            ÃÄ@delay_ms1  0/40  Ram=1
+            ÀÄxuat_buzzer_relay  0/30  Ram=2
+               ÀÄ*

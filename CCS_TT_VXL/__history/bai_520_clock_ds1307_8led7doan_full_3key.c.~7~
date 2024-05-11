@@ -1,0 +1,111 @@
+
+#include <tv_kit_vdk_pic_all.c> 
+
+usi8 giay_tam; 
+signed INT8 gio,phut,giay,bdn,gt_mod,tg_chinh=0;
+
+void b518_giai_ma_8led_quet() 
+{
+   md8l7d_gma_so_bcd_vitri_vn (giay_ds, 0, kx_vn);
+   md8l7d_gma_so_bcd_vitri_vn (phut_ds, 3, kx_vn) ;
+   md8l7d_gma_so_bcd_vitri_vn (gio_ds, 6, cx_vn);
+   IF (gt_mod == 1) dl_8l7dq[6] = dl_8l7dq[6]&0x7f;
+   IF (gt_mod == 2) dl_8l7dq[3] = dl_8l7dq[3]&0x7f;
+   IF (gt_mod == 3) dl_8l7dq[0] = dl_8l7dq[0]&0x7f;
+}
+
+void tat_2led_chinh()
+{
+   IF (gt_mod == 1) {dl_8l7dq[7] = 0xff; dl_8l7dq[6] = 0xff;}
+   IF (gt_mod == 2) {dl_8l7dq[4] = 0xff; dl_8l7dq[3] = 0xff;}
+   IF (gt_mod == 3) {dl_8l7dq[1] = 0xff; dl_8l7dq[0] = 0xff;}
+}
+
+void phim_mod(usi8 dl)
+{
+   IF (phim_mode_c2 (dl))
+   {
+      gt_mod++;
+      IF (gt_mod >= 4) gt_mod = 0;
+      tg_chinh = 0;
+   }
+}
+
+void phim_up(usi8 dl) 
+{
+   IF (phim_up_c2 (dl))
+   {
+      tg_chinh = 0;
+
+      SWITCH (gt_mod)
+      {
+         case 1: IF (gio == 23) gio = 0;
+         ELSE gio++;
+         BREAK;
+         case 2: IF (phut == 59) phut = 0;
+         ELSE phut++;
+         BREAK;
+         case 3: IF (giay == 59) giay = 0;
+         ELSE giay++;
+         BREAK;
+         DEFAULT: break;
+      }
+      b518_giai_ma_8led_quet();
+      hien_thi_8led_7doan_quet();
+   }
+}
+
+void phim_dw(usi8 dl)
+{
+   IF (phim_dw_c2 (dl))
+   {
+      tg_chinh = 0;
+
+      SWITCH (gt_mod)
+      {
+         case 1: IF (gio == 0) gio = 23;
+         ELSE gio--;
+         BREAK;
+         case 2: IF (phut == 0) phut = 59;
+         ELSE phut--;
+         BREAK;
+         case 3: IF (giay == 0) giay = 59;
+         ELSE giay--;
+         BREAK;
+         DEFAULT: break;
+      }
+      b518_giai_ma_8led_quet();
+      hien_thi_8led_7doan_quet();
+   }
+}
+
+
+void xu_ly_choptat() 
+{
+   IF (gt_mod !=  0)
+   {
+      IF ((input (up))&& (input (dw))
+         tat_2led_chinh ();
+      else IF
+         b518_giai_ma_8led_quet();
+   }
+}
+
+void main() 
+{
+   set_up_port ();
+   ds1307_kiem_tra_ma ();
+   
+   WHILE (true)
+   {
+      for (INT8 i = 0; i < 5; i++) hien_thi_8led_7doan_quet ();
+      ds1307_doc_time (8);
+
+      IF (giay_tam != giay_ds)
+      {
+         giay_tam=giay_ds;
+         b518_giai_ma_8led_quet ();
+      }
+   }
+}
+

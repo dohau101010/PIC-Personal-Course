@@ -1,0 +1,140 @@
+ÀÄbai_607_lcd_mtp4x4_buzzer_on_off
+   ÃÄMAIN  0/306  Ram=0
+   ³  ÃÄ@cinit1  (Inline)  Ram=0
+   ³  ÃÄset_up_port  0/58  Ram=0
+   ³  ³  ÀÄxoa_tat_6module  0/88  Ram=0
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_1word  0/22  Ram=4
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄxuat_1word  0/22  Ram=4
+   ³  ³        ÀÄ*
+   ³  ÃÄlcd_setup  0/72  Ram=0
+   ³  ³  ÃÄlcd_command  0/10  Ram=1
+   ³  ³  ³  ÀÄlcd_xuat  0/38  Ram=1
+   ³  ³  ³     ÃÄxuat_lcd  0/16  Ram=2
+   ³  ³  ³     ³  ÀÄxuat_glcd_lcd  0/36  Ram=0
+   ³  ³  ³     ³     ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³     ³     ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³     ³     ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³     ³     ÀÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³     ÀÄxuat_lcd  0/16  Ram=2
+   ³  ³  ³        ÀÄ*
+   ³  ³  ÃÄlcd_command  0/10  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_command  0/10  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ÀÄlcd_command  0/10  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ÃÄ@const986  0/30  Ram=0
+   ³  ³  ÀÄlcd_command  0/10  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄ@PSTRINGC_977  0/32  Ram=2
+   ³  ³  ÀÄlcd_data  0/10  Ram=1
+   ³  ³     ÀÄlcd_xuat  0/38  Ram=1
+   ³  ³        ÀÄ*
+   ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC_977  0/32  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC_977  0/32  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ÀÄ*
+   ³  ÃÄ@PSTRINGC_977  0/32  Ram=2
+   ³  ³  ÀÄ*
+   ³  ÃÄlcd_hienthi_dis  0/22  Ram=0
+   ³  ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄ@PSTRINGC_977  0/32  Ram=2
+   ³  ³     ÀÄ*
+   ³  ÃÄlcd_hienthi_off  0/22  Ram=0
+   ³  ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÀÄ@PSTRINGC_977  0/32  Ram=2
+   ³  ³     ÀÄ*
+   ³  ÃÄlcd_hienthi_tg_cai  0/72  Ram=1
+   ³  ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÃÄlcd_data  0/10  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÀÄlcd_data  0/10  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄlcd_hienthi_tg_dem  0/62  Ram=1
+   ³  ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÃÄlcd_data  0/10  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄ@DIV88  0/40  Ram=3
+   ³  ³  ÀÄlcd_data  0/10  Ram=1
+   ³  ³     ÀÄ*
+   ³  ÃÄxu_ly_cac_phim  0/102  Ram=1
+   ³  ³  ÃÄkey_4x4_dw  0/50  Ram=2
+   ³  ³  ³  ÃÄkey_nhan  0/112  Ram=4
+   ³  ³  ³  ³  ÀÄ@const704  0/30  Ram=0
+   ³  ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ³  ÃÄkey_nhan  0/112  Ram=4
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ³  ÀÄkey_nhan  0/112  Ram=4
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄlcd_hienthi_ena  0/24  Ram=0
+   ³  ³  ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄ@PSTRINGC_977  0/32  Ram=2
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÃÄlcd_hienthi_dis  0/22  Ram=0
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄlcd_hienthi_tg_cai  0/72  Ram=1
+   ³  ³  ³  ÀÄ*
+   ³  ³  ÃÄxuat_32led_don_1dw  0/36  Ram=9
+   ³  ³  ³  ÀÄxuat_32led_don_2word  0/38  Ram=8
+   ³  ³  ³     ÀÄxuat_32led_don_4byte  0/36  Ram=4
+   ³  ³  ³        ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³        ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³        ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³        ÀÄxuat_1byte  0/38  Ram=2
+   ³  ³  ÃÄlcd_hienthi_on  0/24  Ram=0
+   ³  ³  ³  ÃÄlcd_goto_xy  0/26  Ram=3
+   ³  ³  ³  ³  ÀÄ*
+   ³  ³  ³  ÀÄ@PSTRINGC_977  0/32  Ram=2
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÀÄtat_het  0/22  Ram=0
+   ³  ³     ÃÄlcd_hienthi_off  0/22  Ram=0
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÃÄxuat_32led_don_1dw  0/36  Ram=9
+   ³  ³     ³  ÀÄ*
+   ³  ³     ÀÄlcd_hienthi_tg_dem  0/62  Ram=1
+   ³  ³        ÀÄ*
+   ³  ÃÄtat_het  0/22  Ram=0
+   ³  ³  ÀÄ*
+   ³  ÃÄbuzz_bip  0/40  Ram=1
+   ³  ³  ÃÄbuzzer_on_off  0/36  Ram=3
+   ³  ³  ³  ÃÄxuat_buzzer_relay  0/30  Ram=2
+   ³  ³  ³  ³  ÃÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³  ³  ÀÄxuat_1byte  0/38  Ram=2
+   ³  ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ³  ÃÄ@delay_ms1  0/38  Ram=1
+   ³  ³  ³  ÀÄxuat_buzzer_relay  0/30  Ram=2
+   ³  ³  ³     ÀÄ*
+   ³  ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ³  ÃÄlcd_hienthi_tg_dem  0/62  Ram=1
+   ³  ³  ÀÄ*
+   ³  ÀÄ@delay_ms1  0/38  Ram=1
+   ÀÄinterrupt_timer3  0/16  Ram=0

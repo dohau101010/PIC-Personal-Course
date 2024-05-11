@@ -1,0 +1,45 @@
+[PROJECT]
+Target=bai_325_16led_up_dn_clr_2.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_325_16led_up_dn_clr_2.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_325_16led_up_dn_clr_2.c]
+Type=4
+[mru-list]
+1=bai_325_16led_up_dn_clr_2.c
+[Opened Files]
+1=bai_201_4LED_choptat.c
+2=bai_301_choptat_8led.c
+3=bai_302_32led_choptat.c
+4=bai_305_16led_phai_std_tsp.c
+5=bai_306_32led_std_tnv.c
+6=bai_307_32led_std_ttr.c
+7=bai_309_32led_std_tsp.c
+8=bai_310_32led_tong_hop.c
+9=bai_308_32led_std_pst.c
+10=bai_311_32led_sd_pst.c
+11=bai_312_32led_sd_tsp.c
+12=bai_313_32led_sd_tnv.c
+13=bai_314_32led_sd_ttr.c
+14=bai_315_32led_1dsp_mp.c
+15=bai_316_32led_1dst_mp.c
+16=bai_321_on_off_8led.c
+17=bai_322_on_off_inv_8led.c
+18=bai_323_on_off_inv_cdoi_8led.c
+19=bai_326_32led_3y_cau_up_dw.c
+20=bai_311_32led_sd_pst_c1.c
+21=bai_311_32led_sd_pst_c2.c
+22=bai_315_32led_dsdpmd.c
+23=bai_316_32led_dsdtmd.c
+24=bai_315_32led_1ds_ttr.c
+25=bai_335_32led_Kdsdt.c
+26=bai_324_16led_up_dw_clr_1.c
+27=bai_325_16led_up_dn_clr_2.c
+28=
+[Units]
+Count=1
+1=bai_325_16led_up_dn_clr_2 (main)

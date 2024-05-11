@@ -1,0 +1,16 @@
+[PROJECT]
+Target=bai_813_dkdc_dc_theo_thoi_gian_GLCD_hthi_giay.hex
+Processor_Text=PIC18F4550
+CCSVersion=5.015
+Compiler=PCH
+[Target Data]
+FileList=bai_813_dkdc_dc_theo_thoi_gian_GLCD_hthi_giay.c
+[Directories]
+Include=C:\Program Files (x86)\PICC\Devices\;C:\Program Files (x86)\PICC\Drivers\
+[bai_813_dkdc_dc_theo_thoi_gian_GLCD_hthi_giay.c]
+Type=4
+[mru-list]
+1=bai_813_dkdc_dc_theo_thoi_gian_GLCD_hthi_giay.c
+[Units]
+Count=1
+1=bai_813_dkdc_dc_theo_thoi_gian_GLCD_hthi_giay (main)

@@ -1,0 +1,5 @@
+>>> Warning 204 "bai_707_gp2d12_dsp_tv.c" Line 18(1,1): Condition always FALSE   kc_ng
+*** Error 12 "bai_707_gp2d12_dsp_tv.c" Line 18(8,13): Undefined identifier
+*** Error 51 "bai_707_gp2d12_dsp_tv.c" Line 33(4,8): A numeric expression must appear here
+      2 Errors,  1 Warnings.
+Build Failed.

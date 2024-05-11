@@ -1,0 +1,30 @@
+#include <tv_kit_vdk_pic_all.c>
+
+void bai_315_32led_1dsp_mp(usi16 dl)          
+{                                 
+   usi8 i,j;  usi32 x,ttcd,ttdc; //trang thai dich chuyen
+   x=0xffffffff; //trang thai co dinh
+   xuat_32led_don_1dw(x);
+   
+   ttcd = 0xfffffffe;
+   for(i=0;i<32;i++)
+   {  
+      ttdc=0x00000001<<i; //dich (i lan) tuong ung chua cac led tat dang sau ==> diem sang nam o vi tri dung vs vi tri o dang sau co ? led tat
+      for(j=0; j<i+1; j++)  //vong for dieu khien diem sang chay qua cac led tat
+      {
+         ttdc = ttdc>>1;
+         x = ttcd|ttdc;
+         xuat_32led_don_1dw(x);  delay_ms(dl);   
+      } 
+      ttcd=ttcd<<1;
+   }
+}
+void main()                                                        
+{                                               
+   set_up_port();                                                                       
+   while(true)                                        
+   {                                                                   
+      bai_315_32led_1dsp_mp(100);                                        
+   }      
+}  
+

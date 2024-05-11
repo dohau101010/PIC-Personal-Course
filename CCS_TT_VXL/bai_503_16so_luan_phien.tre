@@ -1,0 +1,31 @@
+ÀÄbai_503_16so_luan_phien
+   ÀÄMAIN  0/148  Ram=0
+      ÃÄ@cinit1  (Inline)  Ram=0
+      ÃÄset_up_port  0/58  Ram=0
+      ³  ÀÄxoa_tat_6module  0/88  Ram=0
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÃÄxuat_1word  0/22  Ram=4
+      ³     ³  ÀÄ*
+      ³     ÀÄxuat_1word  0/22  Ram=4
+      ³        ÀÄ*
+      ÃÄhien_thi_8l7d_0_den_7  0/50  Ram=0
+      ³  ÀÄhien_thi_8led_7doan_quet  0/52  Ram=2
+      ³     ÃÄxuat_8led_7doan_quet  0/50  Ram=3
+      ³     ³  ÃÄ@const907  0/26  Ram=0
+      ³     ³  ÃÄxuat_1byte  0/38  Ram=2
+      ³     ³  ÀÄxuat_1byte  0/38  Ram=2
+      ³     ÃÄ@delay_ms1  0/40  Ram=1
+      ³     ÀÄtat_8led_7doan_quet  0/12  Ram=0
+      ³        ÀÄxuat_8led_7doan_quet  0/50  Ram=3
+      ³           ÀÄ*
+      ÀÄhien_thi_8l7d_8_den_F  0/50  Ram=0
+         ÀÄhien_thi_8led_7doan_quet  0/52  Ram=2
+            ÀÄ*

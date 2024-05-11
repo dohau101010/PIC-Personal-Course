@@ -1,0 +1,321 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004.0   step_motor_enable
+004-005 rbdc
+004.1   step_motor_in1
+004.2   step_motor_in2
+004.3   step_motor_in3
+004.4   step_motor_in4
+004.5   dc_enable
+004.6   pwrkey
+005.0   buzzer
+005.1   triac_1
+005.2   triac_2
+005.3   relay_1
+005.4   relay_2
+006-007 dl_btn
+008-00B dl_4l7d
+00C-013 dl_8l7dq
+014-01C time_w
+01D-025 time_r
+026-029 g_lcd
+02A.0   lcd_e
+02A     lcd_ctrl
+02A.1   lcd_rw
+02A.2   lcd_rs
+02A.3   lcd_p
+02B-02C so_ng
+02D-02E so_tp
+02F.0   ttqn
+02F.1   buz_ena
+030     solan
+031-032 lm35a_ng
+033-034 lm35a_tp
+035-036 lm35a_ngt
+037-038 lm35b_ng
+039-03A lm35b_tp
+03B-03C lm35b_ngt
+03D     h701_adc_lm35a_ht_lcd.x
+03D     h702_adc_lm35b_ht_lcd.x
+03D     h701_adc_lm35a_doc_xuly.sl
+03D     h702_adc_lm35b_doc_xuly.sl
+03D-03E so_sanh_nd_dk_buzzer.nd1
+03D     @delay_ms1.P1
+03D-040 atan2.y
+03D     lcd_khoi_tao_cgram_so_to.i
+03D     h702_adc_lm35b_ht_7doan.z
+03D     h701_adc_lm35a_ht_7doan.z
+03D-03E phim_bt3_c2.dl
+03D-03E xuat_1word.w
+03E     h702_adc_lm35b_ht_7doan.ht_l7d
+03E     h701_adc_lm35a_ht_lcd.y
+03E-041 h702_adc_lm35b_doc_xuly.lm35b
+03E-041 h701_adc_lm35a_doc_xuly.lm35a
+03E     h702_adc_lm35b_ht_lcd.y
+03E     h701_adc_lm35a_ht_7doan.ht_l7d
+03E     lcd_khoi_tao_cgram_so_to.@SCRATCH1
+03F     xuat_1word.b1
+03F     md4l7d_giaima_2so_vitri_vn.x
+03F-040 so_sanh_nd_dk_buzzer.nd2
+03F     h701_adc_lm35a_ht_lcd.ht_lcd
+03F     h702_adc_lm35b_ht_lcd.ht_lcd
+03F     phim_bt3_c2.@SCRATCH1
+040     h702_adc_lm35b_ht_lcd.ht_tp
+040     @delay_us1.P1
+040     h701_adc_lm35a_ht_lcd.ht_tp
+040     md4l7d_giaima_2so_vitri_vn.y
+040     xuat_1word.b0
+041-042 lcd_gm_ht_2so_to_xvn.so
+041-044 atan2.x
+041     so_sanh_nd_dk_buzzer.sel
+041     md4l7d_giaima_2so_vitri_vn.xvn
+041     h701_adc_lm35a_ht_lcd.@SCRATCH1
+041     h702_adc_lm35b_ht_lcd.@SCRATCH1
+042-045 float_to_ng_2so_tp.st
+042     lcd_hien_thi_2so_tp_nho.tp
+042     h701_adc_read.solan
+042-043 so_sanh_or_2nd.nd1
+042-043 so_sanh_and_2nd.nd1
+042-043 so_sanh_1nd.nd1
+042     md4l7d_giaima_2so_vitri_vn.@SCRATCH1
+043     lcd_gm_ht_2so_to_xvn.x
+043     lcd_hien_thi_2so_tp_nho.x
+043     h701_adc_read.chan_i
+043     md4l7d_giaima_2so_vitri_vn.@SCRATCH2
+044     lcd_gm_ht_2so_to_xvn.y
+044-047 h701_adc_read.kq_adc
+044     lcd_hien_thi_2so_tp_nho.y
+044-045 so_sanh_and_2nd.nd2
+044-045 so_sanh_or_2nd.nd2
+044     md4l7d_giaima_2so_vitri_vn.@SCRATCH3
+044     so_sanh_1nd.@SCRATCH1
+045-048 atan2.z
+045     lcd_gm_ht_2so_to_xvn.xvn
+045     lcd_hien_thi_2so_tp_nho.@SCRATCH1
+045     @PSTRINGC_977.@SCRATCH1
+046     @DIV88.P1
+046     lcd_gm_ht_2so_to_xvn.ch
+046     xuat_buzzer_relay.rbdc1
+046-049 xuat_32led_don_1dw.dwld
+046-049 @SFTOI.P1
+046-049 @MULFF.P2
+046     @PSTRINGC_977.@SCRATCH2
+046     so_sanh_and_2nd.@SCRATCH1
+046     so_sanh_or_2nd.@SCRATCH1
+047     lcd_gm_ht_2so_to_xvn.dv
+047     xuat_buzzer_relay.rbdc2
+047     @DIV88.P1
+048     h701_adc_read.i
+048     lcd_xoa_so_to.x
+048     @DIV88.@SCRATCH1
+048     lcd_gm_ht_2so_to_xvn.@SCRATCH1
+049.0   atan2.sign
+049-04C @DIVFF.P1
+049     lcd_hien_thi_so_to.so
+049     lcd_xoa_so_to.y
+049-04C @ADDFF.P1
+049-04A @ITOF.P2
+049     lcd_gm_ht_2so_to_xvn.@SCRATCH2
+04A     lcd_xoa_so_to.i
+04A     lcd_hien_thi_so_to.x
+04A     atan2.quad
+04A-04B @DIV1616.P1
+04A-04B xuat_32led_don_1dw.wd1
+04A-04D @MULFF.P1
+04B     lcd_hien_thi_so_to.y
+04B     lcd_xoa_so_to.@SCRATCH1
+04C-04D xuat_32led_don_1dw.wd0
+04C-04D @DIV1616.P1
+04C     lcd_hien_thi_so_to.i
+04D-050 @ADDFF.P1
+04D     @MUL88.P2
+04D-050 @DIVFF.P3
+04D     lcd_hien_thi_so_to.@SCRATCH1
+04E     @MUL88.P1
+04E-04F xuat_32led_don_2word.wld1
+04E     lcd_goto_xy.x
+04E     lcd_data.db
+04E     @MULFF.@SCRATCH1
+04E     xuat_32led_don_1dw.@SCRATCH1
+04E     @DIV1616.@SCRATCH1
+04E     lcd_hien_thi_so_to.@SCRATCH2
+04F     lcd_goto_xy.y
+04F     @MULFF.@SCRATCH2
+050-051 xuat_32led_don_2word.wld0
+050     @MULFF.@SCRATCH3
+050     lcd_goto_xy.@SCRATCH1
+051     lcd_command.db
+051     @ADDFF.@SCRATCH1
+051     @DIVFF.@SCRATCH1
+052     lcd_xuat.db
+052     xuat_32led_don_2word.b3
+052     @ADDFF.@SCRATCH2
+052     @DIVFF.@SCRATCH2
+053     xuat_lcd.lcd_ctr
+053     xuat_32led_don_2word.b2
+053     @ADDFF.@SCRATCH3
+053     @DIVFF.@SCRATCH3
+054     xuat_lcd.lcd_dta
+054     xuat_32led_don_2word.b1
+054     @ADDFF.@SCRATCH4
+054     @DIVFF.@SCRATCH4
+055     xuat_32led_don_2word.b0
+055     @ADDFF.@SCRATCH5
+055     @DIVFF.@SCRATCH5
+056     xuat_32led_don_4byte.bld3
+056     @ADDFF.@SCRATCH6
+056     @DIVFF.@SCRATCH6
+057     xuat_32led_don_4byte.bld2
+057     @ADDFF.@SCRATCH7
+058     xuat_32led_don_4byte.bld1
+058     @ADDFF.@SCRATCH8
+059     xuat_32led_don_4byte.bld0
+05A     xuat_1byte.x
+05A.7   xuat_1byte.msb
+05B     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2_LOW
+FBB     CCP_2
+FBC     CCP_2_HIGH
+FBE     CCP_1
+FBE     CCP_1_LOW
+FBF     CCP_1_HIGH
+FE1-FE2 @WRITE_PACKED_MEMORY.P1
+FE1-FE2 @READ_PACKED_MEMORY.P2
+FE9-FEA @WRITE_PROGRAM_MEMORY.P1
+FE9-FEA @READ_PROGRAM_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PACKED_MEMORY.P4
+FF6-FF8 @READ_PROGRAM_MEMORY.P1
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000004  ma7doan.call
+000014  ma7doan.data
+000024  lcd_vitri.call
+000034  lcd_vitri.data
+000038  lcd_so_to.call
+000048  lcd_so_to.data
+000084  lcd_ma_8doan.call
+000094  lcd_ma_8doan.data
+0000D4  @const1100.call
+0000D6  @const1111.call
+0000E0  @const1113.call
+0000F6  @const1170.call
+000102  @const1241.call
+000106  @const1243.call
+00010A  @const1248.call
+000120  xuat_1byte
+000146  xuat_1word
+00015C  xoa_tat_6module
+0001B4  set_up_port
+0001EE  xuat_glcd_lcd
+000212  xuat_lcd
+000222  lcd_xuat
+000248  lcd_command
+000252  @delay_ms1
+000278  lcd_setup
+0002C0  lcd_data
+0002CA  lcd_khoi_tao_cgram_so_to
+0002F6  lcd_goto_xy
+000310  @PSTRINGC_977
+000330  lcd_ena_buz_off
+000344  @ITOF
+00037A  @ADDFF
+0005E4  @DIVFF
+00073E  h701_adc_read
+000804  @SFTOI
+00083C  @MULFF
+000930  float_to_ng_2so_tp
+000A0A  h701_adc_lm35a_doc_xuly
+000A7A  @DIV1616
+000ABC  @MUL88
+000B08  lcd_hien_thi_so_to
+000B6C  lcd_xoa_so_to
+000BA6  lcd_gm_ht_2so_to_xvn
+000C26  @DIV88
+000C4E  lcd_hien_thi_2so_tp_nho
+000C9E  h701_adc_lm35a_ht_lcd
+000CE4  md4l7d_giaima_2so_vitri_vn
+000D76  xuat_4led_7doan_4so
+000DA0  h701_adc_lm35a_ht_7doan
+000DB6  h702_adc_lm35b_doc_xuly
+000E2A  h702_adc_lm35b_ht_lcd
+000E70  h702_adc_lm35b_ht_7doan
+000E86  xuat_buzzer_relay
+000EA8  buzzer_on
+000EAE  triac_2_off
+000EB4  buzzer_off
+000EBA  triac_2_on
+000EC0  xuat_32led_don_4byte
+000EEC  xuat_32led_don_2word
+000F12  xuat_32led_don_1dw
+000F36  so_sanh_1nd
+000F86  so_sanh_and_2nd
+000FF4  so_sanh_or_2nd
+001062  so_sanh_nd_dk_buzzer
+0010A8  @delay_us1
+0010C4  phim_bt3_c2
+001108  lcd_ena_buz_on
+001122  phim_bt3_tat_mo_buzz
+00114A  @cinit1
+00114A  MAIN
+001182  @cinit2
+
+Project Directory:
+    E:\Downloads\TT VXL THAY PHU\tt_vxl_d501_thay_phu\tt_vxl_d501_thay_phu\
+
+Project Files:
+    bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.c              [06-May-22 13:45  CRC=07997579]
+    tv_kit_vdk_pic_all.c                                    [09-Feb-22 11:37  CRC=95887F12]
+    tv_00_define_18f4550.c                                  [30-Sep-21 12:29  CRC=91C401BF]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [04-Oct-21 08:38  CRC=26E88B80]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [25-Mar-22 13:13  CRC=1A33A3DD]
+    tv_05_i2c_ds13_pcf.c                                    [22-Apr-22 13:22  CRC=97278EF6]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [08-Apr-22 14:02  CRC=EE6254ED]
+    tv_dht11.c                                              [24-Nov-21 12:49  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [06-May-22 13:45  CRC=0738717C]
+    tv_07_ds18b20.c                                         [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [15-Oct-21 08:41  CRC=A7D8AEFA]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+    bai_701_lm35a_tv.c                                      [29-Apr-22 16:50  CRC=34F4586F]
+    bai_701_lm35b_tv.c                                      [05-May-22 18:17  CRC=34F4586F]
+    bai_701_bt3_lcd_tv.c                                    [05-May-22 17:26  CRC=9C746477]
+
+Source signature=BC7E6608
+
+Units:
+    bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3 (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.xsym
+    Errors:      bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.err
+    Ext Symbols: bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.esym
+    INHX32:      bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.hex
+    Symbols:     bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.sym
+    List:        bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.lst
+    Debug/COFF:  bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.cof
+    Project:     bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.ccspjt
+    Call Tree:   bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.tre
+    Statistics:  bai_704_lcd_7doan_or_lm35a_b_den_buz_bt3.STA

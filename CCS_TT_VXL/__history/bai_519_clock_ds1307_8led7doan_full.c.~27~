@@ -1,0 +1,81 @@
+
+#include <tv_kit_vdk_pic_all.c> 
+
+usi8 giay_tam,ngay_tam,thu_tam,gt_mod; 
+void b518_giai_ma_8led_quet() 
+{
+   md8l7d_gma_so_bcd_vitri_vn (giay_ds, 0, kx_vn);
+   md8l7d_gma_so_bcd_vitri_vn (phut_ds, 3, kx_vn);
+   md8l7d_gma_so_bcd_vitri_vn (gio_ds, 6, cx_vn);
+}
+
+void b518_giai_ma_8led_quet_ntn()
+{
+   md8l7d_gma_so_bcd_vitri_vn (nam_ds, 0, kx_vn);
+   md8l7d_gma_so_bcd_vitri_vn (thang_ds, 3, kx_vn);
+   md8l7d_gma_so_bcd_vitri_vn (ngay_ds, 6, kx_vn);
+}
+
+void b518_giai_ma_8led_quet_thu()
+{
+   md8l7d_gma_so_bcd_vitri_vn (thu_ds, 6, kx_vn);
+   md8l7d_gma_2so_vitri_vn (0xbf, 3, kx_vn);
+   md8l7d_gma_2so_vitri_vn (0xbf, 0, kx_vn);
+}
+
+void phim_mod(usi8 dl)
+{
+   IF (phim_bt3_c2 (dl))
+   {
+      gt_mod++;
+      IF (gt_mod > 2) 
+         gt_mod = 0;
+   }
+}
+//!
+//!void mod_ngay_thang_nam_thu_gio_phut_giay()
+//!{
+//!   if(gt_mod==0)  b518_giai_ma_8led_quet();
+//!   if(gt_mod==1)  b518_giai_ma_8led_quet_ntn();
+//!   if(gt_mod==2)  b518_giai_ma_8led_quet_thu();
+//!}
+//!
+void main() 
+{
+   set_up_port ();
+   ds1307_kiem_tra_ma ();
+   
+   WHILE (true)
+   {
+      for (INT8 i = 0; i < 10; i++) hien_thi_8led_7doan_quet ();
+      ds1307_doc_time (8);
+
+      phim_mod(1);
+      
+      if(gt_mod==0)
+      {
+         IF (giay_tam != giay_ds)
+         {
+            giay_tam=giay_ds;
+            b518_giai_ma_8led_quet ();
+         }
+      }
+      if(gt_mod==1)
+      {
+         IF (ngay_tam != ngay_ds)
+         {
+            ngay_tam=ngay_ds;
+            b518_giai_ma_8led_quet_ntn();
+         }
+      }
+      if(gt_mod==2)
+      {
+         IF (thu_tam != thu_ds)
+         {
+            thu_tam=thu_ds;
+            b518_giai_ma_8led_quet_thu();
+         }
+      }
+   }
+}
+

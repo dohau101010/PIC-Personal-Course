@@ -1,0 +1,27 @@
+#include <tv_kit_vdk_pic_all.c>
+#include <chuong3_32led_if_no_delay.c> 
+#include <bai_411_t0_tv.c> 
+#define solan 1 
+#include <bai_706_gp2d12_tv.c> 
+ 
+void main() 
+{ 
+    set_up_port(); 
+    setup_timer_0(t0_ext_l_to_h|t0_div_1|t0_8_bit); 
+    set_timer0(0); t0_tam = 1; g_han=50; 
+    lcd_setup(); 
+    lcd_khoi_tao_cgram_so_to(); 
+    
+    lcd_goto_xy(0,10); 
+    lcd_data("GP2D12"); 
+    while(true) 
+    { 
+       h706_adc_gp2d12_doc_xuly(solan); 
+       h706_adc_gp2d12_ht_lcd(1,10,1,1);
+       //h706_adc_gp2d12_ht_7doan(3,1);
+       if(kc_ng==0) delay_ms(5);
+       else delay_ms(kc_ng);
+       b352_32led_tong_hop_tu_dong_if();
+       b411_dem_sp_t0();
+    } 
+}

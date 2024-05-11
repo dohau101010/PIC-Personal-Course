@@ -1,0 +1,208 @@
+000     @SCRATCH
+001     @SCRATCH
+001     _RETURN_
+002     @SCRATCH
+003     @SCRATCH
+004     @INTERRUPT_AREA
+005     @INTERRUPT_AREA
+006     @INTERRUPT_AREA
+007     @INTERRUPT_AREA
+008     @INTERRUPT_AREA
+009     @INTERRUPT_AREA
+00A     @INTERRUPT_AREA
+00B     @INTERRUPT_AREA
+00C     @INTERRUPT_AREA
+00D     @INTERRUPT_AREA
+00E     @INTERRUPT_AREA
+00F     @INTERRUPT_AREA
+010     @INTERRUPT_AREA
+011     @INTERRUPT_AREA
+012     @INTERRUPT_AREA
+013     @INTERRUPT_AREA
+014     @INTERRUPT_AREA
+015     @INTERRUPT_AREA
+016.0   step_motor_enable
+016-017 rbdc
+016.1   step_motor_in1
+016.2   step_motor_in2
+016.3   step_motor_in3
+016.4   step_motor_in4
+016.5   dc_enable
+016.6   pwrkey
+017.0   buzzer
+017.1   triac_1
+017.2   triac_2
+017.3   relay_1
+017.4   relay_2
+018-019 dl_btn
+01A-01D dl_4l7d
+01E-025 dl_8l7dq
+026-02E time_w
+02F-037 time_r
+038-03B g_lcd
+03C.0   lcd_e
+03C     lcd_ctrl
+03C.1   lcd_rw
+03C.2   lcd_rs
+03C.3   lcd_p
+03D-03E so_ng
+03F-040 so_tp
+041-042 nd_tren
+043-044 nd_duoi
+045.0   ttqn
+045.1   buz_ena
+045.2   dcmotor_tn
+045.3   dcmotor_onoff
+045.4   tt_qt
+045.5   tt_qn
+045.6   tt_n
+046-047 pwm_duty
+048-049 lt
+04A-04B lp
+04C     giay
+04D     bdn
+04E     xuat_buzzer_relay.rbdc1
+04E-051 atan2.y
+04E     hien_thi_8led_7doan_quet.ttl
+04E-04F xuat_1word.w
+04E     md8l7d_gma_2so_vitri_vn.x
+04E     dkdc_theo_giay.giay
+04F     @delay_ms1.P1
+04F     md8l7d_gma_2so_vitri_vn.y
+04F     xuat_buzzer_relay.rbdc2
+04F-050 xuat_32led_don_2word.wld1
+04F     hien_thi_8led_7doan_quet.@SCRATCH1
+04F     dkdc_theo_giay.@SCRATCH1
+050     md8l7d_gma_2so_vitri_vn.xvn
+050     xuat_1word.b1
+050     xuat_8led_7doan_quet.ttq
+051     xuat_1word.b0
+051-052 xuat_32led_don_2word.wld0
+051     xuat_8led_7doan_quet.mht
+051     md8l7d_gma_2so_vitri_vn.@SCRATCH1
+052-055 atan2.x
+052     xuat_8led_7doan_quet.@SCRATCH1
+052     md8l7d_gma_2so_vitri_vn.@SCRATCH2
+053     xuat_32led_don_2word.b3
+053     md8l7d_gma_2so_vitri_vn.@SCRATCH3
+054     xuat_32led_don_2word.b2
+054     @DIV88.P1
+055     xuat_32led_don_2word.b1
+055     @DIV88.P1
+056     xuat_32led_don_2word.b0
+056-059 atan2.z
+056     @DIV88.@SCRATCH1
+057     xuat_32led_don_4byte.bld3
+058     xuat_32led_don_4byte.bld2
+059     xuat_32led_don_4byte.bld1
+05A.0   atan2.sign
+05A     xuat_32led_don_4byte.bld0
+05B     xuat_1byte.x
+05B     atan2.quad
+05B.7   xuat_1byte.msb
+05C     xuat_1byte.sb
+F83     PSP_DATA
+FB4.6   C1OUT
+FB4.7   C2OUT
+FBB     CCP_2
+FBB     CCP_2_LOW
+FBC     CCP_2_HIGH
+FBE     CCP_1_LOW
+FBE     CCP_1
+FBF     CCP_1_HIGH
+FE1-FE2 @READ_PACKED_MEMORY.P1
+FE1-FE2 @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PROGRAM_MEMORY.P1
+FE9-FEA @WRITE_PACKED_MEMORY.P2
+FE9-FEA @READ_PACKED_MEMORY.P3
+FE9-FEA @WRITE_PROGRAM_MEMORY.P4
+FF6-FF8 @WRITE_PROGRAM_MEMORY.P1
+FF6-FF8 @READ_PROGRAM_MEMORY.P2
+
+ROM Allocation:
+000096  ma7doan.call
+0000B0  ma7doan.data
+0000C0  ma_quet.call
+0000DA  ma_quet.data
+0000E4  @const1100.call
+0000E6  @const1106.call
+0000E8  @const1116.call
+0000F2  @const1118.call
+000108  @const1177.call
+000114  interrupt_timer3
+000124  xuat_1byte
+00014A  xuat_1word
+000160  xoa_tat_6module
+0001B8  set_up_port
+0001F2  @DIV88
+00021A  md8l7d_gma_2so_vitri_vn
+0002A8  xuat_buzzer_relay
+0002C8  dc_motor_enable
+0002D0  dc_motor_stop
+0002DA  xuat_8led_7doan_quet
+00030C  @delay_ms1
+000334  tat_8led_7doan_quet
+000340  hien_thi_8led_7doan_quet
+000376  xuat_32led_don_4byte
+00039A  xuat_32led_don_2word
+0003BE  dc_motor_quay_thuan
+0003CA  dc_motor_quay_nghich
+0003D6  dc_motor_run
+0003EA  phim_on_off
+000446  dkdc_theo_giay
+0004D0  tang_giay
+0004EC  @cinit1
+0004EC  MAIN
+000538  @cinit2
+
+Project Directory:
+    E:\Downloads\TT VXL THAY PHU\tt_vxl_d501_thay_phu\tt_vxl_d501_thay_phu\
+
+Project Files:
+    bai_812_dc_motor_on_off_quay_dao_theo_time.c            [27-May-22 10:18  CRC=28899175]
+    tv_kit_vdk_pic_all.c                                    [09-Feb-22 11:37  CRC=95887F12]
+    tv_00_define_18f4550.c                                  [30-Sep-21 12:29  CRC=91C401BF]
+    C:\Program Files (x86)\PICC\Devices\18f4550.h           [12-Nov-13 14:35  CRC=5337E248]
+    tv_01_4_nutnhan.c                                       [06-Jan-22 21:24  CRC=24896EA4]
+    tv_02_matran_phim4x4_138.c                              [04-Oct-21 08:38  CRC=26E88B80]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [28-Sep-12 11:35  CRC=546412C9]
+    tv_03_32led_don.c                                       [15-Oct-21 08:09  CRC=01B74A28]
+    tv_04_4led_7doan.c                                      [15-Oct-21 08:11  CRC=4A84D16F]
+    tv_05_8led_7doan_quet.c                                 [25-Mar-22 13:13  CRC=1A33A3DD]
+    tv_05_i2c_ds13_pcf.c                                    [22-Apr-22 13:22  CRC=97278EF6]
+    tv_06_lcd_glcd.c                                        [15-Oct-21 08:17  CRC=2A209586]
+    tv_06_lcd.c                                             [20-May-22 13:40  CRC=63BB3AC2]
+    tv_dht11.c                                              [13-May-22 16:42  CRC=D54B50C8]
+    tv_08_relay_triac_buzzer_dc.c                           [15-Oct-21 08:37  CRC=97FC1465]
+    tv_07_adc_cb.c                                          [13-May-22 13:20  CRC=6B8BEF4B]
+    tv_07_ds18b20.c                                         [15-Oct-21 08:40  CRC=FB0370B8]
+    C:\Program Files (x86)\PICC\Drivers\touch.c             [02-Mar-10 13:04  CRC=24D0ECE7]
+    tv_07_i2c_at24cxx.c                                     [15-Oct-21 08:41  CRC=A7D8AEFA]
+    tv_09_matran_led_mbi.c                                  [15-Oct-21 08:44  CRC=A571EA9E]
+    tv_08_dc_motor.c                                        [27-May-22 16:39  CRC=81B98620]
+    bai_812_dc_motor_tv.c                                   [27-May-22 10:18  CRC=A86867BC]
+
+Source signature=E6D3C174
+
+Units:
+    bai_812_dc_motor_on_off_quay_dao_theo_time (main)
+
+Compiler Settings:
+    Processor:      PIC18F4550
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   bai_812_dc_motor_on_off_quay_dao_theo_time.xsym
+    Errors:      bai_812_dc_motor_on_off_quay_dao_theo_time.err
+    Ext Symbols: bai_812_dc_motor_on_off_quay_dao_theo_time.esym
+    INHX32:      bai_812_dc_motor_on_off_quay_dao_theo_time.hex
+    Symbols:     bai_812_dc_motor_on_off_quay_dao_theo_time.sym
+    List:        bai_812_dc_motor_on_off_quay_dao_theo_time.lst
+    Debug/COFF:  bai_812_dc_motor_on_off_quay_dao_theo_time.cof
+    Project:     bai_812_dc_motor_on_off_quay_dao_theo_time.ccspjt
+    Call Tree:   bai_812_dc_motor_on_off_quay_dao_theo_time.tre
+    Statistics:  bai_812_dc_motor_on_off_quay_dao_theo_time.STA

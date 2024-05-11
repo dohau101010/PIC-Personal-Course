@@ -1,0 +1,21 @@
+unsigned int16 lt=0, lp=0;
+int1 tt_qt=0, tt_qn=0, tt_n=0;
+//trang thai quay thuan, quay nghich, ngung
+void phim_on_off()
+{
+   if((!input(on))&&(!dcmotor_onoff)) //ktra dcmotor_onff: khi nhan on roi ma nhan on nua thi nho bit do se khoa ko cho lam lai cac cong viec da lam  
+    {
+       dcmotor_onoff=1; 
+       lt=0xffff;
+       tt_n=0; tt_qt=0; tt_qn=0;
+       xuat_32led_don_2word(lt,lp); 
+    } 
+    else if((!input(off))&&(dcmotor_onoff))
+    {
+       dcmotor_onoff=0;
+       dc_motor_run();
+       lt=0;   lp=0;
+       tt_n=0; tt_qt=0; tt_qn=0;
+       xuat_32led_don_2word(lt,lp); 
+    } 
+}
